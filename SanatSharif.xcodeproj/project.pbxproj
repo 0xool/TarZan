@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A52D013F1D27A3E500A97FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D013E1D27A3E500A97FDD /* AppDelegate.swift */; };
+		A52D01411D27A3E500A97FDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D01401D27A3E500A97FDD /* ViewController.swift */; };
+		A52D01441D27A3E500A97FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52D01421D27A3E500A97FDD /* Main.storyboard */; };
+		A52D01461D27A3E500A97FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52D01451D27A3E500A97FDD /* Assets.xcassets */; };
+		A52D01491D27A3E500A97FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52D01471D27A3E500A97FDD /* LaunchScreen.storyboard */; };
+		A52D01541D27A3E500A97FDD /* SanatSharifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D01531D27A3E500A97FDD /* SanatSharifTests.swift */; };
+		A52D015F1D27A3E500A97FDD /* SanatSharifUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D015E1D27A3E500A97FDD /* SanatSharifUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A52D01501D27A3E500A97FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A52D01331D27A3E400A97FDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A52D013A1D27A3E500A97FDD;
+			remoteInfo = SanatSharif;
+		};
+		A52D015B1D27A3E500A97FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A52D01331D27A3E400A97FDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A52D013A1D27A3E500A97FDD;
+			remoteInfo = SanatSharif;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A52D013B1D27A3E500A97FDD /* SanatSharif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanatSharif.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52D013E1D27A3E500A97FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A52D01401D27A3E500A97FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A52D01431D27A3E500A97FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A52D01451D27A3E500A97FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A52D01481D27A3E500A97FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A52D014A1D27A3E500A97FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52D014F1D27A3E500A97FDD /* SanatSharifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanatSharifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52D01531D27A3E500A97FDD /* SanatSharifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatSharifTests.swift; sourceTree = "<group>"; };
+		A52D01551D27A3E500A97FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A52D015A1D27A3E500A97FDD /* SanatSharifUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SanatSharifUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52D015E1D27A3E500A97FDD /* SanatSharifUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanatSharifUITests.swift; sourceTree = "<group>"; };
+		A52D01601D27A3E500A97FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A52D01381D27A3E500A97FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D014C1D27A3E500A97FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D01571D27A3E500A97FDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A52D01321D27A3E400A97FDD = {
+			isa = PBXGroup;
+			children = (
+				A52D013D1D27A3E500A97FDD /* SanatSharif */,
+				A52D01521D27A3E500A97FDD /* SanatSharifTests */,
+				A52D015D1D27A3E500A97FDD /* SanatSharifUITests */,
+				A52D013C1D27A3E500A97FDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A52D013C1D27A3E500A97FDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A52D013B1D27A3E500A97FDD /* SanatSharif.app */,
+				A52D014F1D27A3E500A97FDD /* SanatSharifTests.xctest */,
+				A52D015A1D27A3E500A97FDD /* SanatSharifUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A52D013D1D27A3E500A97FDD /* SanatSharif */ = {
+			isa = PBXGroup;
+			children = (
+				A52D013E1D27A3E500A97FDD /* AppDelegate.swift */,
+				A52D01401D27A3E500A97FDD /* ViewController.swift */,
+				A52D01421D27A3E500A97FDD /* Main.storyboard */,
+				A52D01451D27A3E500A97FDD /* Assets.xcassets */,
+				A52D01471D27A3E500A97FDD /* LaunchScreen.storyboard */,
+				A52D014A1D27A3E500A97FDD /* Info.plist */,
+			);
+			path = SanatSharif;
+			sourceTree = "<group>";
+		};
+		A52D01521D27A3E500A97FDD /* SanatSharifTests */ = {
+			isa = PBXGroup;
+			children = (
+				A52D01531D27A3E500A97FDD /* SanatSharifTests.swift */,
+				A52D01551D27A3E500A97FDD /* Info.plist */,
+			);
+			path = SanatSharifTests;
+			sourceTree = "<group>";
+		};
+		A52D015D1D27A3E500A97FDD /* SanatSharifUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A52D015E1D27A3E500A97FDD /* SanatSharifUITests.swift */,
+				A52D01601D27A3E500A97FDD /* Info.plist */,
+			);
+			path = SanatSharifUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A52D013A1D27A3E500A97FDD /* SanatSharif */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52D01631D27A3E500A97FDD /* Build configuration list for PBXNativeTarget "SanatSharif" */;
+			buildPhases = (
+				A52D01371D27A3E500A97FDD /* Sources */,
+				A52D01381D27A3E500A97FDD /* Frameworks */,
+				A52D01391D27A3E500A97FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SanatSharif;
+			productName = SanatSharif;
+			productReference = A52D013B1D27A3E500A97FDD /* SanatSharif.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A52D014E1D27A3E500A97FDD /* SanatSharifTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52D01661D27A3E500A97FDD /* Build configuration list for PBXNativeTarget "SanatSharifTests" */;
+			buildPhases = (
+				A52D014B1D27A3E500A97FDD /* Sources */,
+				A52D014C1D27A3E500A97FDD /* Frameworks */,
+				A52D014D1D27A3E500A97FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A52D01511D27A3E500A97FDD /* PBXTargetDependency */,
+			);
+			name = SanatSharifTests;
+			productName = SanatSharifTests;
+			productReference = A52D014F1D27A3E500A97FDD /* SanatSharifTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A52D01591D27A3E500A97FDD /* SanatSharifUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52D01691D27A3E500A97FDD /* Build configuration list for PBXNativeTarget "SanatSharifUITests" */;
+			buildPhases = (
+				A52D01561D27A3E500A97FDD /* Sources */,
+				A52D01571D27A3E500A97FDD /* Frameworks */,
+				A52D01581D27A3E500A97FDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A52D015C1D27A3E500A97FDD /* PBXTargetDependency */,
+			);
+			name = SanatSharifUITests;
+			productName = SanatSharifUITests;
+			productReference = A52D015A1D27A3E500A97FDD /* SanatSharifUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A52D01331D27A3E400A97FDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "cyrus refahi";
+				TargetAttributes = {
+					A52D013A1D27A3E500A97FDD = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					A52D014E1D27A3E500A97FDD = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A52D013A1D27A3E500A97FDD;
+					};
+					A52D01591D27A3E500A97FDD = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A52D013A1D27A3E500A97FDD;
+					};
+				};
+			};
+			buildConfigurationList = A52D01361D27A3E500A97FDD /* Build configuration list for PBXProject "SanatSharif" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A52D01321D27A3E400A97FDD;
+			productRefGroup = A52D013C1D27A3E500A97FDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A52D013A1D27A3E500A97FDD /* SanatSharif */,
+				A52D014E1D27A3E500A97FDD /* SanatSharifTests */,
+				A52D01591D27A3E500A97FDD /* SanatSharifUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A52D01391D27A3E500A97FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52D01491D27A3E500A97FDD /* LaunchScreen.storyboard in Resources */,
+				A52D01461D27A3E500A97FDD /* Assets.xcassets in Resources */,
+				A52D01441D27A3E500A97FDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D014D1D27A3E500A97FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D01581D27A3E500A97FDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A52D01371D27A3E500A97FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52D01411D27A3E500A97FDD /* ViewController.swift in Sources */,
+				A52D013F1D27A3E500A97FDD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D014B1D27A3E500A97FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52D01541D27A3E500A97FDD /* SanatSharifTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52D01561D27A3E500A97FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52D015F1D27A3E500A97FDD /* SanatSharifUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A52D01511D27A3E500A97FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A52D013A1D27A3E500A97FDD /* SanatSharif */;
+			targetProxy = A52D01501D27A3E500A97FDD /* PBXContainerItemProxy */;
+		};
+		A52D015C1D27A3E500A97FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A52D013A1D27A3E500A97FDD /* SanatSharif */;
+			targetProxy = A52D015B1D27A3E500A97FDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A52D01421D27A3E500A97FDD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A52D01431D27A3E500A97FDD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A52D01471D27A3E500A97FDD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A52D01481D27A3E500A97FDD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A52D01611D27A3E500A97FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A52D01621D27A3E500A97FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A52D01641D27A3E500A97FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SanatSharif/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cyrus-refai.SanatSharif";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A52D01651D27A3E500A97FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SanatSharif/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cyrus-refai.SanatSharif";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A52D01671D27A3E500A97FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SanatSharifTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cyrus-refai.SanatSharifTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanatSharif.app/SanatSharif";
+			};
+			name = Debug;
+		};
+		A52D01681D27A3E500A97FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SanatSharifTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cyrus-refai.SanatSharifTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SanatSharif.app/SanatSharif";
+			};
+			name = Release;
+		};
+		A52D016A1D27A3E500A97FDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SanatSharifUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cyrus-refai.SanatSharifUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SanatSharif;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A52D016B1D27A3E500A97FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SanatSharifUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cyrus-refai.SanatSharifUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SanatSharif;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A52D01361D27A3E500A97FDD /* Build configuration list for PBXProject "SanatSharif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52D01611D27A3E500A97FDD /* Debug */,
+				A52D01621D27A3E500A97FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52D01631D27A3E500A97FDD /* Build configuration list for PBXNativeTarget "SanatSharif" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52D01641D27A3E500A97FDD /* Debug */,
+				A52D01651D27A3E500A97FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A52D01661D27A3E500A97FDD /* Build configuration list for PBXNativeTarget "SanatSharifTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52D01671D27A3E500A97FDD /* Debug */,
+				A52D01681D27A3E500A97FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A52D01691D27A3E500A97FDD /* Build configuration list for PBXNativeTarget "SanatSharifUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52D016A1D27A3E500A97FDD /* Debug */,
+				A52D016B1D27A3E500A97FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A52D01331D27A3E400A97FDD /* Project object */;
+}
