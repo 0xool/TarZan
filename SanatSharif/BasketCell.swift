@@ -42,7 +42,6 @@ class BasketCell: UITableViewCell {
     
     @IBAction func StepperValueChanged(sender: UIStepper) {
        
-        print("CLicked")
         ProductAmount.text = Int(sender.value).description
         
     }

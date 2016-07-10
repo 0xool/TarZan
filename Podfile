@@ -7,6 +7,8 @@ target 'SanatSharif' do
 
 #pod 'ImageSlideshow', '~> 0.4'
 pod 'Alamofire', '~> 3.0.0'
+pod 'Intercom'
+
 end
 
 target 'SanatSharifTests' do

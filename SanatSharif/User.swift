@@ -10,13 +10,13 @@ import Foundation
 
 class User {
     
-    private var _ID : Int
-    private var _FName : String
-    private var _LName : String
+    private var _ID : Int!
+    private var _FName : String!
+    private var _LName : String!
     
-    private var _Address : [Address]
-    private var _Family : Family
-    private var _Cart : [Cart]
+    private var _Address : [Address]!
+    private var _Family : Family!
+    private var _Cart : [Cart]!
     
     var ID : Int{
         return self._ID
@@ -50,6 +50,11 @@ class User {
         self._FName = Fname
         self._ID = id
         self._LName = Lname
+        
+        
+    }
+    
+    init(){
         
         
     }

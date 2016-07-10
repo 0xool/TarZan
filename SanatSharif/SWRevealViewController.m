@@ -740,6 +740,8 @@ const int FrontViewPositionNone = 0xff;
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    _sidebarMenuOpen = NO;
 
     // Uncomment the following code if you want the child controllers
     // to be loaded at this point.
@@ -1716,6 +1718,40 @@ const int FrontViewPositionNone = 0xff;
     }
 }
 
+//=========================================================================================================================================
+// My costum  classes
+- (void)revealController:(SWRevealViewController *)revealController willMoveToPosition:(FrontViewPosition)position
+{
+    if(position == FrontViewPositionLeft) {
+        self.view.userInteractionEnabled = YES;
+        _sidebarMenuOpen = NO;
+    } else {
+        self.view.userInteractionEnabled = NO;
+        _sidebarMenuOpen = YES;
+    }
+}
+
+- (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position
+{
+    if(position == FrontViewPositionLeft) {
+        self.view.userInteractionEnabled = YES;
+        _sidebarMenuOpen = NO;
+    } else {
+        self.view.userInteractionEnabled = NO;
+        _sidebarMenuOpen = YES;
+    }
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(_sidebarMenuOpen == YES){
+        return nil;
+    } else {
+        return indexPath;
+    }
+}
+
+
+//=========================================================================================================================================
 
 #pragma mark state preservation / restoration
 

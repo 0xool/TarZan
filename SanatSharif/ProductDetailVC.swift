@@ -17,15 +17,23 @@ class ProductDetailVC: UIViewController {
     @IBOutlet weak var DementionAmountLabel: UILabel!
     @IBOutlet weak var TypeLabel: UILabel!
     @IBOutlet weak var Description: UITextView!
+    @IBOutlet weak var AmountLabel: UILabel!
     
     var product : Product!
+    var Amount : Int = 0
     
     override func viewDidLoad() {
     
         NameLabel.text = product.Name
         PriceLabel.text = String(product.Price)
         ExpDateLabel.text = String(product.ExpDate)
-        Description.text = "Later maybe :D"
+
+        
+    }
+    
+    func setProductDetailVC(product : Product){
+        
+        self.product = product
         
     }
     
@@ -38,9 +46,32 @@ class ProductDetailVC: UIViewController {
         
     }
     
+    @IBAction func MinusBtnClicked(sender: AnyObject) {
+        
+        if Amount != 0 {
+            Amount = Amount - 1
+
+            AmountLabel.text = "تعداد خرید :‌ \(String(Amount))"
+        }
+    }
+
+    @IBAction func PlusBtnClicked(sender: AnyObject) {
+        
+        Amount = Amount + 1
+        AmountLabel.text = "تعداد خرید :‌ \(String(Amount))"
+        
+    }
     
     @IBAction func BuyBtnClicked(sender: AnyObject) {
 
+        if Amount != 0 {
+            let item : Item = Item(product: self.product, count: Amount, totalPrice: Amount * product.Price)
+            UserModelManager.UserCredentials._Cart.addItemToCart(item);
+        }else{
+            
+            //alert maybe :D
+            
+        }
         
         
     }

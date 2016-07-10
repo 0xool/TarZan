@@ -10,9 +10,9 @@ import Foundation
 
 class Item {
     
-    private var _Product : Product
-    private var _Count : Int
-    private var _TotalPrice : Int
+    private var _Product : Product!
+    private var _Count : Int!
+    private var _TotalPrice : Int!
     
     var product : Product{
         return self._Product
@@ -31,6 +31,23 @@ class Item {
         self._Product = product
         self._TotalPrice = totalPrice
         self._Count = count
+        
+    }
+    
+    init(){
+        
+        
+    }
+    
+    func increaseCount(){
+        
+        _Count = _Count + 1
+        
+    }
+    
+    func decreaseCount(){
+        
+        _Count = _Count - 1
         
     }
     

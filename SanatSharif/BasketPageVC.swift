@@ -13,7 +13,7 @@ class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSou
     
     @IBOutlet weak var BasketTableView: UITableView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet weak var BuyOut: LoginButtonView!
+    
     
     override func viewDidLoad() {
         
@@ -32,14 +32,31 @@ class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSou
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 10
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        if(indexPath.row == 9 ){
+            
+            if let cell = tableView.dequeueReusableCellWithIdentifier("BuyOut") as? BuyOutCell {
+                
+                UIView.animateWithDuration(2, animations: { cell.alpha = 1 })
+
+                
+                return cell
+                
+            } else {
+                
+                return UITableViewCell()
+            }
+        
+            
+        }
+        
         if let cell = tableView.dequeueReusableCellWithIdentifier("BasketCell") as? BasketCell {
             
-            
+             UIView.animateWithDuration(2, animations: { cell.alpha = 1 })
             
             return cell
             
@@ -50,10 +67,27 @@ class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSou
         
     }
     
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+    
+    for cell in BasketTableView.visibleCells as [UITableViewCell] {
+    
+    let point = BasketTableView.convertPoint(cell.center, toView: BasketTableView.superview)
+    cell.alpha = ((point.y * 100) / BasketTableView.bounds.maxY) / 10
+//    cell.alpha = (((point.y + UIScreen.mainScreen().bounds.height) * 100) / BasketTableView.bounds.minY) / 15
+    }
+    }
+    
 //    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 //        
 //                    return tableView.estimatedRowHeight
 //    }
 //    
+    
+     func reloadData(){
+        
+        BasketTableView.reloadData()
+        print("Fuck yeah")
+        
+    }
     
 }

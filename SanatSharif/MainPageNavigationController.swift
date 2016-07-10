@@ -16,6 +16,8 @@ class MainPageNavigationController: UINavigationController {
         self.navigationBar.tintColor = UIColor.grayColor()
         self.navigationBar.barTintColor = UIColor.whiteColor()
         self.navigationBar.topItem?.title = "Back"
+        
+
 
         
         

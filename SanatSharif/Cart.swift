@@ -10,10 +10,10 @@ import Foundation
 
 class Cart {
     
-    private var _User : User
-    private var _Item : [Item]
-    private var _Total : Int
-    private var _ID : Int
+    private var _User : User!
+    private var _Item : [Item]!
+    private var _Total : Int!
+    private var _ID : Int!
     
     var user : User{
         return self._User
@@ -37,6 +37,38 @@ class Cart {
         self._Item = item
         self._Total = total
         self._User = user
+        
+    }
+    
+    init(){
+        
+        
+        
+    }
+    
+    func addItemToCart(item : Item){
+        
+        if _Item.contains({$0.product.Name == item.product.Name}){
+            _Item[_Item.indexOf({$0.product.Name == item.product.Name})!].increaseCount()
+        }else{
+            _Item.append(item)
+        }
+        
+    }
+    
+    
+    func removeItemFromCart(item : Item){
+        
+        if _Item.contains({$0.product.Name == item.product.Name}){
+            _Item.removeAtIndex(_Item.indexOf({$0.product.Name == item.product.Name})!)
+        }
+    }
+    
+    func removeFromCart(item : Item , theAmpunt : Int){
+        
+        if _Item.contains({$0.product.Name == item.product.Name}){
+            _Item[_Item.indexOf({$0.product.Name == item.product.Name})!].decreaseCount()
+        }
         
         
     }

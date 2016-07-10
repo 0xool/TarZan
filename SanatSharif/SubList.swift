@@ -13,7 +13,7 @@ class SubList {
     private var _ID : Int
     private var _Name : String
     private var _Products : [Product]
-    private var _Slide : Slide
+    private var _Slide : Slider
     
     var ID : Int{
         return self._ID
@@ -27,11 +27,11 @@ class SubList {
         return self._Products
     }
     
-    var slide : Slide{
+    var slide : Slider{
         return self._Slide
     }
     
-    init(id : Int , name : String , product : [Product] , slide : Slide){
+    init(id : Int , name : String , product : [Product] , slide : Slider){
         
         self._ID = id
         self._Name = name

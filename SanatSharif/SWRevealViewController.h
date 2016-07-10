@@ -302,6 +302,9 @@ typedef NS_ENUM(NSInteger, SWRevealToggleAnimationType)
 // custom container controller which does not explicitly clips its subviews.
 @property (nonatomic) BOOL clipsViewsToBounds;
 
+//My Custom Varaibles :D
+@property (nonatomic) BOOL sidebarMenuOpen;
+
 // Defines whether your views clicable area extends beyond the bounds of this controller. Default is NO.
 // Set this to YES if you are presenting this controller as a non full-screen child of a custom container and you are not
 // clipping your front view to this controller bounds.

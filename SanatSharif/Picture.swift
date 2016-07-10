@@ -10,9 +10,9 @@ import Foundation
 
 class Picture {
     
-    private var _Src : String
-    private var _Height : Int
-    private var _Weight : Int
+    private var _Src : String!
+    private var _Height : Int!
+    private var _Weight : Int!
     
     var Src : String{
         return self._Src
@@ -31,6 +31,10 @@ class Picture {
         self._Weight = weight
         self._Height = height
         self._Src = src
+        
+    }
+    
+    init(){
         
     }
     
