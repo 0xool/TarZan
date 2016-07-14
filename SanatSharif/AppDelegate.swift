@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Intercom.setApiKey("ios_sdk-b984443d8d857476de9a04284c8db9cd9ba31c5f", forAppId: "ly6aastn")
-        
+        // Override point for customization after application launch.
+
         
         return true
     }

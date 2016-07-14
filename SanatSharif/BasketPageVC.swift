@@ -69,13 +69,17 @@ class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSou
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
     
-    for cell in BasketTableView.visibleCells as [UITableViewCell] {
+    
+    for cell in BasketTableView.visibleCells as! [UITableViewCell] {
     
     let point = BasketTableView.convertPoint(cell.center, toView: BasketTableView.superview)
-    cell.alpha = ((point.y * 100) / BasketTableView.bounds.maxY) / 10
-//    cell.alpha = (((point.y + UIScreen.mainScreen().bounds.height) * 100) / BasketTableView.bounds.minY) / 15
+    cell.alpha = ((point.y * 400) / BasketTableView.bounds.maxY) / 15
+        if(point.y < 10){
+//                cell.CellView.frame.size.height = cell.CellView.bounds.height - point.y
+        }
     }
     }
+    
     
 //    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 //        
@@ -84,10 +88,7 @@ class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSou
 //    
     
      func reloadData(){
-        
         BasketTableView.reloadData()
-        print("Fuck yeah")
-        
     }
     
 }

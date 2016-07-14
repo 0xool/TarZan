@@ -17,7 +17,9 @@ class MainPageFoodCell: UICollectionViewCell {
     @IBOutlet weak var BuyButtonOutlet: UIButton!
     
     var product : Product!
+    var type : String!
     var Amount : Int!
+    var animate : Bool!
     
     @IBAction func BuyClicked(sender: AnyObject) {
         
@@ -92,7 +94,7 @@ class MainPageFoodCell: UICollectionViewCell {
     }
     
     override func awakeFromNib() {
-        layer.cornerRadius = 4
+        layer.cornerRadius = 6
         self.clipsToBounds = true
 
         

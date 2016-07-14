@@ -44,10 +44,12 @@
 		A57F439E1D27D12200ED5366 /* Demention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F439D1D27D12200ED5366 /* Demention.swift */; };
 		A57F43A01D27D1C300ED5366 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F439F1D27D1C300ED5366 /* Cart.swift */; };
 		A57F43A21D27D2E200ED5366 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F43A11D27D2E200ED5366 /* Item.swift */; };
+		A586A6401D34F51F00731023 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586A63F1D34F51F00731023 /* DataBaseManager.swift */; };
 		A58706DB1D3104E7000D20C9 /* SaleTagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58706DA1D3104E7000D20C9 /* SaleTagLabel.swift */; };
 		A58706DD1D311701000D20C9 /* PrudoctPagePlusMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58706DC1D311701000D20C9 /* PrudoctPagePlusMaterial.swift */; };
 		A58706DF1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58706DE1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift */; };
 		A59F3A8D1D27E7610097A1C9 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */; };
+		A5C511751D3506AE00731494 /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C511741D3506AE00731494 /* RecentSearchCell.swift */; };
 		A5CD99F01D30FB3D00CA0B96 /* UserModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */; };
 		A5CEE84E1D2B9C6200DF871B /* BasketPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE84D1D2B9C6200DF871B /* BasketPageVC.swift */; };
 		A5CEE8501D2B9F6200DF871B /* MediumWindowViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE84F1D2B9F6200DF871B /* MediumWindowViewMaterial.swift */; };
@@ -127,10 +129,15 @@
 		A57F439D1D27D12200ED5366 /* Demention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demention.swift; sourceTree = "<group>"; };
 		A57F439F1D27D1C300ED5366 /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		A57F43A11D27D2E200ED5366 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A57F908A1D364C3D00B876D3 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "Pods/../build/Debug-iphoneos/SQLite.framework"; sourceTree = "<group>"; };
+		A57F908C1D364C6700B876D3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A586A63F1D34F51F00731023 /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		A58706DA1D3104E7000D20C9 /* SaleTagLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleTagLabel.swift; sourceTree = "<group>"; };
 		A58706DC1D311701000D20C9 /* PrudoctPagePlusMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrudoctPagePlusMaterial.swift; sourceTree = "<group>"; };
 		A58706DE1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrudoctPagePlusButtonMaterial.swift; sourceTree = "<group>"; };
 		A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
+		A5C511741D3506AE00731494 /* RecentSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
+		A5C8E4DF1D364B7B00BFEE81 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelManager.swift; sourceTree = "<group>"; };
 		A5CEE84D1D2B9C6200DF871B /* BasketPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketPageVC.swift; sourceTree = "<group>"; };
 		A5CEE84F1D2B9F6200DF871B /* MediumWindowViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumWindowViewMaterial.swift; sourceTree = "<group>"; };
@@ -279,6 +286,7 @@
 				A55E27871D323E3B0081F302 /* BannerCell.swift */,
 				A55E27891D3249F50081F302 /* MainpageCollectionViewLayout.swift */,
 				A55E278D1D326ECA0081F302 /* BuyOutCell.swift */,
+				A5C511741D3506AE00731494 /* RecentSearchCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -297,6 +305,7 @@
 				A51B89341D30DB320049E6F7 /* BasketInfoTableViewVC.swift */,
 				A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */,
 				A55E278B1D3264E60081F302 /* MainpageTabBarControlVC.swift */,
+				A586A63F1D34F51F00731023 /* DataBaseManager.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -323,6 +332,9 @@
 		F34076113A00D9CCDD747BD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A57F908C1D364C6700B876D3 /* libsqlite3.tbd */,
+				A57F908A1D364C3D00B876D3 /* SQLite.framework */,
+				A5C8E4DF1D364B7B00BFEE81 /* libsqlite3.0.tbd */,
 				027E55219C378E053103070F /* Pods_SanatSharif.framework */,
 			);
 			name = Frameworks;
@@ -523,10 +535,12 @@
 				A53C74EB1D2915F3007AFC96 /* SWRevealViewController.m in Sources */,
 				A57F438B1D27C73300ED5366 /* Category.swift in Sources */,
 				A53C74ED1D2918B7007AFC96 /* RoundImageMaterial.swift in Sources */,
+				A5C511751D3506AE00731494 /* RecentSearchCell.swift in Sources */,
 				A53C74E41D28FA0A007AFC96 /* RegisteringFormVC.swift in Sources */,
 				A51B89351D30DB320049E6F7 /* BasketInfoTableViewVC.swift in Sources */,
 				A55E27861D323E210081F302 /* ImageCell.swift in Sources */,
 				A57F43901D27C97E00ED5366 /* SubList.swift in Sources */,
+				A586A6401D34F51F00731023 /* DataBaseManager.swift in Sources */,
 				A5502ADB1D28D0D300B559CD /* Constraints.swift in Sources */,
 				A51B89371D30E1D50049E6F7 /* AddressPickerView.swift in Sources */,
 				A55E278C1D3264E60081F302 /* MainpageTabBarControlVC.swift in Sources */,
@@ -702,6 +716,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = SanatSharif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cyrus-refai.SanatSharif";
@@ -718,6 +736,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = SanatSharif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cyrus-refai.SanatSharif";

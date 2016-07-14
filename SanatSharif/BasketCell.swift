@@ -18,6 +18,7 @@ class BasketCell: UITableViewCell {
     @IBOutlet weak var ProductAmount: RoundLabel!
     @IBOutlet weak var ProductImage: UIImageView!
     
+    @IBOutlet weak var CellView: MediumWindowViewMaterial!
     
     func configureCell(price : Int , Desc : String , name : String , Amount : Int , ImageSrc : String){
         
