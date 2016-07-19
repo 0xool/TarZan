@@ -9,7 +9,37 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SanatSharif.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SanatSharifTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SanatSharifUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SABlurImageView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SQLite.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>432ECC54282C84882B482CCB4CF227FC</key>
+		<key>13C50AB04957AFDC948EA6C605CCFCCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>57D550E20C3EA10D4E46D45F70AAEF96</key>
+		<key>1CE8920FB8CB62AAB75E5AD32CE1763B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2A4D35D4D6D762B56779FDDFE33DF5DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>307F7408F4EFC8A9125C589DF5CF4DB9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>81FC05563CCEF88D47DB1D38C420B3EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C15C986904B4FDA1D278FECFB1CFF1FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7BEAF4DCE4B39E319ED8628F0399557</key>
 		<dict>
 			<key>primary</key>
 			<true/>

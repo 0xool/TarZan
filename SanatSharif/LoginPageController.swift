@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 
 
@@ -27,27 +26,27 @@ class LoginPageController: UIViewController {
         if let username = UsernameTextField.text where username != "" , let pwd = PasswordTextField.text where pwd != ""{
         
            
-            Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
-                .validate()
-                .responseJSON { response in
-                    switch response.result {
-                    case .Success:
-                        print("Validation Successful")
-                        self.performSegueWithIdentifier("LoggedIn", sender: nil)
-                    case .Failure(let error):
-                        let alert = UIAlertView()
-                        alert.title = "خطا در ارتباط با شبکه"
-                        if error.code == -1009{
-                            alert.message = "شبکه قطع می باشد"
-                        }else{
-                            alert.message = "\(error)"
-                        }
-                        alert.addButtonWithTitle("تایید")
-                        alert.show()
-                    }
-            }
-                
-                
+//            Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
+//                .validate()
+//                .responseJSON { response in
+//                    switch response.result {
+//                    case .Success:
+//                        print("Validation Successful")
+//                        self.performSegueWithIdentifier("LoggedIn", sender: nil)
+//                    case .Failure(let error):
+//                        let alert = UIAlertView()
+//                        alert.title = "خطا در ارتباط با شبکه"
+//                        if error.code == -1009{
+//                            alert.message = "شبکه قطع می باشد"
+//                        }else{
+//                            alert.message = "\(error)"
+//                        }
+//                        alert.addButtonWithTitle("تایید")
+//                        alert.show()
+//                    }
+//            }
+//                
+            
             
             
             

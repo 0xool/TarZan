@@ -1,21 +1,26 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
-# Uncomment this line if you're using Swift
-use_frameworks!
+# platform :ios, '9.0'
 
 target 'SanatSharif' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
 
-#pod 'ImageSlideshow', '~> 0.4'
-pod 'Alamofire', '~> 3.0.0'
-pod 'Intercom'
+  # Pods for SanatSharif
+  pod 'Alamofire', '~> 3.4'
+  pod 'ImageSlideshow', '~> 0.4'
+  pod 'SQLite.swift', '~> 0.10'	
+#  pod 'DynamicBlurView', '~> 1.1'
+  pod 'SABlurImageView', '~> 2.1'
+
+
+  target 'SanatSharifTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SanatSharifUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
 end
-
-target 'SanatSharifTests' do
-
-end
-
-target 'SanatSharifUITests' do
-
-end
-

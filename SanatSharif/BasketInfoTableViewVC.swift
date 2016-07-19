@@ -11,6 +11,17 @@ import UIKit
 class BasketInfoTableViewVC: UITableViewController , UIPickerViewDelegate, UIPickerViewDataSource  {
 
     @IBOutlet weak var workTypePicker : UIPickerView!
+    @IBOutlet weak var addressLabel: UITextField!
+    @IBOutlet weak var workTypeLabel: UIPickerView!
+    
+    @IBOutlet weak var paymentMethod: UISegmentedControl!
+    
+    @IBOutlet weak var numberLabel: UITextField!
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var familyNameLabel: UITextField!
+    
+    
+    
     
     var pickerData : [String] = [String]()
     
@@ -59,6 +70,11 @@ class BasketInfoTableViewVC: UITableViewController , UIPickerViewDelegate, UIPic
         return pickerLabel
     }
     
+    func getName(){
+        
+        
+        
+    }
     
     
     

@@ -1,0 +1,6 @@
+framework module Pods_SanatSharifUITests {
+  umbrella header "Pods-SanatSharifUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

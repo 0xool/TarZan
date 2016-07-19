@@ -11,7 +11,8 @@ import UIKit
 class BuyOutCell: UITableViewCell {
 
     @IBOutlet weak var totalAmount : UILabel?
-
+    
+    @IBOutlet weak var ButtonOutlet: LoginButtonView!
     
     
     

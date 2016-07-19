@@ -14,7 +14,7 @@ class MainPageNavigationController: UINavigationController {
         
 //        self.navigationBar.barStyle = UIBarStyle.BlackTranslucent
         self.navigationBar.tintColor = UIColor(red: 48 / 255.0, green: 185 / 255.0, blue: 82 / 255.0, alpha: 1)
-//        self.navigationBar.barTintColor = UIColor.whiteColor()
+        self.navigationBar.barTintColor = UIColor.whiteColor()
 //        self.navigationBar.topItem?.title = "فروشگاه"
         
        // self.navigationBar.alpha = 0

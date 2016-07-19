@@ -9,7 +9,8 @@
 import UIKit
 
 
-class MenuBarVC: UITableViewController {
+
+class MenuBarVC: UITableViewController , UIPopoverPresentationControllerDelegate {
 
     
     @IBOutlet weak var UserImage: RoundImageMaterial!
@@ -20,5 +21,22 @@ class MenuBarVC: UITableViewController {
     @IBOutlet weak var FirstRowNotifNumber: UILabel!
     
     
+    @IBAction func unwindFromSecondVC(segue: UIStoryboardSegue) {
+        // Here you can receive the parameter(s) from secondVC
+
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "popoverSegue" {
+            let popoverViewController = segue.destinationViewController 
+            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.Popover
+            popoverViewController.popoverPresentationController!.delegate = self
+        }
+    }
+    
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
+    }
+
     
 }

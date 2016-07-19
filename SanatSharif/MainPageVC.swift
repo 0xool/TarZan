@@ -9,6 +9,7 @@
 
 import UIKit
 import AVFoundation
+import ImageSlideshow
 
 class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate , UICollectionViewDelegateFlowLayout ,  UITableViewDelegate , UITableViewDataSource  , SWRevealViewControllerDelegate   {
     
@@ -17,7 +18,7 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     @IBOutlet weak var PriceSearchViewHeight: NSLayoutConstraint!
     @IBOutlet weak var PriceSearchView: UIView!
    
-    @IBOutlet weak var topImageScroller: UIView!
+    @IBOutlet weak var topImageScroller: ImageSlideshow!
     @IBOutlet weak var RecentSearchTable: UITableView!
     @IBOutlet weak var NavigationBar: UINavigationItem!
     
@@ -64,6 +65,10 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     var force : CGFloat!
     var sliderButtons : [UIButton]! = [UIButton]()
     var prices : [Int] = [Int]()
+    
+    var transitionDelegate: ZoomAnimatedTransitioningDelegate?
+    
+    
     
     
     
@@ -112,13 +117,43 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
         if self.revealViewController() != nil{
             
             menuBTN.target = self.revealViewController()
-            menuBTN.action = "revealToggle:"
+            menuBTN.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
-        let longpress = UILongPressGestureRecognizer(target: self, action: "longPressGestureRecognized:")
-        collection.addGestureRecognizer(longpress)
 
+        topImageScroller.contentScaleMode = .ScaleAspectFill
+        
+        topImageScroller.setImageInputs([ImageSource(imageString: "FoodImageTemp")!, ImageSource(imageString: "GroceryTemp1")!, ImageSource(imageString: "GroceryTemp2")!, ImageSource(imageString: "GroceryTemp3")!])
+        
+//        topImageScroller.setImageInputs([AlamofireSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, AlamofireSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, AlamofireSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!])
+        
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(click))
+        topImageScroller.addGestureRecognizer(recognizer)
+        
+        
+        let longpress = UILongPressGestureRecognizer(target: self, action: #selector(MainPageVC.longPressGestureRecognized(_:)))
+        collection.addGestureRecognizer(longpress)
+        
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    }
+    
+    func click() {
+        let ctr = FullScreenSlideshowViewController()
+        ctr.pageSelected = {(page: Int) in
+            self.topImageScroller.setScrollViewPage(page, animated: false)
+        }
+        
+        ctr.initialImageIndex = topImageScroller.scrollViewPage
+        ctr.inputs = topImageScroller.images
+        self.transitionDelegate = ZoomAnimatedTransitioningDelegate(slideshowView: topImageScroller, slideshowController: ctr)
+        // Uncomment if you want disable the slide-to-dismiss feature
+        // self.transitionDelegate?.slideToDismissEnabled = false
+        ctr.transitioningDelegate = self.transitionDelegate
+        self.presentViewController(ctr, animated: true, completion: nil)
     }
 //=======================================================================================================
 //Summary : in this section the buttonslider is implemented each button comes from server side and each has a bran new list for main page to show(search implementation of filtering the collectionView are connected to here )
@@ -154,7 +189,7 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
 
         var i : Int = 0
         for items in searchList {
-            i++
+            i += 1
             let vw = UIButton(type: UIButtonType.System)
             let widthConstraint = NSLayoutConstraint(item: vw, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1, constant: 100)
             vw.addConstraint(widthConstraint)
@@ -167,7 +202,7 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
             vw.setTitleColor(UIColor.grayColor(), forState: UIControlState.Normal)
             vw.setTitle(String(items), forState: .Normal)
             
-            vw.addTarget(self, action: "slideButtonClicked:", forControlEvents: UIControlEvents.TouchUpInside)
+            vw.addTarget(self, action: #selector(MainPageVC.slideButtonClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             vw.backgroundColor = UIColor(red: 237 / 255.0, green: 237 / 255.0, blue: 237 / 255.0, alpha: 1)
             sliderButtons.append(vw)
             stackView.addArrangedSubview(vw)
@@ -312,7 +347,7 @@ func animateColllection(){
         for a in cells {
             
             let cell : UICollectionViewCell = a as UICollectionViewCell
-            UIView.animateWithDuration(1.5, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
+            UIView.animateWithDuration(0.25, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
                 
                 cell.transform = CGAffineTransformMakeTranslation(0, 0)
                 
@@ -330,7 +365,7 @@ func animateColllection(){
         cell.transform = CGAffineTransformMakeTranslation(0, collectionHeight + 400)
         cell.transform = CGAffineTransformMakeScale(0.5, 0.5)
         
-        UIView.animateWithDuration(1.5, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
+        UIView.animateWithDuration(0.25, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
             
             cell.transform = CGAffineTransformMakeTranslation(0, 0)
             cell.transform = CGAffineTransformMakeScale(1, 1)
@@ -440,14 +475,17 @@ func animateColllection(){
                 print(HeightConstraint.constant)
             }else if ((scrollView.contentOffset.y + scrollView.frame.size.height > scrollContentSizeHeight / 4 + 250)){
                 
-                UIView.animateWithDuration(Double(0.5), animations: {
-                    self.HeightConstraint.constant = 65
-                    self.topImageHeightConstraint.constant = 65
+                UIView.animateWithDuration(Double(0.25), animations: {
+                    self.HeightConstraint.constant = 60
+                   // self.topImageHeightConstraint.constant = 65
                     self.navigationController?.navigationBar.alpha = 1
                     self.topImageScroller.backgroundColor = UIColor.whiteColor()
                     self.view.layoutIfNeeded()
-                    self.TopImage.alpha = 0
-                    
+                   // self.TopImage.alpha = 0
+                    self.topImageScroller.alpha = 0
+                    self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+                    self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+                    self.navigationController!.navigationBar.shadowImage = nil
                     self.view.layoutIfNeeded()
                 })
                 
@@ -460,54 +498,63 @@ func animateColllection(){
         }
 
     if scrollView.contentOffset.y + scrollView.frame.size.height < scrollContentSizeHeight / 4 + 250{
-    UIView.animateWithDuration(Double(1), animations: {
+    UIView.animateWithDuration(0.5, animations: {
     self.HeightConstraint.constant = 200
-    self.topImageHeightConstraint.constant = 200
+    //self.topImageHeightConstraint.constant = 200
     self.view.layoutIfNeeded()
-    self.TopImage.alpha = 1
+    self.topImageScroller.alpha = 1
     self.navigationController?.navigationBar.alpha = 1
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+    self.navigationController!.navigationBar.shadowImage = UIImage()
+        
     self.topImageScroller.backgroundColor = UIColor.whiteColor()
     self.view.layoutIfNeeded()
     })
         }
         self.lastScrolingOffset = scrollView.contentOffset.y
-    }
+        }
 }
     
-    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-       
-        if(!isInSearchMode){
-        
-        if ( scrollView.contentOffset.y == 0 || (scrollView.contentOffset.y + scrollView.frame.size.height < scrollContentSizeHeight / 4 + 250)){
-            
-            UIView.animateWithDuration(Double(1), animations: {
-                self.HeightConstraint.constant = 200
-                self.topImageHeightConstraint.constant = 200
-                self.view.layoutIfNeeded()
-                self.TopImage.alpha = 1
-                self.navigationController?.navigationBar.alpha = 1
-                self.topImageScroller.backgroundColor = UIColor.whiteColor()
-                
-                self.view.layoutIfNeeded()
-            })
-            
-        }else if(HeightConstraint.constant < 120){
-            
-            UIView.animateWithDuration(Double(0.5), animations: {
-                self.HeightConstraint.constant = 65
-                self.topImageHeightConstraint.constant = 65
-                self.navigationController?.navigationBar.alpha = 1
-                self.topImageScroller.backgroundColor = UIColor.whiteColor()
-                self.view.layoutIfNeeded()
-                self.TopImage.alpha = 0
-                
-                self.view.layoutIfNeeded()
-            })
-        }
-      
-    }
-    
-    }
+//    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+//       
+//        if(!isInSearchMode){
+//        
+//        if ( scrollView.contentOffset.y == 0 || (scrollView.contentOffset.y + scrollView.frame.size.height < scrollContentSizeHeight / 4 + 250)){
+//            
+//            UIView.animateWithDuration(0.5, animations: {
+//                self.HeightConstraint.constant = 200
+//              //  self.topImageHeightConstraint.constant = 200
+//                self.view.layoutIfNeeded()
+//               // self.TopImage.alpha = 1
+//                self.topImageScroller.alpha = 1
+//                self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+//                self.navigationController!.navigationBar.shadowImage = UIImage()
+//                
+//                
+//                self.view.layoutIfNeeded()
+//            })
+//            
+//        }else if(HeightConstraint.constant < 120){
+//            
+//            UIView.animateWithDuration(0.25, animations: {
+//                self.HeightConstraint.constant = 60
+//               // self.topImageHeightConstraint.constant = 65
+//                self.navigationController?.navigationBar.alpha = 1
+//                self.topImageScroller.backgroundColor = UIColor.whiteColor()
+//                self.view.layoutIfNeeded()
+//                //self.TopImage.alpha = 0
+//                self.topImageScroller.alpha = 0
+//                self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+//                self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+//                self.navigationController!.navigationBar.shadowImage = nil
+//                
+//                self.view.layoutIfNeeded()
+//            })
+//        }
+//      
+//    }
+//    
+//    }
 //=======================================================================================================
 //Summary : collectionView delegate Implementation (nothing special here).Remember we have 3 prototype cell depending on type from server the view is created
 //Implementation :
@@ -601,13 +648,14 @@ func animateColllection(){
         
         if(!isInSearchMode){
         
-        UIView.animateWithDuration(0.5, animations: {
+        UIView.animateWithDuration(0.25, animations: {
             
             //self.navigationController!.navigationBar.layer.zPosition = -1;
             
             self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, 0)
             self.MainView.alpha = 0.03
             self.RecentSearchTable.alpha = 0.4
+            self.navigationController?.navigationBar.alpha = 0.2
             
             }, completion: nil)
         
@@ -616,10 +664,11 @@ func animateColllection(){
             isInSearchMode = true
         }else {
             
-            UIView.animateWithDuration(0.5, animations: {
+            UIView.animateWithDuration(0.25, animations: {
                 
                 self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
                 self.MainView.alpha = 1
+                self.navigationController?.navigationBar.alpha = 1
                 self.RecentSearchTable.alpha = 0
                 }, completion: nil)
             
@@ -666,6 +715,7 @@ func animateColllection(){
 //Summary : Here we implement the 3d touch component , when presure is more than 60% a simple info view of the product will be shown
 //Implementation :
 //=======================================================================================================
+    
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         if let touch = touches.first{
@@ -676,7 +726,7 @@ func animateColllection(){
                     
                     print(force)
                     ForceTouchView.hidden = true
-                    UIView.animateWithDuration(0.5, animations: {
+                    UIView.animateWithDuration(0.25, animations: {
                         
                         self.ForceTouchView.alpha = 1
                         self.MainView.alpha = 0.092
@@ -818,14 +868,14 @@ func animateColllection(){
             if(currentValue <= 12){
                 
                 
-                UIView.animateWithDuration(2, animations: { () -> Void in
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
                     self.PriceSlider.value = 0
                     self.SliderPriceTag.text = "قیمت تا: \(String(self.prices[0]))"
                 })
                 
             }else{
                 
-                UIView.animateWithDuration(2, animations: { () -> Void in
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
                     self.PriceSlider.value = 25
                     self.SliderPriceTag.text = "قیمت تا: \(String(self.prices[1]))"
                 })
@@ -838,14 +888,14 @@ func animateColllection(){
             
             if  currentValue <= 37{
             
-                UIView.animateWithDuration(2, animations: { () -> Void in
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
                     self.PriceSlider.value = 25
                     self.SliderPriceTag.text = "قیمت تا: \(String(self.prices[1]))"
                 })
                 
             }else{
                 
-                UIView.animateWithDuration(2, animations: { () -> Void in
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
                     self.PriceSlider.value = 50
                     self.SliderPriceTag.text = "قیمت تا: \(String(self.prices[2]))"
                 })
@@ -860,14 +910,14 @@ func animateColllection(){
             
             if currentValue <= 62 {
                 
-                UIView.animateWithDuration(2, animations: { () -> Void in
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
                     self.PriceSlider.value = 50
                     self.SliderPriceTag.text = "قیمت تا: \(String(self.prices[2]))"
                 })
                 
             }else{
                 
-                UIView.animateWithDuration(2, animations: { () -> Void in
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
                     self.PriceSlider.value = 75
                     self.SliderPriceTag.text = "قیمت تا: \(String(self.prices[3]))"
                 })
@@ -880,14 +930,14 @@ func animateColllection(){
             
             if currentValue <= 87{
                 
-                UIView.animateWithDuration(2, animations: { () -> Void in
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
                     self.PriceSlider.value = 75
                     self.SliderPriceTag.text = "قیمت تا: \(String(self.prices[3]))"
                 })
                 
             }else{
                 
-                UIView.animateWithDuration(2, animations: { () -> Void in
+                UIView.animateWithDuration(0.25, animations: { () -> Void in
                     self.PriceSlider.value = 100
                     self.SliderPriceTag.text = "قیمت تا: \(String(self.prices[4]))"
                 })

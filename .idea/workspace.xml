@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="48132385-03d9-41b9-859f-f89f0621340a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Public/Intercom/Intercom/Intercom.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/certs/intercom.icmcer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/back@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/back@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_left@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_left@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_no_tail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_no_tail@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_no_tail@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_right@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/bubble_right@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/circle_mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/circle_mask@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/circle_mask@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/close@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/close@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/info@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/info@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/intercom_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/intercom_logo@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/intercom_logo@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/message_failed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/message_failed@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/message_failed@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/neutral.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/neutral@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/neutral@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/no_conversations.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/no_conversations@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/no_conversations@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/sad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/sad@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/sad@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/smile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/smile@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/smile@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/thumbs_down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/thumbs_down@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/thumbs_down@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/thumbs_up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/thumbs_up@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/thumbs_up@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/upload_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/upload_icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/images/upload_icon@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/sound/admin_reply_delivered.caf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/sound/message_delivered.caf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/sound/message_failed.caf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.bundle/sound/message_sending.caf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.framework/Headers" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.framework/Intercom" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.framework/Modules/module.modulemap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.framework/Versions/A/Headers/Intercom.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.framework/Versions/A/Intercom" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/Intercom.framework/Versions/Current" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Intercom/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SanatSharif.xcworkspace/xcuserdata/CyrusRefahi.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/BackButtonImage.imageset/noun_218435_cc.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/BackButtonImage.imageset/noun_218435_cc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/FoodImageTemp.imageset/FoodImageTemp.jpg" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/FoodImageTemp.imageset/FoodImageTemp.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/Grocery &amp; Staples.imageset/Grocery &amp; Staples.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/Grocery &amp; Staples.imageset/Grocery &amp; Staples.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/LoginLogo.imageset/LoginLogo.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/LoginLogo.imageset/LoginLogo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/TomatoAndOnion.imageset/TomatoAndOnion.jpeg" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/TomatoAndOnion.imageset/TomatoAndOnion.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/\.imageset/\.jpeg" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/\.imageset/\.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/barcodePic.imageset/noun_473296_cc.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/barcodePic.imageset/noun_473296_cc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/basketPic.imageset/noun_16633_cc.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/basketPic.imageset/noun_16633_cc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/emptyStar.imageset/emptyStart.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/emptyStar.imageset/emptyStart.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/filledStar.imageset/filledStar.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/filledStar.imageset/filledStar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/menu.imageset/menu.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/menu.imageset/menu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/menu.imageset/menu@2x.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/menu.imageset/menu@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/menu.imageset/menu@3x.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/menu.imageset/menu@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/noun_196759_cc.imageset/noun_196759_cc.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/noun_196759_cc.imageset/noun_196759_cc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/noun_26915_cc.imageset/noun_26915_cc.png" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/noun_26915_cc.imageset/noun_26915_cc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/LICENSE" afterPath="$PROJECT_DIR$/Pods/Alamofire/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/README.md" afterPath="$PROJECT_DIR$/Pods/Alamofire/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Alamofire.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Alamofire.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Download.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Download.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Error.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Error.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Manager.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Manager.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/MultipartFormData.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/MultipartFormData.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Request.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Request.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Response.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Response.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Result.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Result.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/ServerTrustPolicy.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/ServerTrustPolicy.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Stream.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Stream.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Upload.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Upload.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Alamofire/Source/Validation.swift" afterPath="$PROJECT_DIR$/Pods/Alamofire/Source/Validation.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/CyrusRefahi.xcuserdatad/xcschemes/Pods-SanatSharif.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/CyrusRefahi.xcuserdatad/xcschemes/Pods-SanatSharif.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/CyrusRefahi.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/CyrusRefahi.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Alamofire/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Alamofire/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-acknowledgements.markdown" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-acknowledgements.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-acknowledgements.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-acknowledgements.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-frameworks.sh" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-frameworks.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-resources.sh" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-resources.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif.debug.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif.release.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/SanatSharif.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Address.swift" afterPath="$PROJECT_DIR$/SanatSharif/Address.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/AppDelegate.swift" afterPath="$PROJECT_DIR$/SanatSharif/AppDelegate.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/AppIcon.appiconset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/BackButtonImage.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/BackButtonImage.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/FoodImageTemp.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/FoodImageTemp.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/Grocery &amp; Staples.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/Grocery &amp; Staples.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/LoginLogo.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/LoginLogo.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/RoundLabel.swift" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/RoundLabel.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/TomatoAndOnion.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/TomatoAndOnion.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/\.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/\.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/barcodePic.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/barcodePic.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/basketPic.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/basketPic.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/emptyStar.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/emptyStar.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/filledStar.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/filledStar.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/menu.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/menu.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/noun_196759_cc.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/noun_196759_cc.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/noun_26915_cc.imageset/Contents.json" afterPath="$PROJECT_DIR$/SanatSharif/Assets.xcassets/noun_26915_cc.imageset/Contents.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/BackButtonMaterial.swift" afterPath="$PROJECT_DIR$/SanatSharif/BackButtonMaterial.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/BannerCell.swift" afterPath="$PROJECT_DIR$/SanatSharif/BannerCell.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Base.lproj/LaunchScreen.storyboard" afterPath="$PROJECT_DIR$/SanatSharif/Base.lproj/LaunchScreen.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/SanatSharif/Base.lproj/Main.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/BasketPageVC.swift" afterPath="$PROJECT_DIR$/SanatSharif/BasketPageVC.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/BuyOutCell.swift" afterPath="$PROJECT_DIR$/SanatSharif/BuyOutCell.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Category.swift" afterPath="$PROJECT_DIR$/SanatSharif/Category.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Constraints.swift" afterPath="$PROJECT_DIR$/SanatSharif/Constraints.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/DataBaseManager.swift" afterPath="$PROJECT_DIR$/SanatSharif/DataBaseManager.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Demention.swift" afterPath="$PROJECT_DIR$/SanatSharif/Demention.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Family.swift" afterPath="$PROJECT_DIR$/SanatSharif/Family.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/ImageCell.swift" afterPath="$PROJECT_DIR$/SanatSharif/ImageCell.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Info.plist" afterPath="$PROJECT_DIR$/SanatSharif/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Item.swift" afterPath="$PROJECT_DIR$/SanatSharif/Item.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/List.swift" afterPath="$PROJECT_DIR$/SanatSharif/List.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/LittleProduct.swift" afterPath="$PROJECT_DIR$/SanatSharif/LittleProduct.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/LoginButtonView.swift" afterPath="$PROJECT_DIR$/SanatSharif/LoginButtonView.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/LoginPageController.swift" afterPath="$PROJECT_DIR$/SanatSharif/LoginPageController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/MainPageCollectionViewController.swift" afterPath="$PROJECT_DIR$/SanatSharif/MainPageCollectionViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/MainPageVC.swift" afterPath="$PROJECT_DIR$/SanatSharif/MainPageVC.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/MainpageCollectionViewLayout.swift" afterPath="$PROJECT_DIR$/SanatSharif/MainpageCollectionViewLayout.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/MainpageTabBarControlVC.swift" afterPath="$PROJECT_DIR$/SanatSharif/MainpageTabBarControlVC.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/MediumWindowViewMaterial.swift" afterPath="$PROJECT_DIR$/SanatSharif/MediumWindowViewMaterial.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/MenuBarVC.swift" afterPath="$PROJECT_DIR$/SanatSharif/MenuBarVC.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/MenuTableViewMaterial.swift" afterPath="$PROJECT_DIR$/SanatSharif/MenuTableViewMaterial.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Picture.swift" afterPath="$PROJECT_DIR$/SanatSharif/Picture.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Product.swift" afterPath="$PROJECT_DIR$/SanatSharif/Product.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/RecentSearchCell.swift" afterPath="$PROJECT_DIR$/SanatSharif/RecentSearchCell.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/RegisteringFormVC.swift" afterPath="$PROJECT_DIR$/SanatSharif/RegisteringFormVC.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/RoundButtonMaterial.swift" afterPath="$PROJECT_DIR$/SanatSharif/RoundButtonMaterial.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/RoundImageMaterial.swift" afterPath="$PROJECT_DIR$/SanatSharif/RoundImageMaterial.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/RoundViewMaterial.swift" afterPath="$PROJECT_DIR$/SanatSharif/RoundViewMaterial.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/SanatSharif-Bridging-Header.h" afterPath="$PROJECT_DIR$/SanatSharif/SanatSharif-Bridging-Header.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Slide.swift" afterPath="$PROJECT_DIR$/SanatSharif/Slide.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/Slider.swift" afterPath="$PROJECT_DIR$/SanatSharif/Slider.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/SmallWindowViewMaterial.swift" afterPath="$PROJECT_DIR$/SanatSharif/SmallWindowViewMaterial.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/SubList.swift" afterPath="$PROJECT_DIR$/SanatSharif/SubList.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/ViewController.swift" afterPath="$PROJECT_DIR$/SanatSharif/ViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharif/asd.swift" afterPath="$PROJECT_DIR$/SanatSharif/asd.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharifTests/Info.plist" afterPath="$PROJECT_DIR$/SanatSharifTests/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharifTests/SanatSharifTests.swift" afterPath="$PROJECT_DIR$/SanatSharifTests/SanatSharifTests.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharifUITests/Info.plist" afterPath="$PROJECT_DIR$/SanatSharifUITests/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SanatSharifUITests/SanatSharifUITests.swift" afterPath="$PROJECT_DIR$/SanatSharifUITests/SanatSharifUITests.swift" />
+    </list>
+    <ignored path="SanatSharif.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_9bba7a3ca8f5093ea3d3c3c1aad56c867f30fdb9" />
+  <component name="FavoritesManager">
+    <favorites_list name="SanatSharif" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BasketPageVC.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SanatSharif/BasketPageVC.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SanatSharif/BasketPageVC.swift" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Cidr.FilesView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SanatSharif" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SanatSharif" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SanatSharif" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SanatSharif" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SanatSharif" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SanatSharif" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SanatSharif" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FullScreen" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.SanatSharif">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SanatSharif" TARGET_NAME="SanatSharif" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SanatSharif" RUN_TARGET_NAME="SanatSharif" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="SanatSharif" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SanatSharif" TARGET_NAME="SanatSharif" CONFIG_NAME="Debug" SCHEME_NAME="SanatSharif" RUN_TARGET_PROJECT_NAME="SanatSharif" RUN_TARGET_NAME="SanatSharif" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Alamofire" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Alamofire" CONFIG_NAME="Debug" SCHEME_NAME="Alamofire" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="ImageSlideshow-ImageSlideshow" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="ImageSlideshow-ImageSlideshow" CONFIG_NAME="Debug" SCHEME_NAME="ImageSlideshow-ImageSlideshow" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="ImageSlideshow" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="ImageSlideshow" CONFIG_NAME="Debug" SCHEME_NAME="ImageSlideshow" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-SanatSharif" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-SanatSharif" CONFIG_NAME="Debug" SCHEME_NAME="Pods-SanatSharif" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-SanatSharifTests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-SanatSharifTests" CONFIG_NAME="Debug" SCHEME_NAME="Pods-SanatSharifTests" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-SanatSharifUITests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-SanatSharifUITests" CONFIG_NAME="Debug" SCHEME_NAME="Pods-SanatSharifUITests" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Application.SanatSharif" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Alamofire" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ImageSlideshow-ImageSlideshow" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ImageSlideshow" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Pods-SanatSharif" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Pods-SanatSharifTests" />
+      <item index="6" class="java.lang.String" itemvalue="Application.Pods-SanatSharifUITests" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48132385-03d9-41b9-859f-f89f0621340a" name="Default" comment="" />
+      <created>1468573249036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1468573249036</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SanatSharif/BasketPageVC.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SanatSharif/BasketPageVC.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
