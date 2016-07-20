@@ -8,8 +8,8 @@ target 'SanatSharif' do
   # Pods for SanatSharif
   pod 'Alamofire', '~> 3.4'
   pod 'ImageSlideshow', '~> 0.4'
-  pod 'SQLite.swift', '~> 0.10'	
-#  pod 'DynamicBlurView', '~> 1.1'
+  pod 'SQLite.swift', '~> 0.10.1'	
+  pod 'DynamicBlurView', '~> 1.1'
   pod 'SABlurImageView', '~> 2.1'
 
 

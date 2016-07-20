@@ -277,6 +277,9 @@ class BuyAsGuestVC: UIViewController {
             self.presentViewController(alertController, animated: true, completion: nil)
             
         }
+        
+        
+        
     /*
     // MARK: - Navigation
 

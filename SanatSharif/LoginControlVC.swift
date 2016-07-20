@@ -48,6 +48,8 @@ class LoginControlVC: UIViewController , UITextFieldDelegate {
     
     
     
+    
+    var screenLocation : CGRect!
     var firstMenuGestureRecognizer : UIPanGestureRecognizer!
     var secondMenuGestureRecognizer : UIPanGestureRecognizer!
     var thirdMenuGestureRecognizer : UIPanGestureRecognizer!
@@ -796,8 +798,13 @@ class LoginControlVC: UIViewController , UITextFieldDelegate {
         
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
             if view.frame.origin.y == 0{
+                screenLocation = keyboardSize
+                
                 UIView.animateWithDuration(0.1, animations: { () -> Void in
-                    self.view.frame.origin.y -= keyboardSize.height - 30
+                    self.view.frame.origin.y -= 100
+                    self.navigationController?.navigationBar.alpha = 0
+                    self.tabBarController?.tabBar.alpha = 0
+                    
                 })
             }
             else {
@@ -808,17 +815,49 @@ class LoginControlVC: UIViewController , UITextFieldDelegate {
     }
     
     func keyboardWillHide(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+        
             if view.frame.origin.y != 0 {
+                
                 UIView.animateWithDuration(0.1, animations: { () -> Void in
-                    self.view.frame.origin.y += keyboardSize.height - 30
+                    self.view.frame.origin.y += 100
+                    self.navigationController?.navigationBar.alpha = 1
+                    self.tabBarController?.tabBar.alpha = 1
+                    
+                    
                 })
             }
             else {
                 
             }
-        }
+        
     }
 
+    
+    @IBAction func loginBtnClicked(sender : AnyObject){
+        
+        if self.UserNameField.text == "" && self.UserNameField.text == nil{
+            
+            let alertController = UIAlertController(title: "نام کاربری وارد نشده است", message:
+                "نام کاربری خود را وارد کنید", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "خارج کردن", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+
+        }
+        
+        if self.PasswordTextField.text == "" && self.PasswordTextField.text == nil{
+        
+            let alertController = UIAlertController(title: "رمز وارد نشده است", message:
+                "رمز خود را وارد کنید", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "خارج کردن", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        
+        }
+        
+        
+        
+        
+    }
     
 }

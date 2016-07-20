@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DynamicBlurView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,7 +52,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>13C50AB04957AFDC948EA6C605CCFCCC</key>
+		<key>03986035B05D1C564D91AA910E316353</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>307F7408F4EFC8A9125C589DF5CF4DB9</key>
+		<key>2D54FE52627EC7FE4943885D7C7EAC59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54B901D26F2B8ACD32DEF2E00C10A1E3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81FC05563CCEF88D47DB1D38C420B3EF</key>
+		<key>978857C5E6B19AFCAA6BBFAE24F34CA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -18,7 +18,7 @@ class BannerCell: UICollectionViewCell {
     
     func configureCell(bannerText : String){
         
-        bannerLabel?.text = bannerText
+        //bannerLabel?.text = bannerText
         
     }
     

@@ -122,6 +122,9 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
         }
 
         topImageScroller.contentScaleMode = .ScaleAspectFill
+        topImageScroller.draggingEnabled = true
+        topImageScroller.slideshowInterval = 5
+        topImageScroller.userInteractionEnabled = false
         
         topImageScroller.setImageInputs([ImageSource(imageString: "FoodImageTemp")!, ImageSource(imageString: "GroceryTemp1")!, ImageSource(imageString: "GroceryTemp2")!, ImageSource(imageString: "GroceryTemp3")!])
         
