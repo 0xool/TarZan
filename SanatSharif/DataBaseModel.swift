@@ -23,7 +23,7 @@ import Foundation
     typealias Familly = (
     
         familyID : Int64?,
-        userID : [Int64]?
+        userID : Int64?
         
     )
     
@@ -38,6 +38,7 @@ import Foundation
     
     typealias Items = (
     
+        itemID : Int64? ,
         productID : Int64? ,
         itemCount : Int64? ,
         itemTotalPrice : Int64?
@@ -48,7 +49,7 @@ import Foundation
     typealias Products = (
         
         productID : Int64? ,
-        productNamer : Int64? ,
+        productName : String? ,
         productPrice : Int64? ,
         productDate : Int64?
         

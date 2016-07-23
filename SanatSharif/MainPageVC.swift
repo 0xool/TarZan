@@ -482,11 +482,11 @@ func animateColllection(){
                     self.HeightConstraint.constant = 60
                    // self.topImageHeightConstraint.constant = 65
                     self.navigationController?.navigationBar.alpha = 1
-                    self.topImageScroller.backgroundColor = UIColor.whiteColor()
+                   // self.topImageScroller.backgroundColor = UIColor.whiteColor()
                     self.view.layoutIfNeeded()
                    // self.TopImage.alpha = 0
                     self.topImageScroller.alpha = 0
-                    self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+//                    self.navigationController?.navigationBar.barTintColor = UIColor.()
                     self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
                     self.navigationController!.navigationBar.shadowImage = nil
                     self.view.layoutIfNeeded()
@@ -510,7 +510,7 @@ func animateColllection(){
     self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
     self.navigationController!.navigationBar.shadowImage = UIImage()
         
-    self.topImageScroller.backgroundColor = UIColor.whiteColor()
+    //self.topImageScroller.backgroundColor = UIColor.clearColor()
     self.view.layoutIfNeeded()
     })
         }

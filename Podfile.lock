@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.4.1)
+  - ALCameraViewController (1.2.1)
   - DynamicBlurView (1.1.1)
   - ImageSlideshow (0.5.0):
     - ImageSlideshow/Core (= 0.5.0)
@@ -9,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
+  - ALCameraViewController
   - DynamicBlurView (~> 1.1)
   - ImageSlideshow (~> 0.4)
   - SABlurImageView (~> 2.1)
@@ -16,11 +18,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  ALCameraViewController: 51c3617ad4f955106e4bf3a34578433cfff1ec99
   DynamicBlurView: 300e709fd793f85ee53b03bf5ffede4d7b2fc0a2
   ImageSlideshow: b2662127d093a42d9595a6b40af2817d064df251
   SABlurImageView: 60fd7f18c20b4bb2bb6b1e4446464d6a480c5754
   SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
 
-PODFILE CHECKSUM: 6494ff300352cb9387f5c68adf37bc0e17798727
+PODFILE CHECKSUM: 36d7b5943f9a91820b5ee0597f24b0ca62ab3612
 
 COCOAPODS: 1.0.1

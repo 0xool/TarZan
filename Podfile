@@ -11,7 +11,7 @@ target 'SanatSharif' do
   pod 'SQLite.swift', '~> 0.10.1'	
   pod 'DynamicBlurView', '~> 1.1'
   pod 'SABlurImageView', '~> 2.1'
-
+  pod 'ALCameraViewController'
 
   target 'SanatSharifTests' do
     inherit! :search_paths

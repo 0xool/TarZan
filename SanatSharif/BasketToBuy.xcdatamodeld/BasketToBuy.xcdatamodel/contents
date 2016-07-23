@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
+    <entity name="Basket" representedClassName=".Basket" syncable="YES">
+        <attribute name="bDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="bDiscription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="bName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Basket" positionX="-171" positionY="-1071" width="128" height="103"/>
+    </elements>
+</model>
