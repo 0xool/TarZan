@@ -13,6 +13,7 @@
 		A518C0721D3BA63A0004D036 /* LoginPopOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518C0711D3BA63A0004D036 /* LoginPopOverVC.swift */; };
 		A51B89351D30DB320049E6F7 /* BasketInfoTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B89341D30DB320049E6F7 /* BasketInfoTableViewVC.swift */; };
 		A51B89371D30E1D50049E6F7 /* AddressPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B89361D30E1D50049E6F7 /* AddressPickerView.swift */; };
+		A5204E691D44978B0016EC88 /* basketDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204E681D44978B0016EC88 /* basketDetailVC.swift */; };
 		A52D013F1D27A3E500A97FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D013E1D27A3E500A97FDD /* AppDelegate.swift */; };
 		A52D01411D27A3E500A97FDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D01401D27A3E500A97FDD /* ViewController.swift */; };
 		A52D01441D27A3E500A97FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52D01421D27A3E500A97FDD /* Main.storyboard */; };
@@ -112,6 +113,7 @@
 		A518C0711D3BA63A0004D036 /* LoginPopOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPopOverVC.swift; sourceTree = "<group>"; };
 		A51B89341D30DB320049E6F7 /* BasketInfoTableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketInfoTableViewVC.swift; sourceTree = "<group>"; };
 		A51B89361D30E1D50049E6F7 /* AddressPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressPickerView.swift; sourceTree = "<group>"; };
+		A5204E681D44978B0016EC88 /* basketDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = basketDetailVC.swift; sourceTree = "<group>"; };
 		A52D013B1D27A3E500A97FDD /* SanatSharif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanatSharif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52D013E1D27A3E500A97FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52D01401D27A3E500A97FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 				A518C0711D3BA63A0004D036 /* LoginPopOverVC.swift */,
 				A589E4B41D3C9F140015A2B7 /* BuyAsGuestVC.swift */,
 				A57C1BCF1D3E3285009A5D5A /* SignUpTableVC.swift */,
+				A5204E681D44978B0016EC88 /* basketDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -734,6 +737,7 @@
 				A58706DF1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift in Sources */,
 				A558F3FC1D43598500346754 /* CoreDataController.swift in Sources */,
 				A57F438D1D27C87400ED5366 /* List.swift in Sources */,
+				A5204E691D44978B0016EC88 /* basketDetailVC.swift in Sources */,
 				A57F439C1D27D08100ED5366 /* Picture.swift in Sources */,
 				A57F43961D27CD3800ED5366 /* User.swift in Sources */,
 				A5F89DA71D29325200293D58 /* MenuTableViewMaterial.swift in Sources */,
@@ -823,7 +827,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -841,9 +845,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos9.3;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -879,7 +884,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos9.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

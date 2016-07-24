@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import ALCameraViewController
+import DKCamera
 import CoreData
 
 
-class InspirationsViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource {
+class InspirationsViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout   {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -26,13 +26,15 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var addNewBasketBtn: UIBarButtonItem!
     
-    let moContext = DataController().managedObjectContext
+    let moContext = UserModelManager.sharedInstance._dataControler.managedObjectContext
     
     var imageSet :  Bool = false
     let colors = UIColor.palette()
     var saveImage : UIImage!
-    var basketInfo : [Basket] = [Basket]()
-    var basketInfoImages : [UIImage] = [UIImage]()
+    
+    
+    
+    var fullScreenCellIndexPaths : [NSIndexPath] = [NSIndexPath]()
   
   override func preferredStatusBarStyle() -> UIStatusBarStyle {
     return UIStatusBarStyle.LightContent
@@ -46,6 +48,11 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     datePicker.calendar = NSCalendar(identifier: NSCalendarIdentifierPersian)
     datePicker.locale = NSLocale(localeIdentifier: "fa_IR")
     
+    
+        
+    
+    
+    
     if let patternImage = UIImage(named: "Pattern") {
       view.backgroundColor = UIColor(patternImage: patternImage)
     }
@@ -58,22 +65,48 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
 //    layout.itemSize = CGSize(width: CGRectGetWidth(collectionView!.bounds), height: 100)
   }
     
+    override func viewDidAppear(animated: Bool) {
+        self.tabBarController?.tabBar.hidden = false
+        self.collectionView.reloadData()
+    }
+    
     
     @IBAction func addImageBtnClicked(sender: AnyObject) {
     
-        let croppingEnabled = true
-        let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled) { image in
-            // Do something with your image here.
-            // If cropping is enabled this image will be the cropped version
-            if image.0 != nil {
-                self.AddImageBtn.setImage(image.0, forState:  .Normal)
-                self.imageSet = true
-                self.saveImage = image.0
-            }
+        
+        let camera = DKCamera()
+        
+        camera.didCancel = { () in
+            print("didCancel")
+            
             self.dismissViewControllerAnimated(true, completion: nil)
         }
         
-        presentViewController(cameraViewController, animated: true, completion: nil)
+        camera.didFinishCapturingImage = {(image: UIImage) in
+            print("didFinishCapturingImage")
+            print(image)
+            
+                self.AddImageBtn.setImage(image, forState:  .Normal)
+                self.imageSet = true
+                self.saveImage = image
+            
+            
+            
+            
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        self.presentViewController(camera, animated: true, completion: nil)
+        
+        
+        //let croppingEnabled = true
+        //let cameraViewController = CameraViewController(croppingEnabled: croppingEnabled) { image in
+            // Do something with your image here.
+            // If cropping is enabled this image will be the cropped version
+            
+          //  self.dismissViewControllerAnimated(true, completion: nil)
+        //}
+        
+        //presentViewController(cameraViewController, animated: true, completion: nil)
     
     
     }
@@ -81,6 +114,7 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     
     @IBAction func addBasketBtnClicked(sender: AnyObject) {
         
+        var formNotCompleted : Bool = false
         let basketEntity = NSEntityDescription.insertNewObjectForEntityForName("Basket", inManagedObjectContext: moContext) as! Basket
         
         if self.BasketName.text != nil && self.BasketName.text != "" {
@@ -89,16 +123,18 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
             
         }else{
             
+            formNotCompleted = true
+            
         }
         
         if self._description.text != nil && self._description.text != "" {
             
             
-            basketEntity.setValue(self.BasketName.text, forKey: "bDiscription")
+            basketEntity.setValue(self._description.text, forKey: "bDiscription")
             
         }else{
             
-            
+           formNotCompleted = true
             
         }
         
@@ -111,10 +147,14 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
             
         }else{
             
+            formNotCompleted = true
+            
         }
         
         
         basketEntity.bDate = datePicker.date
+       
+        if !formNotCompleted {
         
         do {
             try moContext.save()
@@ -134,17 +174,23 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
                 
                 if basketEntity.bImage != nil {
                     let image = UIImage(data: basketEntity.bImage!)!
-                    self.basketInfoImages.append(image.decompressedImage)
+                    UserModelManager.sharedInstance._basketInfoImages.append(image.decompressedImage)
                 }else{
-                    self.basketInfoImages.append(UIImage())
+                    UserModelManager.sharedInstance._basketInfoImages.append(UIImage())
                 }
                 
-                self.basketInfo.append(basketEntity)
+                UserModelManager.sharedInstance._basketInfo.append(basketEntity)
                 self.collectionView.reloadData()
                 self.addBasketView.hidden = true
                 self.collectionView.userInteractionEnabled = true
                 self.navigationController?.navigationBar.userInteractionEnabled = true
             }
+        }
+            
+        }else{
+            
+            
+            
         }
         
         
@@ -162,13 +208,13 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
                 print("================================================\(b.bImage)")
                 if b.bImage != nil{
                     let image = UIImage(data: b.bImage!)!
-                    self.basketInfoImages.append(image.decompressedImage)
+                    UserModelManager.sharedInstance._basketInfoImages.append(image.decompressedImage)
                 }else{
-                    self.basketInfoImages.append(UIImage())
+                    UserModelManager.sharedInstance._basketInfoImages.append(UIImage())
                 }
                 
-                basketInfo.append(b)
-                print(basketInfo.count)
+                UserModelManager.sharedInstance._basketInfo.append(b)
+                
             }
         }catch {
             print("FUCK YOU")
@@ -227,24 +273,49 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     }
    
      func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return basketInfo.count
+        return UserModelManager.sharedInstance._basketInfo.count
     }
     
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        
+        if self.fullScreenCellIndexPaths.contains(indexPath) {
+                return CGSize(width: UIScreen.mainScreen().bounds.width , height: UIScreen.mainScreen().bounds.height)
+        }
+        
+        return CGSize(width: UIScreen.mainScreen().bounds.width , height: 280)
+        
+        
+        
     
+    
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        
+        
+        //        self.collectionView.setContentOffset(CGPoint(x : UIScreen.mainScreen().bounds.maxX , y : UIScreen.mainScreen().bounds.maxX), animated: true)
+        let basketTemp = UserModelManager.sharedInstance._basketInfo[indexPath.row]
+        
+        performSegueWithIdentifier("basketDetailVC", sender: basketTemp)
+        
+    }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 
         
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("BasketToBuyCell", forIndexPath: indexPath) as? BasketToBuyCell {
         
-            let basket = basketInfo[indexPath.row]
+            let basket = UserModelManager.sharedInstance._basketInfo[indexPath.row]
 
         
             if basket.bImage != nil {
                 
                 
                 
-                cell.configureCell(basketInfoImages[indexPath.row] , title: basket.bName! , date: basket.bDate! , personName : "Cyrus" )
+                cell.configureCell( UserModelManager.sharedInstance._basketInfoImages[indexPath.row] , title: basket.bName! , date: basket.bDate! , personName : "Cyrus" )
             }else{
                 cell.configureCell(UIImage(named: "GroceryTemp3")! , title: basket.bName! , date: basket.bDate! , personName : "Cyrus")
             }
@@ -257,6 +328,16 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
             
             return UICollectionViewCell()
             
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "basketDetailVC" {
+            if let basketDetailVC = segue.destinationViewController as? basketDetailVC {
+                if let _basket = sender as? Basket {
+                    basketDetailVC.basket = _basket
+                }
+            }
         }
     }
 

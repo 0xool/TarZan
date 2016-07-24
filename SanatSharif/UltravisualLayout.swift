@@ -15,6 +15,8 @@ struct UltravisualLayoutConstants {
     static let standardHeight: CGFloat = 100
     /* The height of the first visible cell */
     static let featuredHeight: CGFloat = 280
+    
+    static let selectedHeight : CGFloat = UIScreen.mainScreen().bounds.height
   }
 }
 
@@ -36,6 +38,13 @@ class UltravisualLayout: UICollectionViewLayout {
       return max(0, Int(collectionView!.contentOffset.y / dragOffset))
     }
   }
+    
+    var selectedItems : [NSIndexPath] {
+        get {
+            return (collectionView?.indexPathsForSelectedItems())!
+        }
+    }
+    
   
   /* Returns a value between 0 and 1 that represents how close the next cell is to becoming the featured cell */
   var nextItemPercentageOffset: CGFloat {
@@ -76,7 +85,6 @@ class UltravisualLayout: UICollectionViewLayout {
   override func prepareLayout() {
     cache.removeAll(keepCapacity: false)
     
-    cache.removeAll(keepCapacity: false)
     
     let standardHeight = UltravisualLayoutConstants.Cell.standardHeight
     let featuredHeight = UltravisualLayoutConstants.Cell.featuredHeight
@@ -97,11 +105,14 @@ class UltravisualLayout: UICollectionViewLayout {
             y = collectionView!.contentOffset.y - yOffset
             height = featuredHeight
         } else if indexPath.item == (featuredItemIndex + 1) && indexPath.item != numberOfItems {
-            /* The cell directly below the featured cell, which grows as the user scrolls */
+            /* The cell directly below the featured cell, which grows as remote add origin https://github.com/0xool/TarZan.githe user scrolls */
             let maxY = y + standardHeight
             height = standardHeight + max((featuredHeight - standardHeight) * nextItemPercentageOffset, 0)
             y = maxY - height
         }
+        
+        
+        
         frame = CGRect(x: 0, y: y, width: width, height: height)
         attributes.frame = frame
         cache.append(attributes)
@@ -120,6 +131,8 @@ class UltravisualLayout: UICollectionViewLayout {
         return layoutAttributes
         
     }
+    
+    
     
     override func targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         let itemIndex = round(proposedContentOffset.y / dragOffset)

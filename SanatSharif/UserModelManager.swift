@@ -10,11 +10,14 @@ import Foundation
 
 class UserModelManager {
     
-    static let UserCredentials = UserModelManager()
+    static let sharedInstance = UserModelManager()
     
     
     var _User : User = User ()
     var _Cart : Cart = Cart()
+    var _dataControler : DataController = DataController()
+    var _basketInfo : [Basket] = [Basket]()
+    var _basketInfoImages : [UIImage] = [UIImage]()
     
     
     func createNewCart(cart : Cart){

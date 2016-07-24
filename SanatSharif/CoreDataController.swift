@@ -37,5 +37,32 @@ class DataController: NSObject {
                 fatalError("Error migrating store: \(error)")
             }
         }
+        
+        func deleteBasket(){
+            
+            
+            
+            
+            
+        }
+        
+        func fetchBasket(){
+            
+            
+        }
+        
+        func addToBasket(){
+            
+            
+        }
+        
+        func updateBasket(){
+            
+            
+        }
+        
+        
+        
+        
     }
 }

@@ -20,6 +20,8 @@ class BasketToBuyCell: UICollectionViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var personName: UILabel!
     
+    var fullScreen : Bool = false
+    
     func configureCell (image : UIImage , title : String , date : NSDate , personName : String){
         
         self.BasketToBuyImageView.image = image

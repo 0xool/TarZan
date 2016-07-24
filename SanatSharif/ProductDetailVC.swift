@@ -120,7 +120,7 @@ class ProductDetailVC: UIViewController {
 
         if Amount != 0 {
             let item : Item = Item(product: self.product, count: Amount, totalPrice: Amount * product.Price)
-            UserModelManager.UserCredentials._Cart.addItemToCart(item);
+            UserModelManager.sharedInstance._Cart.addItemToCart(item);
         }else{
             
             //alert maybe :D
