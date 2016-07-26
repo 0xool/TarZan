@@ -11,7 +11,7 @@ import DKCamera
 import CoreData
 
 
-class InspirationsViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout   {
+class InspirationsViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout , UITextFieldDelegate , UITextViewDelegate {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -28,6 +28,7 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     
     let moContext = UserModelManager.sharedInstance._dataControler.managedObjectContext
     
+    
     var imageSet :  Bool = false
     let colors = UIColor.palette()
     var saveImage : UIImage!
@@ -42,6 +43,18 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.BasketName.delegate = self
+    self.personName.delegate = self
+    self._description.delegate = self
+    
+    
+    
+    
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(InspirationsViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(InspirationsViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+    
+   
     
     fetch()
     
@@ -70,6 +83,20 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         self.collectionView.reloadData()
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
+    
+    
     
     @IBAction func addImageBtnClicked(sender: AnyObject) {
     
@@ -77,14 +104,11 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         let camera = DKCamera()
         
         camera.didCancel = { () in
-            print("didCancel")
             
             self.dismissViewControllerAnimated(true, completion: nil)
         }
         
         camera.didFinishCapturingImage = {(image: UIImage) in
-            print("didFinishCapturingImage")
-            print(image)
             
                 self.AddImageBtn.setImage(image, forState:  .Normal)
                 self.imageSet = true
@@ -109,6 +133,11 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         //presentViewController(cameraViewController, animated: true, completion: nil)
     
     
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     
@@ -153,6 +182,7 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         
         
         basketEntity.bDate = datePicker.date
+        basketEntity.bNotif = true
        
         if !formNotCompleted {
         
@@ -217,7 +247,7 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
                 
             }
         }catch {
-            print("FUCK YOU")
+            
         }
         
         
@@ -329,6 +359,41 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
             return UICollectionViewCell()
             
         }
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+            if view.frame.origin.y == 0{
+                UIView.animateWithDuration(0.1, animations: { () -> Void in
+                    self.view.frame.origin.y -= 100
+                    self.navigationController?.navigationBar.alpha = 0
+                    self.tabBarController?.tabBar.alpha = 0
+                    
+                })
+            }
+            else {
+                
+            }
+        }
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        
+        if view.frame.origin.y != 0 {
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                self.view.frame.origin.y += 100
+                self.navigationController?.navigationBar.alpha = 1
+                self.tabBarController?.tabBar.alpha = 1
+                
+                
+            })
+        }
+        else {
+            
+        }
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

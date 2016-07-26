@@ -24,6 +24,7 @@ class basketDetailVC: UIViewController {
     @IBOutlet weak var deleteBTN: UIButton!
     @IBOutlet weak var editBTN: UIButton!
     @IBOutlet weak var notifView : UIView!
+   
     
     let moContext = UserModelManager.sharedInstance._dataControler.managedObjectContext
     var basket : Basket!
@@ -154,6 +155,14 @@ class basketDetailVC: UIViewController {
 
         self.navigationController?.popViewControllerAnimated(true)
 
+    }
+    
+    @IBAction func notifSwitchChangedValue(sender: AnyObject) {
+        
+        
+        
+        
+        
     }
     
     @IBAction func editInfo(sender: AnyObject) {

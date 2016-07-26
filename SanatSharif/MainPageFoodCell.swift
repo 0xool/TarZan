@@ -37,10 +37,40 @@ class MainPageFoodCell: UICollectionViewCell {
     
     @IBAction func MinusClicked(sender: AnyObject) {
         
+        
+        
+        
         if Amount != 0 {
-            Amount = Amount - 1
-            let text : String = String(Amount)
-            BuyButtonOutlet.setTitle(text , forState: UIControlState.Normal)
+        self.transform = CGAffineTransformMakeScale(0.9, 0.9)
+         
+            self.Amount = self.Amount - 1
+            let text : String = String(self.Amount)
+            self.BuyButtonOutlet.setTitle(text , forState: UIControlState.Normal)
+            
+            
+            UIView.animateWithDuration(0.15, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 1.5,
+                                       options: UIViewAnimationOptions.AllowAnimatedContent, animations: {
+                                        
+                                      self.transform = CGAffineTransformMakeScale(1.1, 1.1)
+                },
+                                       completion: { _ in
+                                    
+                                        
+                                        
+                                        UIView.animateWithDuration(0.15, delay: 0.0, usingSpringWithDamping: 0.15, initialSpringVelocity: 1.5,
+                                            options: UIViewAnimationOptions.AllowAnimatedContent, animations: {
+                                                
+                                                self.transform = CGAffineTransformMakeScale(1, 1)
+                                                
+                                            },
+                                            completion: { _ in
+                                                
+                                                
+                                                
+                                        })
+            })
+
+            
         }
         
         
@@ -48,9 +78,29 @@ class MainPageFoodCell: UICollectionViewCell {
     
     @IBAction func PlusClicked(sender: AnyObject) {
         
-        Amount = Amount + 1
-        let text : String = String(Amount)
-        BuyButtonOutlet.setTitle(text , forState: UIControlState.Normal)
+        self.transform = CGAffineTransformMakeScale(0.85, 0.85)
+        self.Amount = self.Amount + 1
+        let text : String = String(self.Amount)
+        self.BuyButtonOutlet.setTitle(text , forState: UIControlState.Normal)
+        
+        UIView.animateWithDuration(0.15, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5,
+                                   options: UIViewAnimationOptions.CurveEaseIn, animations: {
+                                    
+                                    self.transform = CGAffineTransformMakeScale(1.05, 1.05)
+            },
+                                   completion: { _ in
+                                    
+                                    UIView.animateWithDuration(0.15, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5,
+                                        options: UIViewAnimationOptions.AllowAnimatedContent, animations: {
+                                            
+                                            self.transform = CGAffineTransformMakeScale(1, 1)
+                                            
+                                        },
+                                        completion: { _ in
+                                            
+                                    })
+        })
+        
         
     }
     

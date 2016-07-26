@@ -6,6 +6,8 @@ target 'SanatSharif' do
   use_frameworks!
 
   # Pods for SanatSharif
+#  pod 'MRTableViewCellCountScrollIndicator', '~> 0.0'
+  pod 'expanding-collection', '~> 0.3'
   pod 'Alamofire', '~> 3.4'
   pod 'ImageSlideshow', '~> 0.4'
   pod 'SQLite.swift', '~> 0.10.1'	

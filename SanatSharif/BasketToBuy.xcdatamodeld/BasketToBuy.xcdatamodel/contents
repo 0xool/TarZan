@@ -5,8 +5,9 @@
         <attribute name="bDiscription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="bName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bNotif" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Basket" positionX="-171" positionY="-1071" width="128" height="103"/>
+        <element name="Basket" positionX="-171" positionY="-1071" width="128" height="120"/>
     </elements>
 </model>

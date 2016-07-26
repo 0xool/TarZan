@@ -34,6 +34,9 @@ class LoginPopOverVC: UIViewController {
         super.viewDidLoad()
         self.navigationController?.toolbarHidden = true
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
         self.visualEffects.effect = nil
         animattionInit()
         
@@ -239,6 +242,43 @@ class LoginPopOverVC: UIViewController {
             
         })
     }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+            if view.frame.origin.y == 0{                
+                UIView.animateWithDuration(0.1, animations: { () -> Void in
+                    self.view.frame.origin.y -= 100
+                    self.navigationController?.navigationBar.alpha = 0
+                    self.tabBarController?.tabBar.alpha = 0
+                    
+                })
+            }
+            else {
+                
+            }
+        }
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        
+        if view.frame.origin.y != 0 {
+            
+            UIView.animateWithDuration(0.1, animations: { () -> Void in
+                self.view.frame.origin.y += 100
+                self.navigationController?.navigationBar.alpha = 1
+                self.tabBarController?.tabBar.alpha = 1
+                
+                
+            })
+        }
+        else {
+            
+        }
+        
+    }
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
