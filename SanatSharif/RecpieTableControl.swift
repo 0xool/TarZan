@@ -16,6 +16,7 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
     
     private var cellView : UIView!
     private let recpieDetailVCAnimation = RecpieDetailVCAnimation()
+    private let recpieDetailVCAnimationDissmiss = RecpieDetailVCAnimationDissmiss()
     private var rowZeroSelected : Bool = false
     
     override func viewDidLoad() {
@@ -50,6 +51,11 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
 //        self.navigationController?.hidesBarsOnTap = true
         //self.navigationController?.hidesBarsOnSwipe = true
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+        self.tableView.beginUpdates()
+        self.tableView.endUpdates()
+        
+        
     }
     
 
@@ -69,6 +75,8 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
         // #warning Incomplete implementation, return the number of rows
         return 4
     }
+    
+    
     
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -95,12 +103,15 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        UIView.animateWithDuration(0.5, delay: 0.5, options: UIViewAnimationOptions.AllowAnimatedContent, animations: {
-        
+        CATransaction.begin()
+
+        CATransaction.setCompletionBlock {
+            self.performSegueWithIdentifier("showRecpieDetail", sender: nil )
+        }
         
         if indexPath.row == 0 {
             
-         self.rowZeroSelected = !self.rowZeroSelected
+            self.rowZeroSelected = !self.rowZeroSelected
             
         }else{
             
@@ -110,30 +121,18 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
         
         
         
-        tableView.moveRowAtIndexPath(indexPath, toIndexPath: tableView.indexPathsForVisibleRows![0])
+        
         
         self.tableView.beginUpdates()
+
+        tableView.moveRowAtIndexPath(indexPath, toIndexPath: tableView.indexPathsForVisibleRows![0])
         self.tableView.endUpdates()
         tableView.setContentOffset(CGPoint(x: 0, y: 236), animated:true)
             
-        self.getViewController()
-//        self.presentViewController(getViewController(), animated: false, completion: nil)
         
-            
-            
-            }) { (finished) in
-                
-                self.cellView = tableView.cellForRowAtIndexPath(indexPath)?.contentView
-                
-                if finished && self.rowZeroSelected == true {
-                 //   self.navigationController?.pushViewController(self.getViewController(), animated: true)
-                    //self.rowZeroSelected = false
-                    self.performSegueWithIdentifier("showRecpieDetail", sender: nil )
-                }
-
-        }
         
-
+        
+        CATransaction.commit()
         
     }
     
@@ -155,9 +154,11 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        recpieDetailVCAnimation.originFrame = self.view.frame
-        return recpieDetailVCAnimation
+        recpieDetailVCAnimationDissmiss.destinationFrame = self.view.frame
+        return recpieDetailVCAnimationDissmiss
     }
+    
+
     
     /*
     // Override to support conditional editing of the table view.

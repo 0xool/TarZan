@@ -15,13 +15,11 @@ class RecpieDetailVCAnimation: NSObject , UIViewControllerAnimatedTransitioning 
     
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 2.0
+        return 0.8
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         
-        print("STill in The Game ")
-
         // 1
         guard let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey),
             let containerView = transitionContext.containerView(),
@@ -62,11 +60,7 @@ class RecpieDetailVCAnimation: NSObject , UIViewControllerAnimatedTransitioning 
                     snapshot.alpha = 1
                 })
                 
-                // 3
-                UIView.addKeyframeWithRelativeStartTime(1/3, relativeDuration: 1/3, animations: {
-                    //snapshot.layer.transform = self.yRotation(0.0)
-//                    snapshot.alpha = 1
-                })
+                
                 
                 // 4
                 UIView.addKeyframeWithRelativeStartTime(2/3, relativeDuration: 1/3, animations: {
@@ -77,7 +71,7 @@ class RecpieDetailVCAnimation: NSObject , UIViewControllerAnimatedTransitioning 
                 // 5
                 toVC.view.hidden = false
 //                fromVC.view.layer.transform = self.yRotation(0.0)
-                fromVC.view.alpha = 0
+//                fromVC.view.alpha = 0
                 
                 snapshot.removeFromSuperview()
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
