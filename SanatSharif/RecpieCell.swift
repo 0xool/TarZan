@@ -11,7 +11,16 @@ import expanding_collection
 
 class RecpieCell: BasePageCollectionCell {
     
+    @IBOutlet weak var title : UILabel!
+    @IBOutlet weak var imageView : UIImageView!
     
+    
+    
+    
+    func configureCell(){
+        
+        
+    }
     
     
     

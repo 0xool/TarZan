@@ -11,8 +11,8 @@ import UIKit
 @IBDesignable class GraphView: UIView {
     
     //1 - the properties for the gradient
-    @IBInspectable var startColor: UIColor = UIColor.redColor()
-    @IBInspectable var endColor: UIColor = UIColor.greenColor()
+    @IBInspectable var startColor: UIColor = UIColor.clearColor()
+    @IBInspectable var endColor: UIColor = UIColor.clearColor()
     
     override func drawRect(rect: CGRect) {
         

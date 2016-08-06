@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import RZTransitions
 
 
 @UIApplicationMain
@@ -18,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+        RZTransitionsManager.shared().defaultPushPopAnimationController = RZCardSlideAnimationController()
+        RZTransitionsManager.shared().defaultPresentDismissAnimationController = RZZoomAlphaAnimationController()
+
         // Override point for customization after application launch.
 
         

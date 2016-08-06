@@ -8,135 +8,139 @@
 
 import UIKit
 import CoreData
+import IOStickyHeader
 
-class basketDetailVC: UIViewController {
+
+class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource   {
 
     
     
-    @IBOutlet weak var backgroundImage: UIImageView!
-    @IBOutlet weak var descTextField: UITextView!
-    @IBOutlet weak var dateLabel: UILabel!
+    //@IBOutlet weak var backgroundImage: UIImageView!
+//    @IBOutlet weak var descTextField: UITextView!
+//    @IBOutlet weak var dateLabel: UILabel!
     
-    @IBOutlet weak var notifLabel: UILabel!
-    @IBOutlet weak var notifSwitch: UISwitch!
-    @IBOutlet weak var titleLabel: UILabel!
+//    @IBOutlet weak var notifLabel: UILabel!
+//    @IBOutlet weak var notifSwitch: UISwitch!
+   // @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var collectionView : UICollectionView!
+//    @IBOutlet weak var deleteBTN: UIButton!
+//    @IBOutlet weak var editBTN: UIButton!
+//    @IBOutlet weak var notifView : UIView!
    
-    @IBOutlet weak var deleteBTN: UIButton!
-    @IBOutlet weak var editBTN: UIButton!
-    @IBOutlet weak var notifView : UIView!
-   
-    
+    let headerNib = UINib(nibName: "BasketDetailHeaderCell", bundle: NSBundle.mainBundle())
     let moContext = UserModelManager.sharedInstance._dataControler.managedObjectContext
     var basket : Basket!
     
     
     override func viewDidLoad() {
-        self.titleLabel.transform = CGAffineTransformMakeTranslation(1000, 0)
-        self.dateLabel.transform = CGAffineTransformMakeTranslation(1000, 0)
-        self.descTextField.transform = CGAffineTransformMakeTranslation(1000, 0)
-        self.notifSwitch.transform = CGAffineTransformMakeTranslation(1000, 0)
-        self.notifLabel.transform = CGAffineTransformMakeTranslation(1000, 0)
-        self.deleteBTN.transform = CGAffineTransformMakeTranslation(1000, 0)
-        self.editBTN.transform = CGAffineTransformMakeTranslation(1000, 0)
-        self.notifView.transform = CGAffineTransformMakeTranslation(1000, 0)
+        
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
         
         
         self.navigationController?.navigationBar.tintColor  = UIColor.whiteColor()
         self.tabBarController?.tabBar.hidden = true
         self.navigationController?.navigationItem.title = "بازگشت"
         
-        self.titleLabel.text = basket.bName
-        
-        if basket.bImage != nil{
-            self.backgroundImage.image = UIImage(data: basket.bImage!)
-        }else{
-            self.backgroundImage.image = UIImage(named: "GroceryTemp3")
+        if let layout: IOStickyHeaderFlowLayout = self.collectionView.collectionViewLayout as? IOStickyHeaderFlowLayout {
+            layout.parallaxHeaderReferenceSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, 274)
+            layout.parallaxHeaderMinimumReferenceSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, 180)
+            layout.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, layout.itemSize.height)
+            layout.parallaxHeaderAlwaysOnTop = true
+            layout.disableStickyHeaders = true
+            self.collectionView.collectionViewLayout = layout
         }
         
-        self.dateLabel.text =  "تاریخ :" + basket.bDate!.datatypeValue
-       
+        self.collectionView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0)
         
-        if basket.bDiscription != nil {
-            self.descTextField.text =  "توضیحات : " + basket.bDiscription!
-            print(basket.bDiscription)
-        }else {
-            self.descTextField.text = "توضیحاتی در این مورد داده نشده است."
+        self.collectionView.registerNib(self.headerNib, forSupplementaryViewOfKind: IOStickyHeaderParallaxHeader, withReuseIdentifier: "header")
+        
+//        self.titleLabel.text = basket.bName
+//        
+//        if basket.bImage != nil{
+//            self.backgroundImage.image = UIImage(data: basket.bImage!)
+//        }else{
+//            self.backgroundImage.image = UIImage(named: "GroceryTemp3")
+//        }
+//        
+//        self.dateLabel.text =  "تاریخ :" + basket.bDate!.datatypeValue
+//       
+//        
+//        if basket.bDiscription != nil {
+//            self.descTextField.text =  "توضیحات : " + basket.bDiscription!
+//            print(basket.bDiscription)
+//        }else {
+//            self.descTextField.text = "توضیحاتی در این مورد داده نشده است."
+//        }
+//        
+        
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        if indexPath.row == 0 {
+        
+            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("RemindMeCell", forIndexPath:     indexPath)
+            return cell
         }
         
+        if indexPath.row == 1 {
+            
+            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("BasketDescCell", forIndexPath:     indexPath) as! BasketDescCell
+            cell.configureCell()
+            return cell
+            
+        }
         
+        if indexPath.row == 2 {
+            
+            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("BasketDateCell", forIndexPath: indexPath) as! BasketDateCell
+                cell.configureCell()
+            return cell
+            
+        }
         
+        return UICollectionViewCell()
+        
+    
     }
     
-    override func viewDidAppear(animated: Bool) {
-        animateView()
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        switch kind {
+        case IOStickyHeaderParallaxHeader:
+            let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "header", forIndexPath: indexPath) as! BasketDetailHeaderCell
+            
+            if basket.bImage != nil{
+                            cell.configureCell(self.basket.bName!, image: UIImage(data: self.basket.bImage!)!)
+                        }else{
+                            cell.configureCell(self.basket.bName!, image: UIImage(named: "GroceryTemp3")!)
+                        }
+            
+            return cell
+        default:
+            assert(false, "Unexpected element kind")
+        }
     }
     
-    
-    func animateView (){
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        if indexPath.row == 1 {
+            return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 150);
+        }
         
+        if indexPath.row == 2 {
+            return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 300);
+        }
         
-       
-        
-        
-        
-        
-        
-        
-        
-        UIView.animateWithDuration(0.5, delay: 0.05 * Double(0) , usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
-            
-        
-            self.titleLabel.transform = CGAffineTransformMakeTranslation(0, 0)
-            
-            
-            }, completion: nil)
-        UIView.animateWithDuration(0.5, delay: 0.05 * Double(2) , usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
-            
-            self.dateLabel.transform = CGAffineTransformMakeTranslation(0, 0)
-            
-            }, completion: nil)
-        UIView.animateWithDuration(0.5, delay: 0.05 * Double(5) , usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
-            
-            self.descTextField.transform = CGAffineTransformMakeTranslation(0, 0)
-            
-            
-            
-            }, completion: nil)
-        UIView.animateWithDuration(0.5, delay: 0.05 * Double(6) , usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
-            
-            self.notifSwitch.transform = CGAffineTransformMakeTranslation(0, 0)
-            self.notifView.transform = CGAffineTransformMakeTranslation(0, 0)
-            
-            
-            
-            }, completion: nil)
-        UIView.animateWithDuration(0.5, delay: 0.05 * Double(7) , usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
-            
-            self.notifLabel.transform = CGAffineTransformMakeTranslation(0, 0)
-            
-            
-            
-            }, completion: nil)
-        UIView.animateWithDuration(0.5, delay: 0.05 * Double(8) , usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
-            
-            self.deleteBTN.transform = CGAffineTransformMakeTranslation(0, 0)
-            
-            
-            
-            }, completion: nil)
-        UIView.animateWithDuration(0.5, delay: 0.05 * Double(9) , usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
-            
-            self.editBTN.transform = CGAffineTransformMakeTranslation(0, 0)
-            
-            
-            
-            }, completion: nil)
-        
-        
-        
-        
+        return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 80);
     }
+
     
+
     
     @IBAction func deleteBasket(sender: AnyObject) {
         
@@ -167,4 +171,14 @@ class basketDetailVC: UIViewController {
     
     @IBAction func editInfo(sender: AnyObject) {
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

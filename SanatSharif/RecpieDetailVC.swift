@@ -27,6 +27,7 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
     
     
     
+    @IBOutlet weak var infoPanelView: UIView!
 //    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var tableViewTopContraint: NSLayoutConstraint!
     @IBOutlet weak var picViewHeightConstraint: NSLayoutConstraint!
@@ -142,7 +143,7 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
                 if againScrolledToTop{
                 
                 self.picViewHeightConstraint.constant =     UIScreen.mainScreen().bounds.height
-                    UIView.animateWithDuration(0.25, animations: {
+                    UIView.animateWithDuration(0.5, animations: {
                     
                         self.view.layoutIfNeeded()
                     
@@ -165,9 +166,10 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
             
                 if self.tableViewTopContraint.constant == -40{
                     self.tableViewTopContraint.constant = 0
-                    UIView.animateWithDuration(0.25, animations: {
+                    UIView.animateWithDuration(0.5, animations: {
                     
                         self.view.layoutIfNeeded()
+                        self.infoPanelView.alpha = 1
                     
                         }, completion: { (Finished) in
                             if Finished {
@@ -182,8 +184,9 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
             
                 if self.tableViewTopContraint.constant == 0{
                     self.tableViewTopContraint.constant = -40
-                UIView.animateWithDuration(0.25, animations: {
+                UIView.animateWithDuration(0.5, animations: {
                 
+                        self.infoPanelView.alpha = 0
                         self.view.layoutIfNeeded()
                 
                         }, completion: { (Finished) in
@@ -398,7 +401,7 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
 
             })
             self.picViewHeightConstraint.constant = UIScreen.mainScreen().bounds.height
-
+            self.tableViewTopContraint.constant = 0
             UIView.animateWithDuration(0.5, animations: {
                 self.view.layoutIfNeeded()
             })

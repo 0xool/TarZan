@@ -9,6 +9,7 @@
 import UIKit
 import expanding_collection
 
+
 class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransitioningDelegate {
 
     private var unSelectedHeight : CGFloat = 250
@@ -21,8 +22,8 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        headerHeight = 236
-
+        
+        headerHeight = 140
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,7 +33,8 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
         
         let newBackButton = UIBarButtonItem(title: "Back", style: .Plain, target: self, action: #selector(back))
         self.navigationItem.leftBarButtonItem = newBackButton;
-        
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.whiteColor()
+//        self.navigationController!.navigationBar.barStyle = 
 //        self.navigationItem.leftBarButtonItem?.image = UIImage(named: "")
         
         
@@ -50,7 +52,8 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
         rowZeroSelected = false
 //        self.navigationController?.hidesBarsOnTap = true
         //self.navigationController?.hidesBarsOnSwipe = true
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+//        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
 
         self.tableView.beginUpdates()
         self.tableView.endUpdates()
@@ -103,11 +106,27 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+
+        tableView.setContentOffset(CGPoint(x: 0, y: 140), animated:true)
+
+        
         CATransaction.begin()
 
         CATransaction.setCompletionBlock {
-            self.performSegueWithIdentifier("showRecpieDetail", sender: nil )
+            CATransaction.begin()
+            CATransaction.setCompletionBlock({ 
+                self.performSegueWithIdentifier("showRecpieDetail", sender: nil )
+            })
+            
+            self.tableView.beginUpdates()
+            self.tableView.endUpdates()
+            
+            CATransaction.commit()
+
         }
+        
+
         
         if indexPath.row == 0 {
             
@@ -118,17 +137,17 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
             self.rowZeroSelected = true
             
         }
-        
-        
-        
-        
-        
         self.tableView.beginUpdates()
 
+        
+
         tableView.moveRowAtIndexPath(indexPath, toIndexPath: tableView.indexPathsForVisibleRows![0])
+
+        
+
+
         self.tableView.endUpdates()
-        tableView.setContentOffset(CGPoint(x: 0, y: 236), animated:true)
-            
+        
         
         
         

@@ -84,20 +84,36 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AMViralSwitch/AMViralSwitch.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKCamera/DKCamera.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DOFavoriteButton/DOFavoriteButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicBlurView/DynamicBlurView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/IOStickyHeader/IOStickyHeader.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ImageSlideshow/ImageSlideshow.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JTAppleCalendar/JTAppleCalendar.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JTMaterialSwitch/JTMaterialSwitch.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RZTransitions/RZTransitions.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SABlurImageView/SABlurImageView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SQLite.swift/SQLite.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/expanding-collection/expanding_collection.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AMViralSwitch/AMViralSwitch.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKCamera/DKCamera.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DOFavoriteButton/DOFavoriteButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicBlurView/DynamicBlurView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/IOStickyHeader/IOStickyHeader.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ImageSlideshow/ImageSlideshow.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JTAppleCalendar/JTAppleCalendar.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JTMaterialSwitch/JTMaterialSwitch.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RZTransitions/RZTransitions.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SABlurImageView/SABlurImageView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SQLite.swift/SQLite.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/expanding-collection/expanding_collection.framework"
 fi

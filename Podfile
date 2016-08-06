@@ -6,7 +6,14 @@ target 'SanatSharif' do
   use_frameworks!
 
   # Pods for SanatSharif
-#  pod 'MRTableViewCellCountScrollIndicator', '~> 0.0'
+  pod 'JTAppleCalendar', '~> 4.1'
+  pod 'IOStickyHeader', '~> 0.3'
+  pod "TextFieldEffects"
+  pod 'AMViralSwitch'
+  pod "JTMaterialSwitch"
+  pod 'DOFavoriteButton'
+  pod 'RAMAnimatedTabBarController'
+  pod 'RZTransitions', '~> 1.2'
   pod 'expanding-collection', '~> 0.3'
   pod 'Alamofire', '~> 3.4'
   pod 'ImageSlideshow', '~> 0.4'

@@ -6,9 +6,13 @@
 //  Copyright © 1395 cyrus refahi. All rights reserved.
 //
 
+import RZTransitions
 import UIKit
 
-class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSource  {
+
+class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSource , RZTransitionInteractionControllerDelegate {
+
+    var pushPopInteractionController: RZTransitionInteractionController?
 
     
     @IBOutlet weak var ButtomBuyView: UIView!
@@ -26,9 +30,9 @@ class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSou
     var goinDown : Bool = true
     
     var currentSection : Int = 0
+    private var lastContentOffset: CGFloat = 0
     
-     private var lastContentOffset: CGFloat = 0
-    
+
     
     override func viewDidLoad() {
         
@@ -36,12 +40,66 @@ class BasketPageVC: UIViewController  , UITableViewDelegate , UITableViewDataSou
         BasketTableView.delegate = self
         BasketTableView.dataSource = self
         
+        //let navigationController = UINavigationController()
+        self.navigationController!.delegate = RZTransitionsManager.shared()
+        
+//        snippets()
+//        
+//        pushPopInteractionController = RZHorizontalInteractionController()
+//        if let vc = pushPopInteractionController as? RZHorizontalInteractionController {
+//            vc.nextViewControllerDelegate = self
+//            vc.attachViewController(self, withAction: .PushPop)
+//            RZTransitionsManager.shared().setInteractionController( vc, fromViewController:self.dynamicType, toViewController:nil, forAction: .PushPop);
+//        }
+//        
+//        pushPopInteractionController = RZHorizontalInteractionController()
+//        if let vc = pushPopInteractionController as? RZHorizontalInteractionController {
+//            vc.nextViewControllerDelegate = self
+//            vc.attachViewController(self, withAction: .PushPop)
+//            RZTransitionsManager.shared().setInteractionController( vc, fromViewController:self.dynamicType, toViewController:nil, forAction: .PushPop);
+//        }
+//        RZTransitionsManager.shared().setAnimationController( RZCardSlideAnimationController(),
+//                                                              fromViewController:self.dynamicType,
+//                                                              forAction:.PushPop);
+//        
+//        RZTransitionsManager.shared().setAnimationController( RZZoomPushAnimationController(),
+//                                                              fromViewController:self.dynamicType,
+//                                                              toViewController:LoginControlVC.self,
+//                                                              forAction:.PushPop);
+//        
+        
+    
+        
+        RZTransitionsManager.shared().setAnimationController( RZCardSlideAnimationController(),
+                                                              fromViewController:self.dynamicType,
+                                                              forAction:.PushPop);
+        
+    
+
+//        self.navigationController?.pushViewController(UIViewController(), animated: true)
+        
+       
+      
+        
         
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+     
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+     
+//        RZTransitionsManager.shared().setInteractionController( pushPopInteractionController,
+//                                                                fromViewController:self.dynamicType,
+//                                                                toViewController:LoginControlVC,
+//                                                                forAction:.PushPop);
+    
+        
     }
     
     override func viewDidAppear(animated: Bool) {

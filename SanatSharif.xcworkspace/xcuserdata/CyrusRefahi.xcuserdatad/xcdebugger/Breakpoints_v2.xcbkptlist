@@ -2,4 +2,99 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/expanding-collection/Source/ExpandingTableViewController/ExpandingTableViewController.swift"
+            timestampString = "491824845.154607"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ExpandingTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "expanding_collection.ExpandingTableViewController.transitionDriver.getter : Swift.Optional&lt;expanding_collection.TransitionDriver&gt;"
+                  moduleName = "expanding_collection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cyrusrefahi/Desktop/SanatSharif/Pods/expanding-collection/Source/ExpandingTableViewController/ExpandingTableViewController.swift"
+                  timestampString = "492165202.195023"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "expanding_collection.ExpandingTableViewController.transitionDriver.setter : Swift.Optional&lt;expanding_collection.TransitionDriver&gt;"
+                  moduleName = "expanding_collection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cyrusrefahi/Desktop/SanatSharif/Pods/expanding-collection/Source/ExpandingTableViewController/ExpandingTableViewController.swift"
+                  timestampString = "492165202.195377"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "expanding_collection.ExpandingTableViewController.init (style : __C.UITableViewStyle) -&gt; expanding_collection.ExpandingTableViewController"
+                  moduleName = "expanding_collection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cyrusrefahi/Desktop/SanatSharif/Pods/expanding-collection/Source/ExpandingTableViewController/ExpandingTableViewController.swift"
+                  timestampString = "492165202.195596"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "expanding_collection.ExpandingTableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; expanding_collection.ExpandingTableViewController"
+                  moduleName = "expanding_collection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cyrusrefahi/Desktop/SanatSharif/Pods/expanding-collection/Source/ExpandingTableViewController/ExpandingTableViewController.swift"
+                  timestampString = "492165202.195749"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "expanding_collection.ExpandingTableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;expanding_collection.ExpandingTableViewController&gt;"
+                  moduleName = "expanding_collection"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cyrusrefahi/Desktop/SanatSharif/Pods/expanding-collection/Source/ExpandingTableViewController/ExpandingTableViewController.swift"
+                  timestampString = "492165202.195893"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

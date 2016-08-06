@@ -8,7 +8,9 @@
 
 import UIKit
 
-class LoginControlVC: UIViewController , UITextFieldDelegate {
+import RZTransitions
+
+class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInteractionControllerDelegate {
 
     @IBOutlet weak var loginStack: UIStackView!
     @IBOutlet weak var MainBtnStack: UIStackView!

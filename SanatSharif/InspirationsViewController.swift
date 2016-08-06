@@ -9,9 +9,9 @@
 import UIKit
 import DKCamera
 import CoreData
+import RZTransitions
 
-
-class InspirationsViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout , UITextFieldDelegate , UITextViewDelegate {
+class InspirationsViewController: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout , UITextFieldDelegate , UITextViewDelegate  {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -48,6 +48,7 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     self.personName.delegate = self
     self._description.delegate = self
     
+   
     
     
     
@@ -363,7 +364,7 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     
     func keyboardWillShow(notification: NSNotification) {
         
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+        if ((notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue()) != nil {
             if view.frame.origin.y == 0{
                 UIView.animateWithDuration(0.1, animations: { () -> Void in
                     self.view.frame.origin.y -= 100
