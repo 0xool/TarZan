@@ -171,8 +171,8 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         
         if self.imageSet {
             
-            let imageData = UIImageJPEGRepresentation(saveImage, 1)
-            basketEntity.setValue(imageData, forKey: "bImage")
+            basketEntity.setValue(self.BasketName.text , forKey: "bImage")
+            writeImagetoFile(self.BasketName.text! , image : self.saveImage)
             
             
         }else{
@@ -204,10 +204,10 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
             if finished {
                 
                 if basketEntity.bImage != nil {
-                    let image = UIImage(data: basketEntity.bImage!)!
-                    UserModelManager.sharedInstance._basketInfoImages.append(image.decompressedImage)
+//                    let image = UIImage(data: basketEntity.bImage!)!
+//                    UserModelManager.sharedInstance._basketInfoImages.append(image.decompressedImage)
                 }else{
-                    UserModelManager.sharedInstance._basketInfoImages.append(UIImage())
+//                    UserModelManager.sharedInstance._basketInfoImages.append(UIImage())
                 }
                 
                 UserModelManager.sharedInstance._basketInfo.append(basketEntity)
@@ -227,9 +227,37 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         
     }
     
+    func getDocumentsDirectory() -> NSString {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    func writeImagetoFile(imageNamed : String , image :  UIImage){
+        
+        if let data = UIImagePNGRepresentation(image) {
+            let filename = getDocumentsDirectory().stringByAppendingPathComponent(imageNamed)
+            data.writeToFile(filename, atomically: true)
+        }
+        
+    }
+    
+    func readImageFromFile(imageNamed : String) -> UIImage{
+        
+//        let path: String? = NSBundle.mainBundle().pathForResource(imageNamed, ofType: "png", inDirectory: getDocumentsDirectory() as String)
+        let path = getDocumentsDirectory().stringByAppendingPathComponent(imageNamed)
+
+        let imageFromPath = UIImage(contentsOfFile: path)!
+        return imageFromPath
+        
+    }
+    
+    
     func fetch() {
         
         let userfetch = NSFetchRequest(entityName: "Basket")
+        
+
         
         
         do {
@@ -237,12 +265,12 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
             for b in fetchedEntity {
                 
                 print("================================================\(b.bImage)")
-                if b.bImage != nil{
-                    let image = UIImage(data: b.bImage!)!
-                    UserModelManager.sharedInstance._basketInfoImages.append(image.decompressedImage)
-                }else{
-                    UserModelManager.sharedInstance._basketInfoImages.append(UIImage())
-                }
+//                if b.bImage != nil{
+//                    let image = UIImage(data: b.bImage!)!
+//                    UserModelManager.sharedInstance._basketInfoImages.append(image.decompressedImage)
+//                }else{
+//                    UserModelManager.sharedInstance._basketInfoImages.append(UIImage())
+//                }
                 
                 UserModelManager.sharedInstance._basketInfo.append(b)
                 
@@ -344,9 +372,8 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         
             if basket.bImage != nil {
                 
-                
-                
-                cell.configureCell( UserModelManager.sharedInstance._basketInfoImages[indexPath.row] , title: basket.bName! , date: basket.bDate! , personName : "Cyrus" )
+                print(basket.bName)
+                cell.configureCell( self.readImageFromFile(basket.bName!) , title: basket.bName! , date: basket.bDate! , personName : "Cyrus" )
             }else{
                 cell.configureCell(UIImage(named: "GroceryTemp3")! , title: basket.bName! , date: basket.bDate! , personName : "Cyrus")
             }

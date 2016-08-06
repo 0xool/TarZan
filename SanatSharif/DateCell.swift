@@ -26,14 +26,20 @@ class DateCell: JTAppleDayCellView {
         
         if selected {
             
-            self.selectedView.animateView()
+            self.selectedView.animateViewClicked()
             
         }
     }
     
     func cellCicked(){
         
-        self.selectedView.animateView()
+        self.selectedView.animateViewClicked()
+       
+    }
+    
+    func cellUnClicked(){
+        
+        self.selectedView.animateViewUnClicked()
         
     }
     

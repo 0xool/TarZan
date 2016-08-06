@@ -2,7 +2,7 @@
 //  Basket+CoreDataProperties.swift
 //  
 //
-//  Created by cyrus refahi on 7/25/16.
+//  Created by cyrus refahi on 8/6/16.
 //
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -16,8 +16,9 @@ extension Basket {
 
     @NSManaged var bDate: NSDate?
     @NSManaged var bDiscription: String?
-    @NSManaged var bImage: NSData?
+    @NSManaged var bImage: String?
     @NSManaged var bName: String?
     @NSManaged var bNotif: NSNumber?
+    @NSManaged var relationship: NSManagedObject?
 
 }

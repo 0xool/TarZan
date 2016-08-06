@@ -18,12 +18,12 @@ class BasketDateCell: UICollectionViewCell , JTAppleCalendarViewDataSource , JTA
         let formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy MM dd"
         
-        let firstDate = formatter.dateFromString("2014 01 05")
+        let firstDate = NSDate() //formatter.dateFromString("2014 01 05")
         let secondDate = NSDate()
         let numberOfRows = 6
         let aCalendar = NSCalendar.currentCalendar() // Properly configure your calendar to your time zone here
         
-        return (startDate: firstDate!, endDate: secondDate, numberOfRows: numberOfRows, calendar: aCalendar)
+        return (startDate: firstDate, endDate: secondDate, numberOfRows: numberOfRows, calendar: aCalendar)
         
     }
     
@@ -36,7 +36,7 @@ class BasketDateCell: UICollectionViewCell , JTAppleCalendarViewDataSource , JTA
     }
     
     func calendar(calendar: JTAppleCalendarView, didDeselectDate date: NSDate, cell: JTAppleDayCellView?, cellState: CellState) {
-        (cell as! DateCell).cellCicked()
+        (cell as! DateCell).cellUnClicked()
     }
     
     

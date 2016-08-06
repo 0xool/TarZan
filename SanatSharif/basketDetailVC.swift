@@ -116,7 +116,7 @@ class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollection
             let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "header", forIndexPath: indexPath) as! BasketDetailHeaderCell
             
             if basket.bImage != nil{
-                            cell.configureCell(self.basket.bName!, image: UIImage(data: self.basket.bImage!)!)
+                            cell.configureCell(self.basket.bName!, image: FileManager().readImageFromFile(self.basket.bName!))
                         }else{
                             cell.configureCell(self.basket.bName!, image: UIImage(named: "GroceryTemp3")!)
                         }
@@ -147,7 +147,6 @@ class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollection
 //        let person = result[0] as! NSManagedObject
         
         moContext.deleteObject(basket)
-        UserModelManager.sharedInstance._basketInfoImages.removeAtIndex(UserModelManager.sharedInstance._basketInfo.indexOf(basket)!)
         UserModelManager.sharedInstance._basketInfo.removeAtIndex(UserModelManager.sharedInstance._basketInfo.indexOf(basket)!)
         
         do {

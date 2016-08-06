@@ -31,7 +31,7 @@ class RoundViewWithShadowMaterial: UIView {
         }        
     }
     
-    func animateView (){
+    func animateViewClicked (){
         
         self.transform = CGAffineTransformMakeScale(0, 0)
         self.hidden = false
@@ -41,6 +41,26 @@ class RoundViewWithShadowMaterial: UIView {
             self.transform = CGAffineTransformMakeScale(1, 1)
             
         })
+    }
+    
+        func animateViewUnClicked (){
+            
+
+            
+            UIView.animateWithDuration(0.25, animations: {
+                
+                self.transform = CGAffineTransformMakeScale(0 , 0)
+                
+                }) { (finished ) in
+                    if finished{
+                        self.hidden = true
+                    }
+            }
+    
+    
+            
+                
+          
         
         
     }

@@ -4794,26 +4794,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wZR-tX-AzF">
-                                                    <rect key="frame" x="8" y="12" width="150" height="23"/>
+                                                    <rect key="frame" x="8" y="12" width="150" height="24"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgL-FJ-rgJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="23"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgL-FJ-rgJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="24"/>
                                                             <state key="normal" title="Button" image="emptyStar"/>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjP-hS-kaZ">
-                                                            <rect key="frame" x="30" y="0.0" width="30" height="23"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjP-hS-kaZ">
+                                                            <rect key="frame" x="30" y="0.0" width="30" height="24"/>
                                                             <state key="normal" title="Button" image="emptyStar"/>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-SB-6br">
-                                                            <rect key="frame" x="60" y="0.0" width="30" height="23"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-SB-6br">
+                                                            <rect key="frame" x="60" y="0.0" width="30" height="24"/>
                                                             <state key="normal" title="Button" image="emptyStar"/>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICm-Pe-KAe">
-                                                            <rect key="frame" x="90" y="0.0" width="30" height="23"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICm-Pe-KAe">
+                                                            <rect key="frame" x="90" y="0.0" width="30" height="24"/>
                                                             <state key="normal" title="Button" image="emptyStar"/>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-LN-mpU">
-                                                            <rect key="frame" x="120" y="0.0" width="30" height="23"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-LN-mpU">
+                                                            <rect key="frame" x="120" y="0.0" width="30" height="24"/>
                                                             <state key="normal" title="Button" image="emptyStar"/>
                                                         </button>
                                                     </subviews>

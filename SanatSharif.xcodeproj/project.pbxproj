@@ -86,6 +86,8 @@
 		A589E4B71D3CA4C40015A2B7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A589E4B61D3CA4C40015A2B7 /* Enums.swift */; };
 		A589E4B91D3CB9290015A2B7 /* BuyWindowMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A589E4B81D3CB9290015A2B7 /* BuyWindowMaterial.swift */; };
 		A59F3A8D1D27E7610097A1C9 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */; };
+		A5A4E3D11D55F7C100757D0E /* Basket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4E3D01D55F7C100757D0E /* Basket+CoreDataProperties.swift */; };
+		A5A4E3D31D5607DB00757D0E /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4E3D21D5607DB00757D0E /* FileManager.swift */; };
 		A5C511751D3506AE00731494 /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C511741D3506AE00731494 /* RecentSearchCell.swift */; };
 		A5CD99F01D30FB3D00CA0B96 /* UserModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */; };
 		A5CEE84E1D2B9C6200DF871B /* BasketPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE84D1D2B9C6200DF871B /* BasketPageVC.swift */; };
@@ -102,7 +104,6 @@
 		A5DEA3F91D4616FE005218A8 /* RecpieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA3F81D4616FE005218A8 /* RecpieCell.swift */; };
 		A5DEA3FB1D4618DB005218A8 /* RecpieTableControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA3FA1D4618DB005218A8 /* RecpieTableControl.swift */; };
 		A5E27CA71D2A5E5B00E5DF37 /* MainPageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E27CA61D2A5E5B00E5DF37 /* MainPageNavigationController.swift */; };
-		A5F51CA01D45E52000D783FF /* Basket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F51C9F1D45E52000D783FF /* Basket+CoreDataProperties.swift */; };
 		A5F89DA51D292BE100293D58 /* RoundViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F89DA41D292BE100293D58 /* RoundViewMaterial.swift */; };
 		A5F89DA71D29325200293D58 /* MenuTableViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F89DA61D29325200293D58 /* MenuTableViewMaterial.swift */; };
 		A5FFB8321D55B38900FDB0FB /* BasketDescCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFB8311D55B38900FDB0FB /* BasketDescCell.swift */; };
@@ -222,6 +223,8 @@
 		A589E4B61D3CA4C40015A2B7 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		A589E4B81D3CB9290015A2B7 /* BuyWindowMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyWindowMaterial.swift; sourceTree = "<group>"; };
 		A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
+		A5A4E3D01D55F7C100757D0E /* Basket+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Basket+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5A4E3D21D5607DB00757D0E /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		A5C511741D3506AE00731494 /* RecentSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
 		A5C8E4DF1D364B7B00BFEE81 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelManager.swift; sourceTree = "<group>"; };
@@ -239,7 +242,6 @@
 		A5DEA3F81D4616FE005218A8 /* RecpieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieCell.swift; sourceTree = "<group>"; };
 		A5DEA3FA1D4618DB005218A8 /* RecpieTableControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieTableControl.swift; sourceTree = "<group>"; };
 		A5E27CA61D2A5E5B00E5DF37 /* MainPageNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageNavigationController.swift; sourceTree = "<group>"; };
-		A5F51C9F1D45E52000D783FF /* Basket+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Basket+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A5F89DA41D292BE100293D58 /* RoundViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViewMaterial.swift; sourceTree = "<group>"; };
 		A5F89DA61D29325200293D58 /* MenuTableViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewMaterial.swift; sourceTree = "<group>"; };
 		A5FFB8311D55B38900FDB0FB /* BasketDescCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketDescCell.swift; sourceTree = "<group>"; };
@@ -469,6 +471,7 @@
 			children = (
 				A53C74E71D2915C5007AFC96 /* SWRevealViewController */,
 				A5502ADA1D28D0D300B559CD /* Constraints.swift */,
+				A5A4E3D21D5607DB00757D0E /* FileManager.swift */,
 			);
 			name = Utiles;
 			sourceTree = "<group>";
@@ -476,7 +479,7 @@
 		A558F3F31D43475400346754 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				A5F51C9F1D45E52000D783FF /* Basket+CoreDataProperties.swift */,
+				A5A4E3D01D55F7C100757D0E /* Basket+CoreDataProperties.swift */,
 				A558F3F81D434AD500346754 /* Basket.swift */,
 				A558F3F41D43479800346754 /* BasketToBuy.xcdatamodeld */,
 				A558F3FB1D43598500346754 /* CoreDataController.swift */,
@@ -795,6 +798,7 @@
 				A54672DE1D489F51005662B2 /* RecpieDetailVCAnimationDissmiss.swift in Sources */,
 				A57120A91D4DE5570057DDE9 /* UIViewExtensions.swift in Sources */,
 				A5CEE8561D2BB53300DF871B /* BasketCell.swift in Sources */,
+				A5A4E3D11D55F7C100757D0E /* Basket+CoreDataProperties.swift in Sources */,
 				A52D01411D27A3E500A97FDD /* ViewController.swift in Sources */,
 				A558F3FA1D434AD500346754 /* Basket.swift in Sources */,
 				A5FFB8321D55B38900FDB0FB /* BasketDescCell.swift in Sources */,
@@ -823,7 +827,6 @@
 				A57F43901D27C97E00ED5366 /* SubList.swift in Sources */,
 				A586A6401D34F51F00731023 /* DataBaseManager.swift in Sources */,
 				A5502ADB1D28D0D300B559CD /* Constraints.swift in Sources */,
-				A5F51CA01D45E52000D783FF /* Basket+CoreDataProperties.swift in Sources */,
 				A558F3F61D43479800346754 /* BasketToBuy.xcdatamodeld in Sources */,
 				A57C1BD01D3E3285009A5D5A /* SignUpTableVC.swift in Sources */,
 				A51B89371D30E1D50049E6F7 /* AddressPickerView.swift in Sources */,
@@ -844,6 +847,7 @@
 				A507173F1D55C775007E4BE5 /* BasketDateCell.swift in Sources */,
 				A5CEE8521D2BA65100DF871B /* RoundLabel.swift in Sources */,
 				A518C0701D3B5BAF0004D036 /* LoginControlVC.swift in Sources */,
+				A5A4E3D31D5607DB00757D0E /* FileManager.swift in Sources */,
 				A589E4B71D3CA4C40015A2B7 /* Enums.swift in Sources */,
 				A55E27881D323E3B0081F302 /* BannerCell.swift in Sources */,
 				A5DAAD741D3A1EDC0033DDBB /* infoCellMaterial.swift in Sources */,
