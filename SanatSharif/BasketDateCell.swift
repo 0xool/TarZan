@@ -39,11 +39,73 @@ class BasketDateCell: UICollectionViewCell , JTAppleCalendarViewDataSource , JTA
         (cell as! DateCell).cellUnClicked()
     }
     
+    func calendar(calendar: JTAppleCalendarView, sectionHeaderSizeForDate date: (startDate: NSDate, endDate: NSDate)) -> CGSize{
+        return CGSize (width: UIScreen.mainScreen().bounds.width , height: 100 )
+    }
+    func calendar(calendar: JTAppleCalendarView, isAboutToDisplaySectionHeader header: JTAppleHeaderView, date: (startDate: NSDate, endDate: NSDate), identifier: String){
+
+        var label = "Unkown error"
+        let date = NSDate()
+        let calender = NSCalendar(calendarIdentifier: NSCalendarIdentifierPersian)
+        let components = calender?.components(NSCalendarUnit(rawValue: UInt.max), fromDate: date)
+        
+        let year =  components!.year
+        let month = components!.month
+        let day = components!.day
+        
+        switch month {
+        case 1:
+            label = "فروردین"
+            break
+        case 2:
+            label = "اردیبهشت"
+            break
+        case 3:
+            label = "خرداد"
+            break
+        case 4:
+            label = "تیر"
+            break
+        case 5:
+            label = "مرداد"
+            break
+        case 6:
+            label = "شهریور"
+            break
+        case 7:
+            label = "مهر"
+            break
+        case 8:
+            label = "آبان"
+            break
+        case 9:
+            label = "آذر"
+            break
+        case 10:
+            label = "دی"
+            break
+        case 11:
+            label = "بهمن"
+            break
+        case 12:
+            label = "اسفند"
+        default:
+            break
+        }
+        
+        
+        
+        (header as! DateHeaderCell).configureCell("\(String(label)) \n \(String(year))")
+
+        
+    }
+    
     
     func configureCell()  {
         self.calendarView.dataSource = self
         self.calendarView.delegate = self
         self.calendarView.registerCellViewXib(fileName: "DateCell")
+        self.calendarView.registerHeaderViewXibs(fileNames: ["DateHeaderCell"])
         
          calendarView.cellInset = CGPoint(x: 0, y: 0)
     }

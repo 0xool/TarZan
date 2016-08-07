@@ -95,6 +95,9 @@
 		A5CEE8521D2BA65100DF871B /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE8511D2BA65100DF871B /* RoundLabel.swift */; };
 		A5CEE8541D2BA79300DF871B /* SmallWindowViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE8531D2BA79300DF871B /* SmallWindowViewMaterial.swift */; };
 		A5CEE8561D2BB53300DF871B /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE8551D2BB53300DF871B /* BasketCell.swift */; };
+		A5D543D21D57199100D47011 /* DateHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D543D11D57199100D47011 /* DateHeaderCell.xib */; };
+		A5D543D41D5719A900D47011 /* DateHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D543D31D5719A900D47011 /* DateHeaderCell.swift */; };
+		A5D543D61D574F2300D47011 /* RemindMeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D543D51D574F2300D47011 /* RemindMeCell.swift */; };
 		A5D60A921D2BD41800799CD2 /* RoundButtonMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D60A911D2BD41800799CD2 /* RoundButtonMaterial.swift */; };
 		A5DA4AF41D2A857400152D41 /* ProductDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA4AF31D2A857400152D41 /* ProductDetailVC.swift */; };
 		A5DAAD721D3A18080033DDBB /* infoCellTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DAAD711D3A18080033DDBB /* infoCellTable.swift */; };
@@ -233,6 +236,9 @@
 		A5CEE8511D2BA65100DF871B /* RoundLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundLabel.swift; path = Assets.xcassets/RoundLabel.swift; sourceTree = "<group>"; };
 		A5CEE8531D2BA79300DF871B /* SmallWindowViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallWindowViewMaterial.swift; sourceTree = "<group>"; };
 		A5CEE8551D2BB53300DF871B /* BasketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketCell.swift; sourceTree = "<group>"; };
+		A5D543D11D57199100D47011 /* DateHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateHeaderCell.xib; sourceTree = "<group>"; };
+		A5D543D31D5719A900D47011 /* DateHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHeaderCell.swift; sourceTree = "<group>"; };
+		A5D543D51D574F2300D47011 /* RemindMeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindMeCell.swift; sourceTree = "<group>"; };
 		A5D60A911D2BD41800799CD2 /* RoundButtonMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButtonMaterial.swift; sourceTree = "<group>"; };
 		A5DA4AF31D2A857400152D41 /* ProductDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailVC.swift; sourceTree = "<group>"; };
 		A5DAAD711D3A18080033DDBB /* infoCellTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoCellTable.swift; sourceTree = "<group>"; };
@@ -407,6 +413,7 @@
 				A5FFB8311D55B38900FDB0FB /* BasketDescCell.swift */,
 				A507173E1D55C775007E4BE5 /* BasketDateCell.swift */,
 				A50717401D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift */,
+				A5D543D51D574F2300D47011 /* RemindMeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -496,6 +503,8 @@
 				A56F48511D530EF400A09303 /* BasketDetailHeaderCell.xib */,
 				A5FFB8331D55C0AD00FDB0FB /* DateCell.xib */,
 				A5FFB8351D55C13200FDB0FB /* DateCell.swift */,
+				A5D543D11D57199100D47011 /* DateHeaderCell.xib */,
+				A5D543D31D5719A900D47011 /* DateHeaderCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -639,6 +648,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D543D21D57199100D47011 /* DateHeaderCell.xib in Resources */,
 				A52D01491D27A3E500A97FDD /* LaunchScreen.storyboard in Resources */,
 				A5DEA3F41D4607E0005218A8 /* RecpieCell.xib in Resources */,
 				A52D01461D27A3E500A97FDD /* Assets.xcassets in Resources */,
@@ -834,6 +844,7 @@
 				A57765301D4F15B50076A1F5 /* RelatedSection.swift in Sources */,
 				A55E278C1D3264E60081F302 /* MainpageTabBarControlVC.swift in Sources */,
 				A57F43A21D27D2E200ED5366 /* Item.swift in Sources */,
+				A5D543D41D5719A900D47011 /* DateHeaderCell.swift in Sources */,
 				A5CEE8541D2BA79300DF871B /* SmallWindowViewMaterial.swift in Sources */,
 				A50717411D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift in Sources */,
 				A531F7D71D476C85006E0863 /* RecpieDetailVC.swift in Sources */,
@@ -881,6 +892,7 @@
 				A5CEE8501D2B9F6200DF871B /* MediumWindowViewMaterial.swift in Sources */,
 				A5D60A921D2BD41800799CD2 /* RoundButtonMaterial.swift in Sources */,
 				A5FFB8361D55C13200FDB0FB /* DateCell.swift in Sources */,
+				A5D543D61D574F2300D47011 /* RemindMeCell.swift in Sources */,
 				A5725CD71D40ADCA00DCE7A6 /* UIImage+Decompression.swift in Sources */,
 				A57F43921D27CAB300ED5366 /* Slide.swift in Sources */,
 				A518C0721D3BA63A0004D036 /* LoginPopOverVC.swift in Sources */,

@@ -26,6 +26,8 @@ class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollection
 //    @IBOutlet weak var deleteBTN: UIButton!
 //    @IBOutlet weak var editBTN: UIButton!
 //    @IBOutlet weak var notifView : UIView!
+    
+    var dateNotifIsOn : Bool = false
    
     let headerNib = UINib(nibName: "BasketDetailHeaderCell", bundle: NSBundle.mainBundle())
     let moContext = UserModelManager.sharedInstance._dataControler.managedObjectContext
@@ -55,6 +57,8 @@ class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollection
         
         self.collectionView.registerNib(self.headerNib, forSupplementaryViewOfKind: IOStickyHeaderParallaxHeader, withReuseIdentifier: "header")
         
+
+        
 //        self.titleLabel.text = basket.bName
 //        
 //        if basket.bImage != nil{
@@ -83,13 +87,24 @@ class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollection
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        if indexPath.row == 0 {
+        if indexPath.row == 1 {
         
-            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("RemindMeCell", forIndexPath:     indexPath)
+            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("RemindMeCell", forIndexPath:     indexPath) as! RemindMeCell
+            print(self.basket.bNotif!)
+            if self.basket.bNotif == 1{
+            
+                cell.configureCell(false)
+            
+            }else{
+            
+                cell.configureCell(true)
+            
+            }
+            
             return cell
         }
         
-        if indexPath.row == 1 {
+        if indexPath.row == 0 {
             
             let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("BasketDescCell", forIndexPath:     indexPath) as! BasketDescCell
             cell.configureCell()
@@ -116,7 +131,7 @@ class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollection
             let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "header", forIndexPath: indexPath) as! BasketDetailHeaderCell
             
             if basket.bImage != nil{
-                            cell.configureCell(self.basket.bName!, image: FileManager().readImageFromFile(self.basket.bName!))
+                            cell.configureCell(self.basket.bName!, image: FileManager().readImageFromFile(self.basket.bImage!))
                         }else{
                             cell.configureCell(self.basket.bName!, image: UIImage(named: "GroceryTemp3")!)
                         }
@@ -128,12 +143,28 @@ class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollection
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        if indexPath.row == 1 {
+        if indexPath.row == 0 {
             return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 150);
         }
         
+        if indexPath.row == 1 {
+            
+            return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 80);
+
+            
+        }
+        
         if indexPath.row == 2 {
-            return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 300);
+            
+            if dateNotifIsOn {
+                return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 300);
+
+            }else{
+                
+                return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 0);
+                
+            }
+            
         }
         
         return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 80);

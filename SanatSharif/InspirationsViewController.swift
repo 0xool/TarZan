@@ -1,9 +1,9 @@
 //
 //  InspirationsViewController.swift
-//  RWDevCon
+//  SanatSharif
 //
-//  Created by Mic Pringle on 02/03/2015.
-//  Copyright (c) 2015 Ray Wenderlich. All rights reserved.
+//  Created by CyrusREfahi on 4/12/1395 AP.
+//  Copyright © 1395 cyrus refahi. All rights reserved.
 //
 
 import UIKit
@@ -171,8 +171,13 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         
         if self.imageSet {
             
-            basketEntity.setValue(self.BasketName.text , forKey: "bImage")
-            writeImagetoFile(self.BasketName.text! , image : self.saveImage)
+            let unParsedID: String = basketEntity.objectID.URIRepresentation().absoluteString
+            let parsedID = unParsedID.stringByReplacingOccurrencesOfString("x-coredata:///Basket/", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+
+            
+            basketEntity.setValue(parsedID , forKey: "bImage")
+            print("the ID is :   \(parsedID)")
+            writeImagetoFile(parsedID , image : self.saveImage)
             
             
         }else{
@@ -237,6 +242,7 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         
         if let data = UIImagePNGRepresentation(image) {
             let filename = getDocumentsDirectory().stringByAppendingPathComponent(imageNamed)
+            print("Write filename \(filename)")
             data.writeToFile(filename, atomically: true)
         }
         
@@ -246,7 +252,7 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         
 //        let path: String? = NSBundle.mainBundle().pathForResource(imageNamed, ofType: "png", inDirectory: getDocumentsDirectory() as String)
         let path = getDocumentsDirectory().stringByAppendingPathComponent(imageNamed)
-
+        print("read filename \(path)")
         let imageFromPath = UIImage(contentsOfFile: path)!
         return imageFromPath
         
@@ -372,8 +378,8 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
         
             if basket.bImage != nil {
                 
-                print(basket.bName)
-                cell.configureCell( self.readImageFromFile(basket.bName!) , title: basket.bName! , date: basket.bDate! , personName : "Cyrus" )
+                print("================= \(basket.bImage!)")
+                cell.configureCell( self.readImageFromFile(basket.bImage!) , title: basket.bName! , date: basket.bDate! , personName : "Cyrus" )
             }else{
                 cell.configureCell(UIImage(named: "GroceryTemp3")! , title: basket.bName! , date: basket.bDate! , personName : "Cyrus")
             }
