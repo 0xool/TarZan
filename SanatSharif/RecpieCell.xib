@@ -20,69 +20,29 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H6F-0n-pHj">
                                 <rect key="frame" x="0.0" y="75" width="250" height="100"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="توضیحات :‌آيا تا به حال دوست دارید شبیه آشپز حرفه ای آشپزی کنید؟" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-M2-tel">
-                                        <rect key="frame" x="5" y="0.0" width="240" height="60"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="توضیحات :‌آيا تا به حال دوست دارید شبیه آشپز حرفه ای آشپزی کنید؟" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNq-M2-tel">
+                                        <rect key="frame" x="5" y="0.0" width="240" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="elY-6J-pJu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="elY-6J-pJu"/>
+                                            </mask>
+                                        </variation>
                                     </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="uf7-Ir-jbQ">
-                                        <rect key="frame" x="0.0" y="68" width="250" height="32"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fast-food" translatesAutoresizingMaskIntoConstraints="NO" id="dSE-Mw-rGi" customClass="RoundImageMaterial" customModule="SanatSharif" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="32" id="0h5-2R-jWH"/>
-                                                    <constraint firstAttribute="height" constant="32" id="pe4-Qb-D2B"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GroceryTemp3" translatesAutoresizingMaskIntoConstraints="NO" id="P4P-7r-4HG" customClass="RoundImageMaterial" customModule="SanatSharif" customModuleProvider="target">
-                                                <rect key="frame" x="55" y="0.0" width="32" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="32" id="60O-eS-mgS"/>
-                                                    <constraint firstAttribute="width" constant="32" id="ffT-E6-cyO"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GroceryTemp2" translatesAutoresizingMaskIntoConstraints="NO" id="eyO-ld-NdS" customClass="RoundImageMaterial" customModule="SanatSharif" customModuleProvider="target">
-                                                <rect key="frame" x="109" y="0.0" width="32" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="32" id="6lY-2s-EGW"/>
-                                                    <constraint firstAttribute="height" constant="32" id="RYF-fY-Dl9"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grocery &amp; Staples" translatesAutoresizingMaskIntoConstraints="NO" id="GeO-C4-sSK" customClass="RoundImageMaterial" customModule="SanatSharif" customModuleProvider="target">
-                                                <rect key="frame" x="164" y="0.0" width="32" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="32" id="GIx-g4-kH9"/>
-                                                    <constraint firstAttribute="height" constant="32" id="tRk-xP-4uI"/>
-                                                </constraints>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GroceryTemp1" translatesAutoresizingMaskIntoConstraints="NO" id="Gdm-2a-nDW" customClass="RoundImageMaterial" customModule="SanatSharif" customModuleProvider="target">
-                                                <rect key="frame" x="218" y="0.0" width="32" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="32" id="NzZ-MY-S5n"/>
-                                                    <constraint firstAttribute="width" constant="32" id="y9O-FN-Zry"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="uUY-qu-By5"/>
-                                        </constraints>
-                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="lNq-M2-tel" secondAttribute="trailing" constant="5" id="83L-Fe-Jmy"/>
                                     <constraint firstItem="lNq-M2-tel" firstAttribute="leading" secondItem="H6F-0n-pHj" secondAttribute="leading" constant="5" id="8mc-p2-STx"/>
+                                    <constraint firstAttribute="bottom" secondItem="lNq-M2-tel" secondAttribute="bottom" constant="5" id="AxA-jA-mkj"/>
                                     <constraint firstItem="lNq-M2-tel" firstAttribute="top" secondItem="H6F-0n-pHj" secondAttribute="top" id="Kbs-kd-8XJ"/>
-                                    <constraint firstItem="uf7-Ir-jbQ" firstAttribute="leading" secondItem="H6F-0n-pHj" secondAttribute="leading" id="OVA-fc-fkh"/>
-                                    <constraint firstAttribute="bottom" secondItem="uf7-Ir-jbQ" secondAttribute="bottom" id="e1T-Lx-8M6"/>
                                     <constraint firstAttribute="height" constant="100" id="rgO-1w-VYV"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="uH5-3k-Ayx"/>
-                                    <constraint firstAttribute="trailing" secondItem="uf7-Ir-jbQ" secondAttribute="trailing" id="xug-Jn-Xd4"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -91,6 +51,7 @@
                                 </variation>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="H6F-0n-pHj" firstAttribute="leading" secondItem="pLr-n3-oR8" secondAttribute="leading" id="I2X-jF-cfa"/>
                             <constraint firstAttribute="height" constant="250" id="IMR-vK-sL7"/>
@@ -160,15 +121,12 @@
                 <outlet property="frontConstraintY" destination="Pko-9a-H5b" id="7T0-i3-i8o"/>
                 <outlet property="frontContainerView" destination="Hb0-Xb-TeB" id="QZy-Ve-fIY"/>
                 <outlet property="imageView" destination="e1t-Dg-gby" id="t72-kd-acZ"/>
+                <outlet property="title" destination="CMf-za-uIj" id="2PO-2w-jbV"/>
             </connections>
             <point key="canvasLocation" x="562" y="242"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Grocery &amp; Staples" width="962" height="312"/>
         <image name="GroceryTemp1" width="1280" height="853"/>
-        <image name="GroceryTemp2" width="864" height="475"/>
-        <image name="GroceryTemp3" width="2048" height="1365"/>
-        <image name="fast-food" width="2880" height="1800"/>
     </resources>
 </document>

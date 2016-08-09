@@ -88,6 +88,7 @@
 		A59F3A8D1D27E7610097A1C9 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */; };
 		A5A4E3D11D55F7C100757D0E /* Basket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4E3D01D55F7C100757D0E /* Basket+CoreDataProperties.swift */; };
 		A5A4E3D31D5607DB00757D0E /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4E3D21D5607DB00757D0E /* FileManager.swift */; };
+		A5C2E1FC1D59F980000F05F0 /* RecpieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2E1FB1D59F980000F05F0 /* RecpieCategory.swift */; };
 		A5C511751D3506AE00731494 /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C511741D3506AE00731494 /* RecentSearchCell.swift */; };
 		A5CD99F01D30FB3D00CA0B96 /* UserModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */; };
 		A5CEE84E1D2B9C6200DF871B /* BasketPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE84D1D2B9C6200DF871B /* BasketPageVC.swift */; };
@@ -228,6 +229,7 @@
 		A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		A5A4E3D01D55F7C100757D0E /* Basket+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Basket+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A5A4E3D21D5607DB00757D0E /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		A5C2E1FB1D59F980000F05F0 /* RecpieCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieCategory.swift; sourceTree = "<group>"; };
 		A5C511741D3506AE00731494 /* RecentSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
 		A5C8E4DF1D364B7B00BFEE81 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelManager.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 				A57F43A11D27D2E200ED5366 /* Item.swift */,
 				A589E4B61D3CA4C40015A2B7 /* Enums.swift */,
 				A5486BEB1D3F80EA003C9057 /* DataBaseModel.swift */,
+				A5C2E1FB1D59F980000F05F0 /* RecpieCategory.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -813,6 +816,7 @@
 				A558F3FA1D434AD500346754 /* Basket.swift in Sources */,
 				A5FFB8321D55B38900FDB0FB /* BasketDescCell.swift in Sources */,
 				A56F48501D530EDE00A09303 /* BasketDetailHeaderCell.swift in Sources */,
+				A5C2E1FC1D59F980000F05F0 /* RecpieCategory.swift in Sources */,
 				A53C74EF1D291A9C007AFC96 /* MenuBarVC.swift in Sources */,
 				A531F7D31D474087006E0863 /* ElasticTextField.swift in Sources */,
 				A5F89DA51D292BE100293D58 /* RoundViewMaterial.swift in Sources */,

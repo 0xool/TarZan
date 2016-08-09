@@ -24,7 +24,35 @@ class RecpieCategoryVC:  ExpandingViewController  {
     
     var lastIndex : Int = 0
     
+    private var recpieCategory : [RecpieCategory] = [RecpieCategory]()
+    
     override func viewDidLoad() {
+        
+        let RC : RecpieCategory = RecpieCategory()
+        
+        RC.categoryDesc = ""
+        RC.categoryImage = UIImage(named: "Pizza")!
+        RC.categoryName = "Pizza"
+        recpieCategory.append(RC)
+        
+        let RC1 : RecpieCategory = RecpieCategory()
+        
+        RC1.categoryDesc = ""
+        RC1.categoryImage = UIImage(named: "Kabab")!
+        RC1.categoryName = "Kabab"
+        recpieCategory.append(RC1)
+        
+        let RC2 : RecpieCategory = RecpieCategory()
+        
+        RC2.categoryDesc = ""
+        RC2.categoryImage = UIImage(named: "Burger")!
+        RC2.categoryName = "Burger"
+        recpieCategory.append(RC2)
+        
+        
+        
+        
+        
         itemSize = CGSize(width: 250 , height: 250)
         super.viewDidLoad()
         
@@ -39,8 +67,12 @@ class RecpieCategoryVC:  ExpandingViewController  {
     }
     
     override func viewDidAppear(animated: Bool) {
-        let currentCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: 0, inSection: 0)) as! RecpieCell
         
+        if currentIndex == 0 {
+            let firstCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: 0, inSection: 0)) as! RecpieCell
+        
+            firstCell.cellIsOpen(true)
+        }
         
         /*UIView.transitionWithView(self.backGroundImage,
                                   duration:5,
@@ -82,12 +114,14 @@ class RecpieCategoryVC:  ExpandingViewController  {
     
         
         override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return 4
+            return recpieCategory.count
         }
         
         override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RecpieCell", forIndexPath: indexPath)
-            // configure cell
+            let cell = collectionView.dequeueReusableCellWithReuseIdentifier("RecpieCell", forIndexPath: indexPath) as! RecpieCell
+            let rc = recpieCategory[indexPath.row]
+            
+             cell.configureCell(rc.categoryImage , title: rc.categoryName)
             return cell
         }
     
@@ -95,13 +129,13 @@ class RecpieCategoryVC:  ExpandingViewController  {
     private func addGestureToView(toView: UIView) {
         let gesutereUp = Init(UISwipeGestureRecognizer(target: self, action: #selector(RecpieCategoryVC.swipeHandler(_:)))) {
             $0.direction = .Up
-        }
         
-        let gesutereDown = Init(UISwipeGestureRecognizer(target: self, action: #selector(RecpieCategoryVC.swipeHandler(_:)))) {
-            $0.direction = .Down
+        
+      
+      
         }
         toView.addGestureRecognizer(gesutereUp)
-        toView.addGestureRecognizer(gesutereDown)
+    
     }
     
     func swipeHandler(sender: UISwipeGestureRecognizer) {
@@ -120,18 +154,14 @@ class RecpieCategoryVC:  ExpandingViewController  {
     
     override func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
         super.collectionView(collectionView, willDisplayCell: cell, forItemAtIndexPath: indexPath)
-        let cell  = self.collectionView?.cellForItemAtIndexPath(indexPath) as? RecpieCell
-        cell?.cellIsOpen(true)
-        print("OK What is worng? :D \(indexPath.row)")
+
         
     }
     
     override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         super.scrollViewDidEndDecelerating(scrollView)
         let currentCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: currentIndex, inSection: 0)) as! RecpieCell
-        let previousCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: lastIndex, inSection: 0)) as! RecpieCell
-        
-        previousCell.cellIsOpen(false)
+
         currentCell.cellIsOpen(true)
         
         lastIndex = currentIndex
@@ -144,17 +174,15 @@ class RecpieCategoryVC:  ExpandingViewController  {
         self.backGroundImage.layer.addAnimation(transition, forKey: nil)
         
         self.backGroundImage.image = currentCell.imageView.image
+    
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
         
-//        CATransition *transition = [CATransition animation];
-//        transition.duration = 1.0f;
-//        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-//        transition.type = kCATransitionFade;
-//        
-//        [imageView.layer addAnimation:transition forKey:nil];
-//
-        
-        
-        
+        if let previousCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: currentIndex, inSection: 0)) as? RecpieCell{
+            
+            previousCell.cellIsOpen(false)
+        }
         
     }
     
