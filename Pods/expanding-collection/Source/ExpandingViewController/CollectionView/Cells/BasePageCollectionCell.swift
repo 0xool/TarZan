@@ -83,7 +83,7 @@ extension BasePageCollectionCell {
   
   private func commonInit() {
     configurationViews()
-    shadowView = createShadowViewOnView(frontContainerView)
+    //shadowView = createShadowViewOnView(frontContainerView)
   }
 
 }

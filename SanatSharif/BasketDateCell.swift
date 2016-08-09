@@ -100,12 +100,18 @@ class BasketDateCell: UICollectionViewCell , JTAppleCalendarViewDataSource , JTA
         
     }
     
+    func updateCell(){
+        
+        self.calendarView.reloadData()
+        
+    }
     
     func configureCell()  {
         self.calendarView.dataSource = self
         self.calendarView.delegate = self
         self.calendarView.registerCellViewXib(fileName: "DateCell")
         self.calendarView.registerHeaderViewXibs(fileNames: ["DateHeaderCell"])
+        
         
          calendarView.cellInset = CGPoint(x: 0, y: 0)
     }

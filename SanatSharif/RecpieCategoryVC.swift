@@ -18,9 +18,14 @@ internal func Init<Type>(value : Type, @noescape block: (object: Type) -> Void) 
 
 
 class RecpieCategoryVC:  ExpandingViewController  {
-
+    
+    @IBOutlet weak var backGroundImage : UIImageView!
+    @IBOutlet weak var backgroundBlurEffect: UIVisualEffectView!
+    
+    var lastIndex : Int = 0
+    
     override func viewDidLoad() {
-        itemSize = CGSize(width: 210, height: 211)
+        itemSize = CGSize(width: 250 , height: 250)
         super.viewDidLoad()
         
         addGestureToView(collectionView!)
@@ -28,8 +33,22 @@ class RecpieCategoryVC:  ExpandingViewController  {
         // register cell
         let nib = UINib(nibName: String(RecpieCell), bundle: nil)
         collectionView?.registerNib(nib, forCellWithReuseIdentifier: String(RecpieCell))
+        
+        
 
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        let currentCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: 0, inSection: 0)) as! RecpieCell
+        
+        
+        /*UIView.transitionWithView(self.backGroundImage,
+                                  duration:5,
+                                  options: UIViewAnimationOptions.TransitionCrossDissolve,
+                                  animations: { self.backGroundImage.image = currentCell.imageView.image },
+                                  completion: nil)
+    
+ */}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -98,15 +117,46 @@ class RecpieCategoryVC:  ExpandingViewController  {
         let open = sender.direction == .Up ? true : false
         cell.cellIsOpen(open)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
+        super.collectionView(collectionView, willDisplayCell: cell, forItemAtIndexPath: indexPath)
+        let cell  = self.collectionView?.cellForItemAtIndexPath(indexPath) as? RecpieCell
+        cell?.cellIsOpen(true)
+        print("OK What is worng? :D \(indexPath.row)")
+        
     }
-    */
+    
+    override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        super.scrollViewDidEndDecelerating(scrollView)
+        let currentCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: currentIndex, inSection: 0)) as! RecpieCell
+        let previousCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: lastIndex, inSection: 0)) as! RecpieCell
+        
+        previousCell.cellIsOpen(false)
+        currentCell.cellIsOpen(true)
+        
+        lastIndex = currentIndex
+        
+        let transition : CATransition = CATransition()
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionFade
+        
+        self.backGroundImage.layer.addAnimation(transition, forKey: nil)
+        
+        self.backGroundImage.image = currentCell.imageView.image
+        
+//        CATransition *transition = [CATransition animation];
+//        transition.duration = 1.0f;
+//        transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//        transition.type = kCATransitionFade;
+//        
+//        [imageView.layer addAnimation:transition forKey:nil];
+//
+        
+        
+        
+        
+    }
+    
 
 }

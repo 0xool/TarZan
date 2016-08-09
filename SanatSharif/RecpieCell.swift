@@ -8,17 +8,21 @@
 
 import UIKit
 import expanding_collection
+import SABlurImageView
 
 class RecpieCell: BasePageCollectionCell {
     
     @IBOutlet weak var title : UILabel!
     @IBOutlet weak var imageView : UIImageView!
     
+
     
     
-    
-    func configureCell(){
+    func configureCell(image : UIImage){
         
+        
+        
+
         
     }
     

@@ -8,7 +8,13 @@
 
 import Foundation
 
-
+class Constants {
+    
+    
 let Protocol = "https://"
 let URL = ""
 
+let screenWidth = UIScreen.mainScreen().bounds.width
+let screenHeight = UIScreen.mainScreen().bounds.height
+
+}

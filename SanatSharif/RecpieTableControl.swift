@@ -23,7 +23,7 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        headerHeight = 140
+        headerHeight = 236
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -108,7 +108,7 @@ class RecpieTableControl: ExpandingTableViewController  , UIViewControllerTransi
         
         self.navigationController?.setNavigationBarHidden(true, animated: true)
 
-        tableView.setContentOffset(CGPoint(x: 0, y: 140), animated:true)
+        tableView.setContentOffset(CGPoint(x: 0, y: 236), animated:true)
 
         
         CATransaction.begin()
