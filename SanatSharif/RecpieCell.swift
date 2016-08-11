@@ -9,12 +9,13 @@
 import UIKit
 import expanding_collection
 import SABlurImageView
+import DOFavoriteButton
 
 class RecpieCell: BasePageCollectionCell {
     
     @IBOutlet weak var title : UILabel!
     @IBOutlet weak var imageView : UIImageView!
-    
+
 
 
     func openBackView()  {
@@ -42,11 +43,14 @@ class RecpieCell: BasePageCollectionCell {
     
     func configureCell(image : UIImage , title : String){
         
+
+        
         self.imageView.image = image
         self.title.text = title
   
     }
     
+  
     
     
 }

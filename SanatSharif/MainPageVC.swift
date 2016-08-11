@@ -722,7 +722,6 @@ func animateColllection(){
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         if let touch = touches.first{
-            if #available (iOS 9.0 , *){
                 if traitCollection.forceTouchCapability == UIForceTouchCapability.Available{
                 //3D touch capable
                     let force = touch.force / touch.maximumPossibleForce
@@ -741,7 +740,7 @@ func animateColllection(){
                     
                 }
                 
-            }
+            
             
             
         }

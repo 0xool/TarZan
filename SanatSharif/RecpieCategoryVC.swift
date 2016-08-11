@@ -6,8 +6,22 @@
 //  Copyright © 2016 cyrus refahi. All rights reserved.
 //
 
+
+////////
+/*
+Snippets :
+ 
+ //        self.starBtn.addTarget(self, action: #selector(RecpieCategoryVC.starBtnClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+
+
+
+*/
+///////
+
+
 import UIKit
 import expanding_collection
+import DOFavoriteButton
 
 @warn_unused_result
 internal func Init<Type>(value : Type, @noescape block: (object: Type) -> Void) -> Type
@@ -21,6 +35,9 @@ class RecpieCategoryVC:  ExpandingViewController  {
     
     @IBOutlet weak var backGroundImage : UIImageView!
     @IBOutlet weak var backgroundBlurEffect: UIVisualEffectView!
+    @IBOutlet weak var itemBTn : UIButton!
+    
+    @IBOutlet weak var menuBtn : UIBarButtonItem!
     
     var lastIndex : Int = 0
     
@@ -49,8 +66,13 @@ class RecpieCategoryVC:  ExpandingViewController  {
         RC2.categoryName = "Burger"
         recpieCategory.append(RC2)
         
+        if self.revealViewController() != nil {
+            self.menuBtn.target = self.revealViewController()
+            self.menuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         
-        
+        self.itemBTn.transform = CGAffineTransformMakeTranslation(0, UIScreen.mainScreen().bounds.height + 100)
         
         
         itemSize = CGSize(width: 250 , height: 250)
@@ -66,14 +88,59 @@ class RecpieCategoryVC:  ExpandingViewController  {
 
     }
     
+    
+    
+    
+    override func viewDidLayoutSubviews() {
+        
+    
+        
+        
+
+        
+    }
+    
     override func viewDidAppear(animated: Bool) {
         
+        UIView.animateWithDuration(0.25, delay: 0.1, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            
+            self.itemBTn.transform = CGAffineTransformMakeTranslation(0, 0)
+            
+            }, completion: { (finished) in
+                if finished{
+                    
+                }
+            })
+            
+    
+    
+    
+            
+        
         if currentIndex == 0 {
+            
             let firstCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: 0, inSection: 0)) as! RecpieCell
+            
+            self.itemBTn.setTitle("مشاهده زیر مجموعه \(firstCell.title.text!)", forState: UIControlState.Normal)
+            
+            
+                        firstCell.cellIsOpen(true)
+                    }
+            
         
-            firstCell.cellIsOpen(true)
-        }
         
+        
+        
+        
+        
+        
+
+        
+        
+
+        
+        
+
         /*UIView.transitionWithView(self.backGroundImage,
                                   duration:5,
                                   options: UIViewAnimationOptions.TransitionCrossDissolve,
@@ -162,9 +229,20 @@ class RecpieCategoryVC:  ExpandingViewController  {
         super.scrollViewDidEndDecelerating(scrollView)
         let currentCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: currentIndex, inSection: 0)) as! RecpieCell
 
-        currentCell.cellIsOpen(true)
+       // currentCell.cellIsOpen(true)
+        
         
         lastIndex = currentIndex
+        
+        self.itemBTn.setTitle("مشاهده زیر مجموعه \(currentCell.title.text!)", forState: UIControlState.Normal)
+        UIView.animateWithDuration(0.2, animations: {
+            self.itemBTn.transform = CGAffineTransformMakeTranslation(0, 0)
+            }, completion: { (finished) in
+                if finished {
+                    currentCell.cellIsOpen(true)
+                    
+                }
+        })
         
         let transition : CATransition = CATransition()
         transition.duration = 1
@@ -182,7 +260,37 @@ class RecpieCategoryVC:  ExpandingViewController  {
         if let previousCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: currentIndex, inSection: 0)) as? RecpieCell{
             
             previousCell.cellIsOpen(false)
+            
+            UIView.animateWithDuration(0.75, animations: {
+                self.itemBTn.transform = CGAffineTransformMakeTranslation(0, UIScreen.mainScreen().bounds.height + 100)
+            })
+            
+            
         }
+        
+    }
+    
+    @IBAction func itemBtnClicked (sender : AnyObject){
+        
+        
+        UIView.animateWithDuration(0.25, animations: {
+            self.itemBTn.transform = CGAffineTransformMakeTranslation(0, UIScreen.mainScreen().bounds.height + 100)
+            }, completion: { (finished) in
+                if finished {
+                   
+                    let cell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: self.currentIndex, inSection: 0)) as? RecpieCell
+                    
+                    if cell!.isOpened == false {
+                        cell!.cellIsOpen(true)
+                    } else {
+                        let vc: ExpandingTableViewController = self.getViewController()
+                        self.pushToViewController(vc)
+                    }
+                    
+                }
+        })
+        
+        
         
     }
     

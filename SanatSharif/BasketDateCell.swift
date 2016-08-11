@@ -51,7 +51,7 @@ class BasketDateCell: UICollectionViewCell , JTAppleCalendarViewDataSource , JTA
         
         let year =  components!.year
         let month = components!.month
-        let day = components!.day
+       // let day = components!.day
         
         switch month {
         case 1:

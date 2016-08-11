@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DOFavoriteButton
 
 
 
@@ -26,6 +27,10 @@ extension UIPanGestureRecognizer {
 class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSource    {
     
     
+    
+    @IBOutlet weak var shareBtn : UIButton!
+    @IBOutlet weak var likeBtn : UIButton!
+    @IBOutlet weak var favBtn : UIButton!
     
     @IBOutlet weak var infoPanelView: UIView!
 //    @IBOutlet weak var scrollView: UIScrollView!
@@ -50,6 +55,10 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
         tableView.delegate = self
         tableView.dataSource = self
         
+        self.favBtn.addTarget(self, action: #selector(RecpieDetailVC.favBtnClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        self.likeBtn.addTarget(self, action: #selector(RecpieDetailVC.likeBtnClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        self.shareBtn.addTarget(self, action: #selector(RecpieDetailVC.shareBtnClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        
         self.infoPanelHeightConstraint.constant = 0
         
         self.automaticallyAdjustsScrollViewInsets = false
@@ -70,6 +79,9 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
 
         
         backBtnView.transform = CGAffineTransformMakeTranslation(0, -100)
+        favBtn.transform = CGAffineTransformMakeTranslation(0, -100)
+        likeBtn.transform = CGAffineTransformMakeTranslation(0, -100)
+        shareBtn.transform = CGAffineTransformMakeTranslation(0, -100)
         
         
             }
@@ -223,6 +235,9 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
         
         UIView.animateWithDuration(0.2, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
             self.backBtnView.transform = CGAffineTransformMakeTranslation(0, 0)
+            self.favBtn.transform = CGAffineTransformMakeTranslation(0, 0)
+            self.likeBtn.transform = CGAffineTransformMakeTranslation(0, 0)
+            self.shareBtn.transform = CGAffineTransformMakeTranslation(0, 0)
             }, completion: nil)
       
     }
@@ -231,13 +246,44 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
         
         UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
             self.backBtnView.transform = CGAffineTransformMakeTranslation(0, -100)
+            self.favBtn.transform = CGAffineTransformMakeTranslation(0, -100)
+            self.likeBtn.transform = CGAffineTransformMakeTranslation(0, -100)
+            self.shareBtn.transform = CGAffineTransformMakeTranslation(0, -100)
             self.tableView.setContentOffset(CGPoint(x: 0, y: 0), animated:true)
 
             }, completion: completion)
         
     }
     
-    func tableView(_ tableView: UITableView,
+    func favBtnClicked(sender : DOFavoriteButton)  {
+        
+        if sender.selected {
+            sender.deselect()
+        } else {
+            sender.select()
+        }
+    }
+    
+    func likeBtnClicked(sender : DOFavoriteButton)  {
+        
+        if sender.selected {
+            sender.deselect()
+        } else {
+            sender.select()
+        }
+    }
+    
+    func shareBtnClicked(sender : DOFavoriteButton)  {
+        
+        if sender.selected {
+            sender.deselect()
+        } else {
+            sender.select()
+        }
+    }
+    
+    
+    func tableView(tableView: UITableView,
                               heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
        
         
@@ -416,6 +462,9 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
         UIView.animateWithDuration(0.4, animations: {
             
             self.backBtnView.transform = CGAffineTransformMakeTranslation(0, -100)
+            self.favBtn.transform = CGAffineTransformMakeTranslation(0, -100)
+            self.likeBtn.transform = CGAffineTransformMakeTranslation(0, -100)
+            self.shareBtn.transform = CGAffineTransformMakeTranslation(0, -100)
         })
         
      CATransaction.commit()

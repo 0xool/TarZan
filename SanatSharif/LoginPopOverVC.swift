@@ -245,7 +245,7 @@ class LoginPopOverVC: UIViewController {
     
     func keyboardWillShow(notification: NSNotification) {
         
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
+        
             if view.frame.origin.y == 0{                
                 UIView.animateWithDuration(0.1, animations: { () -> Void in
                     self.view.frame.origin.y -= 100
@@ -257,7 +257,7 @@ class LoginPopOverVC: UIViewController {
             else {
                 
             }
-        }
+        
         
     }
     

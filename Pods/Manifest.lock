@@ -11,10 +11,15 @@ PODS:
   - IOStickyHeader (0.3.0)
   - JTAppleCalendar (4.1.2)
   - JTMaterialSwitch (1.1)
+  - PureLayout (3.0.2)
   - RAMAnimatedTabBarController (1.5.3)
   - RZTransitions (1.2.1)
   - SABlurImageView (2.1.1)
   - SQLite.swift (0.10.1)
+  - SwiftyButton (0.4.0):
+    - SwiftyButton/CustomContent (= 0.4.0)
+  - SwiftyButton/CustomContent (0.4.0):
+    - PureLayout (~> 3.0)
   - TextFieldEffects (1.2.0)
 
 DEPENDENCIES:
@@ -32,6 +37,7 @@ DEPENDENCIES:
   - RZTransitions (~> 1.2)
   - SABlurImageView (~> 2.1)
   - SQLite.swift (~> 0.10.1)
+  - SwiftyButton
   - TextFieldEffects
 
 SPEC CHECKSUMS:
@@ -45,12 +51,14 @@ SPEC CHECKSUMS:
   IOStickyHeader: 4550b071f8f3df73a361a3152aab8e5a3bae1ea8
   JTAppleCalendar: f705daea0c7e833a3dbd88aca753c425b565f2c5
   JTMaterialSwitch: cad8093c3773ff9f6c60005c98d269eb869b5e04
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   RAMAnimatedTabBarController: 04b624cf8958a0032bf7fa9c0f2c515f59d30b9c
   RZTransitions: 0e0013fda6989ee84dc5e44dca79fd539e1a975a
   SABlurImageView: 60fd7f18c20b4bb2bb6b1e4446464d6a480c5754
   SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
+  SwiftyButton: fffcc0d82b2b5f9ec1681f20ee9c67bed0d5c73b
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: bb9dcbcf4a5377447c56407490b1785d36f7f84f
+PODFILE CHECKSUM: 3197f96849e89eed0495271bb1282536751e5364
 
 COCOAPODS: 1.0.1

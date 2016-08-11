@@ -72,12 +72,7 @@ class LoginPageController: UIViewController {
             
         }else{
             
-            let alert = UIAlertView()
-            alert.title = "اطلاعات درست وارد نشده است"
-            alert.message = "لطفاً نام کاربری و رمز خود را وارد کنید"
-            alert.addButtonWithTitle("تایید")
-            alert.show()
-            
+      
         }
         
     
