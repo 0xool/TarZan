@@ -6,6 +6,8 @@ target 'SanatSharif' do
   use_frameworks!
 
   # Pods for SanatSharif
+  pod "GMStepper"
+  pod 'FoldingCell'
   pod 'SwiftyButton'
   pod 'JTAppleCalendar', '~> 4.1'
   pod 'IOStickyHeader', '~> 0.3'

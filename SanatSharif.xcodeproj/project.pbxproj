@@ -108,6 +108,10 @@
 		A5DEA3F91D4616FE005218A8 /* RecpieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA3F81D4616FE005218A8 /* RecpieCell.swift */; };
 		A5DEA3FB1D4618DB005218A8 /* RecpieTableControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEA3FA1D4618DB005218A8 /* RecpieTableControl.swift */; };
 		A5E27CA71D2A5E5B00E5DF37 /* MainPageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E27CA61D2A5E5B00E5DF37 /* MainPageNavigationController.swift */; };
+		A5EBA8701D5F0859003CEC91 /* BasketContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA86F1D5F0859003CEC91 /* BasketContainerViewController.swift */; };
+		A5EBA8721D5F0B32003CEC91 /* BasketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EBA8711D5F0B32003CEC91 /* BasketItemCell.swift */; };
+		A5F1B2F51D5EEE32006F38E8 /* BasketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F1B2F41D5EEE32006F38E8 /* BasketVC.swift */; };
+		A5F1B2F91D5EF060006F38E8 /* BasketFoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F1B2F81D5EF060006F38E8 /* BasketFoldingCell.swift */; };
 		A5F89DA51D292BE100293D58 /* RoundViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F89DA41D292BE100293D58 /* RoundViewMaterial.swift */; };
 		A5F89DA71D29325200293D58 /* MenuTableViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F89DA61D29325200293D58 /* MenuTableViewMaterial.swift */; };
 		A5FFB8321D55B38900FDB0FB /* BasketDescCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FFB8311D55B38900FDB0FB /* BasketDescCell.swift */; };
@@ -250,6 +254,10 @@
 		A5DEA3F81D4616FE005218A8 /* RecpieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieCell.swift; sourceTree = "<group>"; };
 		A5DEA3FA1D4618DB005218A8 /* RecpieTableControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieTableControl.swift; sourceTree = "<group>"; };
 		A5E27CA61D2A5E5B00E5DF37 /* MainPageNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageNavigationController.swift; sourceTree = "<group>"; };
+		A5EBA86F1D5F0859003CEC91 /* BasketContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketContainerViewController.swift; sourceTree = "<group>"; };
+		A5EBA8711D5F0B32003CEC91 /* BasketItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketItemCell.swift; sourceTree = "<group>"; };
+		A5F1B2F41D5EEE32006F38E8 /* BasketVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketVC.swift; sourceTree = "<group>"; };
+		A5F1B2F81D5EF060006F38E8 /* BasketFoldingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketFoldingCell.swift; sourceTree = "<group>"; };
 		A5F89DA41D292BE100293D58 /* RoundViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViewMaterial.swift; sourceTree = "<group>"; };
 		A5F89DA61D29325200293D58 /* MenuTableViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewMaterial.swift; sourceTree = "<group>"; };
 		A5FFB8311D55B38900FDB0FB /* BasketDescCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketDescCell.swift; sourceTree = "<group>"; };
@@ -417,6 +425,8 @@
 				A507173E1D55C775007E4BE5 /* BasketDateCell.swift */,
 				A50717401D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift */,
 				A5D543D51D574F2300D47011 /* RemindMeCell.swift */,
+				A5F1B2F81D5EF060006F38E8 /* BasketFoldingCell.swift */,
+				A5EBA8711D5F0B32003CEC91 /* BasketItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -445,6 +455,8 @@
 				A5DEA3F61D4614F3005218A8 /* RecpieCategoryVC.swift */,
 				A5DEA3FA1D4618DB005218A8 /* RecpieTableControl.swift */,
 				A531F7D61D476C85006E0863 /* RecpieDetailVC.swift */,
+				A5F1B2F41D5EEE32006F38E8 /* BasketVC.swift */,
+				A5EBA86F1D5F0859003CEC91 /* BasketContainerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -824,6 +836,7 @@
 				A53C74E21D28F0A0007AFC96 /* BackButtonMaterial.swift in Sources */,
 				A55E278A1D3249F50081F302 /* MainpageCollectionViewLayout.swift in Sources */,
 				A5DEA3F91D4616FE005218A8 /* RecpieCell.swift in Sources */,
+				A5F1B2F91D5EF060006F38E8 /* BasketFoldingCell.swift in Sources */,
 				A5E27CA71D2A5E5B00E5DF37 /* MainPageNavigationController.swift in Sources */,
 				A589E4B51D3C9F140015A2B7 /* BuyAsGuestVC.swift in Sources */,
 				A57F439E1D27D12200ED5366 /* Demention.swift in Sources */,
@@ -833,6 +846,7 @@
 				A53C74ED1D2918B7007AFC96 /* RoundImageMaterial.swift in Sources */,
 				A5C511751D3506AE00731494 /* RecentSearchCell.swift in Sources */,
 				A53C74E41D28FA0A007AFC96 /* RegisteringFormVC.swift in Sources */,
+				A5F1B2F51D5EEE32006F38E8 /* BasketVC.swift in Sources */,
 				A51B89351D30DB320049E6F7 /* BasketInfoTableViewVC.swift in Sources */,
 				A5DEA3F71D4614F3005218A8 /* RecpieCategoryVC.swift in Sources */,
 				A5725CD11D40AD6B00DCE7A6 /* UIColor+Palette.swift in Sources */,
@@ -863,6 +877,7 @@
 				A5CEE8521D2BA65100DF871B /* RoundLabel.swift in Sources */,
 				A518C0701D3B5BAF0004D036 /* LoginControlVC.swift in Sources */,
 				A5A4E3D31D5607DB00757D0E /* FileManager.swift in Sources */,
+				A5EBA8701D5F0859003CEC91 /* BasketContainerViewController.swift in Sources */,
 				A589E4B71D3CA4C40015A2B7 /* Enums.swift in Sources */,
 				A55E27881D323E3B0081F302 /* BannerCell.swift in Sources */,
 				A5DAAD741D3A1EDC0033DDBB /* infoCellMaterial.swift in Sources */,
@@ -889,6 +904,7 @@
 				A5CEE84E1D2B9C6200DF871B /* BasketPageVC.swift in Sources */,
 				A589E4B91D3CB9290015A2B7 /* BuyWindowMaterial.swift in Sources */,
 				A58706DD1D311701000D20C9 /* PrudoctPagePlusMaterial.swift in Sources */,
+				A5EBA8721D5F0B32003CEC91 /* BasketItemCell.swift in Sources */,
 				A5725CCD1D40AD2C00DCE7A6 /* InspirationsViewController.swift in Sources */,
 				A56722211D29218A009B42BF /* MainPageVC.swift in Sources */,
 				A54672E01D48CEED005662B2 /* IngredientSectionHeaderCell.swift in Sources */,

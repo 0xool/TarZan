@@ -5,6 +5,8 @@ PODS:
   - DOFavoriteButton (0.0.4)
   - DynamicBlurView (1.1.1)
   - expanding-collection (0.3.2)
+  - FoldingCell (1.0.0)
+  - GMStepper (1.2.0)
   - ImageSlideshow (0.5.0):
     - ImageSlideshow/Core (= 0.5.0)
   - ImageSlideshow/Core (0.5.0)
@@ -29,6 +31,8 @@ DEPENDENCIES:
   - DOFavoriteButton
   - DynamicBlurView (~> 1.1)
   - expanding-collection (~> 0.3)
+  - FoldingCell
+  - GMStepper
   - ImageSlideshow (~> 0.4)
   - IOStickyHeader (~> 0.3)
   - JTAppleCalendar (~> 4.1)
@@ -47,6 +51,8 @@ SPEC CHECKSUMS:
   DOFavoriteButton: 866e15af173d2dd5233971a1f657a5f31d2491d5
   DynamicBlurView: 300e709fd793f85ee53b03bf5ffede4d7b2fc0a2
   expanding-collection: 0a237d343a1d71472a312296a8e1359be01244ab
+  FoldingCell: ca0b0f73a853143bf7d968c04a6604d25fbf1af7
+  GMStepper: e743b5648ae5fe877e33d3b51b5aa2df432f179d
   ImageSlideshow: b2662127d093a42d9595a6b40af2817d064df251
   IOStickyHeader: 4550b071f8f3df73a361a3152aab8e5a3bae1ea8
   JTAppleCalendar: f705daea0c7e833a3dbd88aca753c425b565f2c5
@@ -59,6 +65,6 @@ SPEC CHECKSUMS:
   SwiftyButton: fffcc0d82b2b5f9ec1681f20ee9c67bed0d5c73b
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: 3197f96849e89eed0495271bb1282536751e5364
+PODFILE CHECKSUM: 27ecc3bd252d8983867aff713384c137891b4c5c
 
 COCOAPODS: 1.0.1
