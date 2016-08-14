@@ -21,8 +21,16 @@ class BasketFoldingCell: FoldingCell , UITableViewDataSource , UITableViewDelega
             self.containerHeightConstraint.constant = self.containerTableView.contentSize.height + extraHeight
             print(self.containerTableView.contentSize.height + extraHeight)
             let tempHeight = self.containerTableView.contentSize.height + extraHeight
-            itemCount = Int(round( tempHeight / 100.0)) // Decides number of folds for cell
+            itemCount = Int(round( tempHeight / 90))  // Decides number of folds for cell
             return self.containerTableView.contentSize.height + extraHeight
+        }
+        
+    }
+    
+    var heightValue : CGFloat {
+        
+        get{
+           return self.containerTableView.contentSize.height
         }
         
     }
@@ -34,8 +42,12 @@ class BasketFoldingCell: FoldingCell , UITableViewDataSource , UITableViewDelega
         return cell!
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 30
     }
     
     

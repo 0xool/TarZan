@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OlV-F9-VyL" customClass="BasketFooterView" customModule="SanatSharif" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUI-E9-lBL">
+                    <rect key="frame" x="0.0" y="595" width="600" height="5"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="BYF-pd-4YB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tp-ia-nkW" customClass="BasketFooterBackGroundView" customModule="SanatSharif" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="595"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جمع کل :‌  ۲۰۰۰۰۰۰" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10g-lB-agA">
+                    <rect key="frame" x="471" y="290" width="120.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120.5" id="AMI-To-yqM"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ORm-Em-pTi"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120.5" id="OSU-Ys-K64"/>
+                        <constraint firstAttribute="height" constant="21" id="a0a-7l-BkL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fju-fn-Ius" customClass="SwiftyButton" customModule="SwiftyButton">
+                    <rect key="frame" x="12" y="280" width="443.5" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="3it-DX-TOG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="خرید"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                            <color key="value" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.0" green="0.33325320512820511" blue="0.16765878361844988" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowHeight">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="10g-lB-agA" firstAttribute="centerY" secondItem="OlV-F9-VyL" secondAttribute="centerY" id="6Uz-JF-YW2"/>
+                <constraint firstItem="IUI-E9-lBL" firstAttribute="leading" secondItem="OlV-F9-VyL" secondAttribute="leading" id="CjW-Hl-2Y6"/>
+                <constraint firstItem="Fju-fn-Ius" firstAttribute="leading" secondItem="OlV-F9-VyL" secondAttribute="leading" constant="12" id="DLi-Hy-lNp"/>
+                <constraint firstItem="Fju-fn-Ius" firstAttribute="leading" secondItem="OlV-F9-VyL" secondAttribute="leading" constant="12" id="E3d-ep-SNN"/>
+                <constraint firstAttribute="bottom" secondItem="0tp-ia-nkW" secondAttribute="bottom" id="NXX-bO-vHq"/>
+                <constraint firstAttribute="bottom" secondItem="IUI-E9-lBL" secondAttribute="bottom" id="OxQ-QC-cst"/>
+                <constraint firstItem="IUI-E9-lBL" firstAttribute="top" secondItem="0tp-ia-nkW" secondAttribute="bottom" id="PHa-rK-nEE"/>
+                <constraint firstItem="Fju-fn-Ius" firstAttribute="centerY" secondItem="OlV-F9-VyL" secondAttribute="centerY" id="QKd-Va-QKy"/>
+                <constraint firstAttribute="trailing" secondItem="IUI-E9-lBL" secondAttribute="trailing" id="Z3C-5p-Wug"/>
+                <constraint firstAttribute="trailing" secondItem="0tp-ia-nkW" secondAttribute="trailing" id="Zow-zj-Cql"/>
+                <constraint firstItem="10g-lB-agA" firstAttribute="leading" secondItem="Fju-fn-Ius" secondAttribute="trailing" constant="16" id="aeM-ZS-jiY"/>
+                <constraint firstItem="10g-lB-agA" firstAttribute="leading" secondItem="IUI-E9-lBL" secondAttribute="trailing" id="cu7-6D-f6m"/>
+                <constraint firstItem="0tp-ia-nkW" firstAttribute="top" secondItem="OlV-F9-VyL" secondAttribute="top" id="jZz-nf-7Lx"/>
+                <constraint firstItem="0tp-ia-nkW" firstAttribute="leading" secondItem="OlV-F9-VyL" secondAttribute="leading" id="lse-a7-hma"/>
+                <constraint firstAttribute="trailing" secondItem="Fju-fn-Ius" secondAttribute="trailing" constant="80" id="vrI-40-zfP"/>
+                <constraint firstItem="Fju-fn-Ius" firstAttribute="leading" secondItem="OlV-F9-VyL" secondAttribute="leading" constant="80" id="wWc-lO-x4t"/>
+                <constraint firstItem="Fju-fn-Ius" firstAttribute="centerX" secondItem="OlV-F9-VyL" secondAttribute="centerX" id="xdp-ig-ZbR"/>
+                <constraint firstAttribute="trailing" secondItem="10g-lB-agA" secondAttribute="trailing" constant="8" id="yOt-1K-YZP"/>
+                <constraint firstAttribute="bottom" secondItem="0tp-ia-nkW" secondAttribute="bottom" id="zsN-1U-hd6"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="NXX-bO-vHq"/>
+                    <exclude reference="zsN-1U-hd6"/>
+                    <exclude reference="vrI-40-zfP"/>
+                    <exclude reference="wWc-lO-x4t"/>
+                    <exclude reference="xdp-ig-ZbR"/>
+                    <exclude reference="cu7-6D-f6m"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="273" y="213"/>
+        </view>
+    </objects>
+</document>

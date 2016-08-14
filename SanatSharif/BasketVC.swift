@@ -48,7 +48,7 @@ class BasketVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
          let cell = self.tableView.dequeueReusableCellWithIdentifier("FoldingCell") as? BasketFoldingCell
             cell?.configureCell()
         
-            
+        
            
             return cell!
         }
@@ -63,7 +63,7 @@ class BasketVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
         
         var duration = 0.0
         if cellHeights[indexPath.row] == kCloseCellHeight { // open cell
-            cellHeights[indexPath.row] = kOpenCellHeight
+            cellHeights[indexPath.row] = cell.height + 10
             
             cell.selectedAnimation(true, animated: true, completion: nil)
             duration = 0.5
