@@ -68,7 +68,7 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         
-            return 61.0
+            return 50
         
         
         
@@ -94,6 +94,7 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
         
         cell.contentView.backgroundColor = UIColor.darkGrayColor()
         
+        
         return cell
     }
     
@@ -117,7 +118,16 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
         
             print(self.selectedSection)
             
-            self.tableView.reloadSections(NSIndexSet(index : self.selectedSection), withRowAnimation: .Fade)
+            
+            UIView.animateWithDuration(0.1) {
+                
+                self.tableView.beginUpdates()
+                self.tableView.reloadSections(NSIndexSet(index : self.selectedSection), withRowAnimation: .Fade)
+                //self.tableView.headerViewForSection(self.selectedSection)?.layoutSubviews()
+                self.tableView.endUpdates()
+                
+            }
+            
            
         }else{
             self.selectedSection = -1

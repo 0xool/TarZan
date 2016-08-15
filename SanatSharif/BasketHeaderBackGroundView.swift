@@ -18,7 +18,6 @@ class BasketHeaderBackGroundView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        if shadowLayer == nil {
             shadowLayer = CAShapeLayer()
             shadowLayer.path = UIBezierPath(roundedRect: self.bounds,
                                             byRoundingCorners: [.TopRight, .TopLeft],
@@ -34,7 +33,10 @@ class BasketHeaderBackGroundView: UIView {
             
             //layer.insertSublayer(shadowLayer, atIndex: 0)
             layer.insertSublayer(shadowLayer, below: nil) // also works
-        }
+        
     }
+    
+   
+    
 
 }

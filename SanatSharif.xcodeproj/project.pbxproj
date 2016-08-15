@@ -11,6 +11,7 @@
 		4CE8DC967222F2AC50799928 /* Pods_SanatSharif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C83F9AEE80427D627FE9D25 /* Pods_SanatSharif.framework */; };
 		A507173F1D55C775007E4BE5 /* BasketDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507173E1D55C775007E4BE5 /* BasketDateCell.swift */; };
 		A50717411D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50717401D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift */; };
+		A511D5561D61A6C000AA5424 /* RamItemHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511D5551D61A6C000AA5424 /* RamItemHandler.swift */; };
 		A518C0701D3B5BAF0004D036 /* LoginControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518C06F1D3B5BAF0004D036 /* LoginControlVC.swift */; };
 		A518C0721D3BA63A0004D036 /* LoginPopOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518C0711D3BA63A0004D036 /* LoginPopOverVC.swift */; };
 		A51B89351D30DB320049E6F7 /* BasketInfoTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B89341D30DB320049E6F7 /* BasketInfoTableViewVC.swift */; };
@@ -40,6 +41,7 @@
 		A54937231D472F8E007785AA /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54937221D472F8E007785AA /* GraphView.swift */; };
 		A5502ADB1D28D0D300B559CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5502ADA1D28D0D300B559CD /* Constants.swift */; };
 		A5502ADD1D28D17B00B559CD /* LoginPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5502ADC1D28D17B00B559CD /* LoginPageController.swift */; };
+		A55517D41D61C78D003B4962 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55517D31D61C78D003B4962 /* QRViewController.swift */; };
 		A558F3F61D43479800346754 /* BasketToBuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A558F3F41D43479800346754 /* BasketToBuy.xcdatamodeld */; };
 		A558F3FA1D434AD500346754 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A558F3F81D434AD500346754 /* Basket.swift */; };
 		A558F3FC1D43598500346754 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A558F3FB1D43598500346754 /* CoreDataController.swift */; };
@@ -53,7 +55,7 @@
 		A5643C341D607B3B00C74624 /* BasketHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5643C331D607B3B00C74624 /* BasketHeaderView.xib */; };
 		A5643C361D607D7700C74624 /* BasketFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5643C351D607D7700C74624 /* BasketFooterView.xib */; };
 		A5643C381D607ED800C74624 /* BasketFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5643C371D607ED800C74624 /* BasketFooterView.swift */; };
-		A5643C3A1D60952000C74624 /* BasketBackGroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5643C391D60952000C74624 /* BasketBackGroundView.swift */; };
+		A5643C3A1D60952000C74624 /* BasketFooterBackGroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5643C391D60952000C74624 /* BasketFooterBackGroundView.swift */; };
 		A5643C3C1D6097C500C74624 /* BasketHeaderBackGroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5643C3B1D6097C500C74624 /* BasketHeaderBackGroundView.swift */; };
 		A56722211D29218A009B42BF /* MainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56722201D29218A009B42BF /* MainPageVC.swift */; };
 		A56F48501D530EDE00A09303 /* BasketDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56F484F1D530EDE00A09303 /* BasketDetailHeaderCell.swift */; };
@@ -153,6 +155,7 @@
 		9C83F9AEE80427D627FE9D25 /* Pods_SanatSharif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanatSharif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A507173E1D55C775007E4BE5 /* BasketDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketDateCell.swift; sourceTree = "<group>"; };
 		A50717401D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViewWithShadowMaterial.swift; sourceTree = "<group>"; };
+		A511D5551D61A6C000AA5424 /* RamItemHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RamItemHandler.swift; sourceTree = "<group>"; };
 		A518C06F1D3B5BAF0004D036 /* LoginControlVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControlVC.swift; sourceTree = "<group>"; };
 		A518C0711D3BA63A0004D036 /* LoginPopOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPopOverVC.swift; sourceTree = "<group>"; };
 		A51B89341D30DB320049E6F7 /* BasketInfoTableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketInfoTableViewVC.swift; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 		A54937221D472F8E007785AA /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		A5502ADA1D28D0D300B559CD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5502ADC1D28D17B00B559CD /* LoginPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageController.swift; sourceTree = "<group>"; };
+		A55517D31D61C78D003B4962 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		A558F3F51D43479800346754 /* BasketToBuy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasketToBuy.xcdatamodel; sourceTree = "<group>"; };
 		A558F3F81D434AD500346754 /* Basket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		A558F3FB1D43598500346754 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
@@ -203,7 +207,7 @@
 		A5643C331D607B3B00C74624 /* BasketHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasketHeaderView.xib; sourceTree = "<group>"; };
 		A5643C351D607D7700C74624 /* BasketFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasketFooterView.xib; sourceTree = "<group>"; };
 		A5643C371D607ED800C74624 /* BasketFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketFooterView.swift; sourceTree = "<group>"; };
-		A5643C391D60952000C74624 /* BasketBackGroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketBackGroundView.swift; sourceTree = "<group>"; };
+		A5643C391D60952000C74624 /* BasketFooterBackGroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketFooterBackGroundView.swift; sourceTree = "<group>"; };
 		A5643C3B1D6097C500C74624 /* BasketHeaderBackGroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketHeaderBackGroundView.swift; sourceTree = "<group>"; };
 		A56722201D29218A009B42BF /* MainPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageVC.swift; sourceTree = "<group>"; };
 		A56F484F1D530EDE00A09303 /* BasketDetailHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketDetailHeaderCell.swift; sourceTree = "<group>"; };
@@ -442,8 +446,9 @@
 				A5F1B2F81D5EF060006F38E8 /* BasketFoldingCell.swift */,
 				A5EBA8711D5F0B32003CEC91 /* BasketItemCell.swift */,
 				A5E224F91D60535300091E7F /* BasketHeaderCell.swift */,
-				A5643C391D60952000C74624 /* BasketBackGroundView.swift */,
+				A5643C391D60952000C74624 /* BasketFooterBackGroundView.swift */,
 				A5643C3B1D6097C500C74624 /* BasketHeaderBackGroundView.swift */,
+				A511D5551D61A6C000AA5424 /* RamItemHandler.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 				A531F7D61D476C85006E0863 /* RecpieDetailVC.swift */,
 				A5F1B2F41D5EEE32006F38E8 /* BasketVC.swift */,
 				A5EBA86F1D5F0859003CEC91 /* BasketViewController.swift */,
+				A55517D31D61C78D003B4962 /* QRViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -881,6 +887,7 @@
 				A5502ADB1D28D0D300B559CD /* Constants.swift in Sources */,
 				A558F3F61D43479800346754 /* BasketToBuy.xcdatamodeld in Sources */,
 				A57C1BD01D3E3285009A5D5A /* SignUpTableVC.swift in Sources */,
+				A55517D41D61C78D003B4962 /* QRViewController.swift in Sources */,
 				A5E224FA1D60535300091E7F /* BasketHeaderCell.swift in Sources */,
 				A51B89371D30E1D50049E6F7 /* AddressPickerView.swift in Sources */,
 				A577652E1D4F14ED0076A1F5 /* RelatedCollectionCell.swift in Sources */,
@@ -924,7 +931,7 @@
 				A57F438D1D27C87400ED5366 /* List.swift in Sources */,
 				A5204E691D44978B0016EC88 /* basketDetailVC.swift in Sources */,
 				A57F439C1D27D08100ED5366 /* Picture.swift in Sources */,
-				A5643C3A1D60952000C74624 /* BasketBackGroundView.swift in Sources */,
+				A5643C3A1D60952000C74624 /* BasketFooterBackGroundView.swift in Sources */,
 				A57F43961D27CD3800ED5366 /* User.swift in Sources */,
 				A5F89DA71D29325200293D58 /* MenuTableViewMaterial.swift in Sources */,
 				A5725CDF1D40AFC600DCE7A6 /* UltravisualLayout.swift in Sources */,
@@ -943,6 +950,7 @@
 				A5D543D61D574F2300D47011 /* RemindMeCell.swift in Sources */,
 				A5725CD71D40ADCA00DCE7A6 /* UIImage+Decompression.swift in Sources */,
 				A57F43921D27CAB300ED5366 /* Slide.swift in Sources */,
+				A511D5561D61A6C000AA5424 /* RamItemHandler.swift in Sources */,
 				A518C0721D3BA63A0004D036 /* LoginPopOverVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

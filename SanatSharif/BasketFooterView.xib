@@ -20,6 +20,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0tp-ia-nkW" customClass="BasketFooterBackGroundView" customModule="SanatSharif" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="595"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جمع کل :‌  ۲۰۰۰۰۰۰" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10g-lB-agA">
                     <rect key="frame" x="471" y="290" width="120.5" height="21"/>
