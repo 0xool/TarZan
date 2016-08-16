@@ -6,12 +6,12 @@ target 'SanatSharif' do
   use_frameworks!
 
   # Pods for SanatSharif
+  pod 'TextFieldEffects', '~> 1.2'
   pod "GMStepper"
   pod 'FoldingCell'
   pod 'SwiftyButton'
   pod 'JTAppleCalendar', '~> 4.1'
   pod 'IOStickyHeader', '~> 0.3'
-  pod "TextFieldEffects"
   pod 'AMViralSwitch'
   pod "JTMaterialSwitch"
   pod 'DOFavoriteButton'

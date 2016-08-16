@@ -11,6 +11,8 @@ import UIKit
 class BasketViewController: UIViewController , UITableViewDelegate , UITableViewDataSource  {
     
     @IBOutlet weak var tableView : UITableView!
+    @IBOutlet weak var menuBTN: UIBarButtonItem!
+
     
     private var sizes : [Int]! = [Int]()
     private var selectedSection : Int! = -1
@@ -34,6 +36,12 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
         let footerNib = UINib(nibName: "BasketFooterView", bundle: NSBundle.mainBundle())
         self.tableView.registerNib(footerNib, forHeaderFooterViewReuseIdentifier: "BasketFooterView")
 
+        if self.revealViewController() != nil{
+            
+            menuBTN.target = self.revealViewController()
+            menuBTN.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
         
     }
 
@@ -93,7 +101,7 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
         let cell = self.tableView.dequeueReusableHeaderFooterViewWithIdentifier("BasketFooterView") as! BasketFooterView
         
         cell.contentView.backgroundColor = UIColor.darkGrayColor()
-        
+        cell.configureCell(section, basketViewController: self)
         
         return cell
     }
@@ -133,15 +141,28 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
             self.selectedSection = -1
             self.tableView.reloadData()
         }
+    }
     
+    
+    func loadAuthenticationView(){
         
-       
+        performSegueWithIdentifier("loadAuthenthicat", sender: nil)
         
-        
-
-      
-        
-
+    }
+    
+//=======================================================================================================
+//Summary : here we Implement the segue action for loading productDetail View
+//Implementation :
+//Details : we pop the view not show(we do not stack it!!!)
+//=======================================================================================================
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "loadAuthenthicat" {
+            if let productDetailVC = segue.destinationViewController as? LoginControlVC {
+//                if let product = sender as? Product {
+//                    productDetailVC.product = product
+//                }
+            }
+        }
     }
     
     

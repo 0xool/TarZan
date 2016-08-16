@@ -16,6 +16,8 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var AddImageBtn: UIButton!
+    @IBOutlet weak var menuBTN: UIBarButtonItem!
+
   
     @IBOutlet weak var BasketName: UITextField!
     @IBOutlet weak var addBasketView: MediumWindowViewMaterial!
@@ -48,9 +50,12 @@ class InspirationsViewController: UIViewController  , UICollectionViewDelegate ,
     self.personName.delegate = self
     self._description.delegate = self
     
-   
-    
-    
+    if self.revealViewController() != nil{
+        
+        menuBTN.target = self.revealViewController()
+        menuBTN.action = #selector(SWRevealViewController.revealToggle(_:))
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    }
     
     NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(InspirationsViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
     NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(InspirationsViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)

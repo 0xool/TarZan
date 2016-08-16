@@ -10,6 +10,33 @@ import UIKit
 
 class BasketFooterView: UITableViewHeaderFooterView {
 
+    
+    
+    private var cart : Cart = Cart()
+    private var number : Int!
+    private var basketViewController : BasketViewController!
+    
+    
+    func configureCell (number : Int , basketViewController : BasketViewController) {
+        
+        self.number = number
+        self.basketViewController = basketViewController
+        
+    }
+    
+    @IBAction func buyBtnClicked (sender : AnyObject){
+    
+        self.basketViewController.loadAuthenticationView()
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

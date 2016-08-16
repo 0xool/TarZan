@@ -42,7 +42,7 @@ DEPENDENCIES:
   - SABlurImageView (~> 2.1)
   - SQLite.swift (~> 0.10.1)
   - SwiftyButton
-  - TextFieldEffects
+  - TextFieldEffects (~> 1.2)
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
@@ -65,6 +65,6 @@ SPEC CHECKSUMS:
   SwiftyButton: fffcc0d82b2b5f9ec1681f20ee9c67bed0d5c73b
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: 27ecc3bd252d8983867aff713384c137891b4c5c
+PODFILE CHECKSUM: d4e7efa7e0c2cedc169f9c6dd25275a00497ab1b
 
 COCOAPODS: 1.0.1

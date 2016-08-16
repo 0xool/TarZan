@@ -69,7 +69,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
         self.guestMenu_NumberLabel.delegate = self;
         self.guestMenu_LastNameLabel.delegate = self;
         self.guestMenu_NumberLabel.delegate = self;
-        self.UserNameField.delegate = self;
+        //self.UserNameField.delegate = self;
         self.PasswordTextField.delegate = self;
         
         self.visualEffects.effect = nil

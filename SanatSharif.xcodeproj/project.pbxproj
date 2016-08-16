@@ -339,6 +339,7 @@
 		A52D013D1D27A3E500A97FDD /* SanatSharif */ = {
 			isa = PBXGroup;
 			children = (
+				A5CC13DF1D630309002080B0 /* FrameWorks */,
 				A531F7D81D477AC7006E0863 /* Animations */,
 				A5DEA3F21D46079D005218A8 /* Cell */,
 				A558F3F31D43475400346754 /* CoreData */,
@@ -530,6 +531,13 @@
 				A558F3FB1D43598500346754 /* CoreDataController.swift */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		A5CC13DF1D630309002080B0 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FrameWorks;
 			sourceTree = "<group>";
 		};
 		A5DEA3F21D46079D005218A8 /* Cell */ = {
