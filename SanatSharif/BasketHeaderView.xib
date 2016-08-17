@@ -13,7 +13,7 @@
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exv-Gr-hFx">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="5"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="5" id="ctn-cU-7WR"/>
                     </constraints>
@@ -70,7 +70,6 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Exv-Gr-hFx" firstAttribute="top" secondItem="0G1-0M-VTE" secondAttribute="top" id="6OV-Vp-FWS"/>
                 <constraint firstItem="J65-an-Cja" firstAttribute="leading" secondItem="0G1-0M-VTE" secondAttribute="leading" id="H5n-Lt-lVs"/>

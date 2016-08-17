@@ -6,6 +6,7 @@ target 'SanatSharif' do
   use_frameworks!
 
   # Pods for SanatSharif
+  pod 'RAMPaperSwitch', '~> 1.0'
   pod 'TextFieldEffects', '~> 1.2'
   pod "GMStepper"
   pod 'FoldingCell'

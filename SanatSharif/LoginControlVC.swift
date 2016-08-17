@@ -143,7 +143,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
                     self.firstMenuGestureRecognizer.view!.center.x -= 400
                     
                     
-                    self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.secondMenuGestureRecognizer.view!.center.y)
+                    self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2 )
                     
 
                     
@@ -161,7 +161,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
                     
                     UIView.animateWithDuration(0.25 , delay: 0.05 * Double(0), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
                         
-                        self.firstMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.firstMenuGestureRecognizer.view!.center.y)
+                        self.firstMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
                         
                         
                         }, completion: nil)
@@ -203,7 +203,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
                 
                 UIView.animateWithDuration(0.25 , delay: 0.05 * Double(0), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
                     
-                    self.firstMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.firstMenuGestureRecognizer.view!.center.y)
+                    self.firstMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
                     
                     
                     }, completion: nil)
@@ -243,7 +243,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
                 UIView.animateWithDuration(0.25 , delay: 0.05 * Double(0), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
                 
                     self.secondMenuGestureRecognizer.view!.center.x -= 400
-                    self.thirdMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.thirdMenuGestureRecognizer.view!.center.y)
+                    self.thirdMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
                     
                     
                     }, completion:  { (finished) -> Void in
@@ -258,7 +258,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
                     
                     UIView.animateWithDuration(0.25 , delay: 0.05 * Double(0), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
                         
-                        self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.secondMenuGestureRecognizer.view!.center.y)
+                        self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
                         
                         
                         }, completion: nil)
@@ -288,7 +288,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
                 
                 UIView.animateWithDuration(0.25 , delay: 0.05 * Double(0), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: UIViewAnimationOptions.TransitionCurlUp, animations: {
                     
-                    self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.secondMenuGestureRecognizer.view!.center.y)
+                    self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
                     
                     
                     }, completion: nil)
@@ -304,7 +304,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
                     
                     self.secondMenuGestureRecognizer.view!.center.x += 400
                    
-                    self.firstMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.firstMenuGestureRecognizer.view!.center.y)
+                    self.firstMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
                     
                     
                     }, completion:  { (finished) -> Void in
@@ -647,7 +647,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
             
                 
                 self.firstMenuGestureRecognizer.view!.center.x -= 400
-                self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.secondMenuGestureRecognizer.view!.center.y)
+                self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
             
                 }, completion: { (finished) -> Void in
                     if finished {
@@ -704,7 +704,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
         
                 self.secondMenuGestureRecognizer.view!.center.x += 400
                 self.FirstOptionWindow.hidden = false
-                self.firstMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.firstMenuGestureRecognizer.view!.center.y)
+                self.firstMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
                 }, completion: { (finished) -> Void in
                     if finished {
                         
@@ -732,7 +732,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
                             
                             self.secondMenuGestureRecognizer.view!.center.x -= 400
                             
-                            self.thirdMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.thirdMenuGestureRecognizer.view!.center.y)
+                            self.thirdMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
                             
                             }, completion:{ (finished) -> Void in
                                 if finished {
@@ -779,7 +779,7 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
             self.thirdMenuGestureRecognizer.view!.center.x += 400
             
             self.SecondOptionWindow.hidden = false
-            self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , self.firstMenuGestureRecognizer.view!.center.y)
+            self.secondMenuGestureRecognizer.view!.center = CGPointMake(UIScreen.mainScreen().bounds.maxX / 2 , UIScreen.mainScreen().bounds.height / 2)
         
             }, completion: { (finished) -> Void in
                 if finished {

@@ -15,6 +15,7 @@ PODS:
   - JTMaterialSwitch (1.1)
   - PureLayout (3.0.2)
   - RAMAnimatedTabBarController (1.5.3)
+  - RAMPaperSwitch (1.0.4)
   - RZTransitions (1.2.1)
   - SABlurImageView (2.1.1)
   - SQLite.swift (0.10.1)
@@ -38,6 +39,7 @@ DEPENDENCIES:
   - JTAppleCalendar (~> 4.1)
   - JTMaterialSwitch
   - RAMAnimatedTabBarController
+  - RAMPaperSwitch (~> 1.0)
   - RZTransitions (~> 1.2)
   - SABlurImageView (~> 2.1)
   - SQLite.swift (~> 0.10.1)
@@ -59,12 +61,13 @@ SPEC CHECKSUMS:
   JTMaterialSwitch: cad8093c3773ff9f6c60005c98d269eb869b5e04
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   RAMAnimatedTabBarController: 04b624cf8958a0032bf7fa9c0f2c515f59d30b9c
+  RAMPaperSwitch: 8fc0d32bcd0f168eadb2855528fd148afa29b37e
   RZTransitions: 0e0013fda6989ee84dc5e44dca79fd539e1a975a
   SABlurImageView: 60fd7f18c20b4bb2bb6b1e4446464d6a480c5754
   SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
   SwiftyButton: fffcc0d82b2b5f9ec1681f20ee9c67bed0d5c73b
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
 
-PODFILE CHECKSUM: d4e7efa7e0c2cedc169f9c6dd25275a00497ab1b
+PODFILE CHECKSUM: 9a3ae452368183615096ecbc2882a87f49f15392
 
 COCOAPODS: 1.0.1

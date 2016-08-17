@@ -76,7 +76,7 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         
-            return 50
+            return 90
         
         
         
