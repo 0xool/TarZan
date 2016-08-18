@@ -292,7 +292,7 @@ class RecpieDetailVC: UIViewController , UITableViewDelegate , UITableViewDataSo
         }
         
         if indexPath.section == 2 {
-            return 250 * 2
+            return 250 * 2 + 80
         }
         
         if indexPath.section == 3 {

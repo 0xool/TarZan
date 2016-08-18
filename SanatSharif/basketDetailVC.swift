@@ -19,14 +19,12 @@ class basketDetailVC: UIViewController , UICollectionViewDelegate , UICollection
 //    @IBOutlet weak var descTextField: UITextView!
 //    @IBOutlet weak var dateLabel: UILabel!
     
-//    @IBOutlet weak var notifLabel: UILabel!
-//    @IBOutlet weak var notifSwitch: UISwitch!
-   // @IBOutlet weak var titleLabel: UILabel!
+
+
+
     @IBOutlet weak var collectionView : UICollectionView!
     @IBOutlet weak var bottomView : UIView!
-//    @IBOutlet weak var deleteBTN: UIButton!
-//    @IBOutlet weak var editBTN: UIButton!
-//    @IBOutlet weak var notifView : UIView!
+
     
     var dateNotifIsOn : Bool = true
  

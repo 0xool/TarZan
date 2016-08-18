@@ -15,21 +15,39 @@ class ReviewSection: UITableViewCell , UITableViewDelegate , UITableViewDataSour
     @IBOutlet weak var tableView : UITableView!
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("ReviewTableViewCell") as! ReviewTableViewCell
+       
+        if indexPath.row == 1 || indexPath.row == 0 {
+            let cell = self.tableView.dequeueReusableCellWithIdentifier("ReviewTableViewCell") as! ReviewTableViewCell
         
-        cell.configureCell(gray)
+            cell.configureCell(gray)
+            
+            gray = !gray
         
-        gray = !gray
+            return cell
+        }
         
-        return cell
+        if indexPath.row == 2 {
+            
+            let cell = self.tableView.dequeueReusableCellWithIdentifier("LoadMoreCell") as! LoadMoreCell
+            
+            return cell
+            
+        }
+        
+        return UITableViewCell()
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 250
+        
+        if indexPath.row == 1 || indexPath.row == 0 {
+            return 250
+        }else{
+            return 60
+        }
     }
     
     override func awakeFromNib() {

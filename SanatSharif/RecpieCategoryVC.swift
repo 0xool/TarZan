@@ -45,6 +45,9 @@ class RecpieCategoryVC:  ExpandingViewController  {
     
     override func viewDidLoad() {
         
+        super.viewDidLoad()
+
+        
         let RC : RecpieCategory = RecpieCategory()
         
         RC.categoryDesc = ""
@@ -76,27 +79,12 @@ class RecpieCategoryVC:  ExpandingViewController  {
         
         
         itemSize = CGSize(width: 250 , height: 250)
-        super.viewDidLoad()
         
         addGestureToView(collectionView!)
 
         // register cell
         let nib = UINib(nibName: String(RecpieCell), bundle: nil)
         collectionView?.registerNib(nib, forCellWithReuseIdentifier: String(RecpieCell))
-        
-        
-
-    }
-    
-    
-    
-    
-    override func viewDidLayoutSubviews() {
-        
-    
-        
-        
-
         
     }
     
@@ -126,28 +114,8 @@ class RecpieCategoryVC:  ExpandingViewController  {
             
                         firstCell.cellIsOpen(true)
                     }
-            
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
-
-        
-        
-
-        /*UIView.transitionWithView(self.backGroundImage,
-                                  duration:5,
-                                  options: UIViewAnimationOptions.TransitionCrossDissolve,
-                                  animations: { self.backGroundImage.image = currentCell.imageView.image },
-                                  completion: nil)
     
- */}
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -166,10 +134,7 @@ class RecpieCategoryVC:  ExpandingViewController  {
             let vc: ExpandingTableViewController = getViewController()
                 pushToViewController(vc)
         }
-        
-//        let open = sender.direction == .Up ? true : false
-//        cell.cellIsOpen(open)
-//        cellsIsOpen[indexPath.row] = cell.isOpened
+
     }
     
     private func getViewController() -> ExpandingTableViewController {
@@ -196,10 +161,6 @@ class RecpieCategoryVC:  ExpandingViewController  {
     private func addGestureToView(toView: UIView) {
         let gesutereUp = Init(UISwipeGestureRecognizer(target: self, action: #selector(RecpieCategoryVC.swipeHandler(_:)))) {
             $0.direction = .Up
-        
-        
-      
-      
         }
         toView.addGestureRecognizer(gesutereUp)
     
@@ -211,8 +172,6 @@ class RecpieCategoryVC:  ExpandingViewController  {
         // double swipe Up transition
         if cell.isOpened == true && sender.direction == .Up {
             pushToViewController(getViewController())
-            
-           
         }
         
         let open = sender.direction == .Up ? true : false
@@ -228,10 +187,6 @@ class RecpieCategoryVC:  ExpandingViewController  {
     override func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         super.scrollViewDidEndDecelerating(scrollView)
         let currentCell = self.collectionView?.cellForItemAtIndexPath(NSIndexPath(forItem: currentIndex, inSection: 0)) as! RecpieCell
-
-       // currentCell.cellIsOpen(true)
-        
-        
         lastIndex = currentIndex
         
         self.itemBTn.setTitle("مشاهده زیر مجموعه \(currentCell.title.text!)", forState: UIControlState.Normal)
