@@ -105,6 +105,9 @@ class LoginControlVC: UIViewController , UITextFieldDelegate , RZTransitionInter
         
         self.SecondOptionWindow.hidden = true
         self.ThirdOptionWindow.hidden = true
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationItem.backBarButtonItem?.title = "sabade kharid"
     }
     
     func dismissKeyboard() {

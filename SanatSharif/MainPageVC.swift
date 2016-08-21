@@ -10,8 +10,10 @@
 import UIKit
 import AVFoundation
 import ImageSlideshow
+import DynamicBlurView
+import SABlurImageView
 
-class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate , UICollectionViewDelegateFlowLayout ,  UITableViewDelegate , UITableViewDataSource  , SWRevealViewControllerDelegate   {
+class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate , UICollectionViewDelegateFlowLayout ,  UITableViewDelegate , UITableViewDataSource  , SWRevealViewControllerDelegate  {
     
     @IBOutlet weak var SliderPriceTag : UILabel!
     @IBOutlet weak var PriceSlider: UISlider!
@@ -39,6 +41,8 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var SearchBarStackView: UIStackView!
     @IBOutlet weak var dragView: UIView!
+    
+    @IBOutlet weak var graphView : UIView!
     
     var scrollView: UIScrollView!
     var stackView: UIStackView!
@@ -78,6 +82,7 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
         collection.dataSource = self
         RecentSearchTable.delegate =  self
         RecentSearchTable.dataSource =  self
+        SearchBar.delegate = self
         
         self.PriceSearchView.hidden = true
         self.PriceSearchViewHeight.constant = 0
@@ -479,16 +484,23 @@ func animateColllection(){
             }else if ((scrollView.contentOffset.y + scrollView.frame.size.height > scrollContentSizeHeight / 4 + 250)){
                 
                 UIView.animateWithDuration(Double(0.25), animations: {
-                    self.HeightConstraint.constant = 60
+                    self.HeightConstraint.constant = 0
                    // self.topImageHeightConstraint.constant = 65
                     self.navigationController?.navigationBar.alpha = 1
-                   // self.topImageScroller.backgroundColor = UIColor.whiteColor()
+                    
+                    //self.topImageScroller.backgroundColor = UIColor.redColor()
                     self.view.layoutIfNeeded()
                    // self.TopImage.alpha = 0
                     self.topImageScroller.alpha = 0
-//                    self.navigationController?.navigationBar.barTintColor = UIColor.()
-                    self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
-                    self.navigationController!.navigationBar.shadowImage = nil
+                    self.graphView.alpha = 0
+//                    self.navigationController?.navigationBar.barTintColor = UIColor.()    
+                    //self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: )
+                    
+                    self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: .Default)
+                    self.navigationController?.navigationBar.shadowImage = nil
+                    self.navigationController?.navigationBar.translucent = false
+                    self.navigationController?.navigationBar.backgroundColor  = UIColor(red: 0 / 255.0, green: 128 / 255.0, blue: 0 / 255.0, alpha: 1)
+                   // self.navigationController!.navigationBar.shadowImage = nil
                     self.view.layoutIfNeeded()
                 })
                 
@@ -501,14 +513,22 @@ func animateColllection(){
         }
 
     if scrollView.contentOffset.y + scrollView.frame.size.height < scrollContentSizeHeight / 4 + 250{
+        self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true
+        self.navigationController?.navigationBar.alpha = 1
     UIView.animateWithDuration(0.5, animations: {
     self.HeightConstraint.constant = 200
     //self.topImageHeightConstraint.constant = 200
     self.view.layoutIfNeeded()
     self.topImageScroller.alpha = 1
-    self.navigationController?.navigationBar.alpha = 1
-    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
-    self.navigationController!.navigationBar.shadowImage = UIImage()
+        self.graphView.alpha = 0.4
+        
+    
+    //self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+    //self.navigationController!.navigationBar.shadowImage = UIImage()
         
     //self.topImageScroller.backgroundColor = UIColor.clearColor()
     self.view.layoutIfNeeded()
@@ -612,20 +632,20 @@ func animateColllection(){
 //=======================================================================================================
     func revealController(revealController: SWRevealViewController!,  willMoveToPosition position: FrontViewPosition){
         if(position == FrontViewPosition.Left) {
-            // self.view.userInteractionEnabled = true
+             self.view.userInteractionEnabled = true
             sidebarMenuOpen = false
         } else {
-            // self.view.userInteractionEnabled = false
+             self.view.userInteractionEnabled = false
             sidebarMenuOpen = true
         }
     }
     
     func revealController(revealController: SWRevealViewController!,  didMoveToPosition position: FrontViewPosition){
         if(position == FrontViewPosition.Left) {
-            // self.view.userInteractionEnabled = true
+             self.view.userInteractionEnabled = true
             sidebarMenuOpen = false
         } else {
-            // self.view.userInteractionEnabled = false
+             self.view.userInteractionEnabled = false
             sidebarMenuOpen = true
         }
     }
@@ -642,6 +662,14 @@ func animateColllection(){
                 }
             }
         }
+        
+        if segue.identifier == "SearchResultView" {
+            if let searchViewController = segue.destinationViewController as? SearchResultVC {
+                if let textSearched = sender as? String {
+                    searchViewController.textSearched = textSearched
+                }
+            }
+        }
     }
 //=======================================================================================================
 //Summary : IBaction when clicking the search button in main view for animating the search view
@@ -649,16 +677,41 @@ func animateColllection(){
 //=======================================================================================================
     @IBAction func SearchItemClicked(sender: AnyObject) {
         
-        if(!isInSearchMode){
         
-        UIView.animateWithDuration(0.25, animations: {
+      
+        
+        if(!isInSearchMode){
             
+            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = self.MainView.bounds
+            blurEffectView.alpha = 0
+             // for supporting device rotation
+            self.MainView.addSubview(blurEffectView)
+            self.SearchBar.isFirstResponder()
+            
+        UIView.animateWithDuration(0.5, animations: {
+            self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+            
+            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+            self.navigationController?.navigationBar.shadowImage = UIImage()
+            self.navigationController?.navigationBar.translucent = true
+            self.navigationController?.navigationBar.alpha = 1
             //self.navigationController!.navigationBar.layer.zPosition = -1;
+           // self.MainView.blurRadius = 30
+            self.SearchBar.becomeFirstResponder()
+
+            for v in self.MainView.subviews{
+                if v is UIVisualEffectView{
+                    v.alpha = 0.8
+                }
+            }
             
             self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, 0)
-            self.MainView.alpha = 0.03
-            self.RecentSearchTable.alpha = 0.4
-            self.navigationController?.navigationBar.alpha = 0.2
+            self.MainView.alpha = 1
+            self.RecentSearchTable.alpha = 0.3
+            self.navigationController?.navigationBar.alpha = 1
+            
             
             }, completion: nil)
         
@@ -666,23 +719,44 @@ func animateColllection(){
         self.MainView.userInteractionEnabled = false
             isInSearchMode = true
         }else {
-            
-            UIView.animateWithDuration(0.25, animations: {
-                
-                self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
-                self.MainView.alpha = 1
-                self.navigationController?.navigationBar.alpha = 1
-                self.RecentSearchTable.alpha = 0
-                }, completion: nil)
-            
-//            self.searchBarView.hidden =  true
-            self.MainView.userInteractionEnabled = true
-            isInSearchMode = false
-            
+                searchModeOff()
         }
 
    
     }
+    
+    func searchModeOff(){
+        self.SearchBar.resignFirstResponder()
+        
+        UIView.animateWithDuration(0.25, animations: {
+            
+            for v in self.MainView.subviews{
+                if v is UIVisualEffectView{
+                    v.removeFromSuperview()
+                }
+            }
+            
+            self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
+            self.MainView.alpha = 1
+            self.navigationController?.navigationBar.alpha = 1
+            self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+            self.RecentSearchTable.alpha = 0
+            }, completion: nil)
+        
+        //            self.searchBarView.hidden =  true
+        self.MainView.userInteractionEnabled = true
+        isInSearchMode = false
+    }
+    
+   
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+
+        searchModeOff()
+        performSegueWithIdentifier("SearchResultView", sender: searchBar.text)
+        
+    }
+    
 //=======================================================================================================
 //Summary : Here we implement the table for searchView which contains the recent searches the user has made (implementation of DB is required to store and recieve the data)
 //Implementation :
@@ -693,6 +767,16 @@ func animateColllection(){
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        searchModeOff()
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! RecentSearchCell
+        let searchedText : String = cell.TextSearched.text!
+        performSegueWithIdentifier("SearchResultView", sender: searchedText)
+        
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

@@ -97,6 +97,8 @@
 		A59F3A8D1D27E7610097A1C9 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */; };
 		A5A4E3D11D55F7C100757D0E /* Basket+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4E3D01D55F7C100757D0E /* Basket+CoreDataProperties.swift */; };
 		A5A4E3D31D5607DB00757D0E /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A4E3D21D5607DB00757D0E /* FileManager.swift */; };
+		A5ACD5B11D6846450011A2D7 /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACD5B01D6846450011A2D7 /* SearchResultVC.swift */; };
+		A5ACD5B31D6870F60011A2D7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACD5B21D6870F60011A2D7 /* SearchVC.swift */; };
 		A5C2E1FC1D59F980000F05F0 /* RecpieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2E1FB1D59F980000F05F0 /* RecpieCategory.swift */; };
 		A5C511751D3506AE00731494 /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C511741D3506AE00731494 /* RecentSearchCell.swift */; };
 		A5CD99F01D30FB3D00CA0B96 /* UserModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */; };
@@ -252,6 +254,8 @@
 		A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 		A5A4E3D01D55F7C100757D0E /* Basket+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Basket+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A5A4E3D21D5607DB00757D0E /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		A5ACD5B01D6846450011A2D7 /* SearchResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
+		A5ACD5B21D6870F60011A2D7 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		A5C2E1FB1D59F980000F05F0 /* RecpieCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieCategory.swift; sourceTree = "<group>"; };
 		A5C511741D3506AE00731494 /* RecentSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
 		A5C8E4DF1D364B7B00BFEE81 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -484,6 +488,8 @@
 				A5F1B2F41D5EEE32006F38E8 /* BasketVC.swift */,
 				A5EBA86F1D5F0859003CEC91 /* BasketViewController.swift */,
 				A55517D31D61C78D003B4962 /* QRViewController.swift */,
+				A5ACD5B01D6846450011A2D7 /* SearchResultVC.swift */,
+				A5ACD5B21D6870F60011A2D7 /* SearchVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -941,12 +947,14 @@
 				A58706DF1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift in Sources */,
 				A558F3FC1D43598500346754 /* CoreDataController.swift in Sources */,
 				A57F438D1D27C87400ED5366 /* List.swift in Sources */,
+				A5ACD5B11D6846450011A2D7 /* SearchResultVC.swift in Sources */,
 				A5204E691D44978B0016EC88 /* basketDetailVC.swift in Sources */,
 				A57F439C1D27D08100ED5366 /* Picture.swift in Sources */,
 				A5643C3A1D60952000C74624 /* BasketFooterBackGroundView.swift in Sources */,
 				A57F43961D27CD3800ED5366 /* User.swift in Sources */,
 				A5F89DA71D29325200293D58 /* MenuTableViewMaterial.swift in Sources */,
 				A5725CDF1D40AFC600DCE7A6 /* UltravisualLayout.swift in Sources */,
+				A5ACD5B31D6870F60011A2D7 /* SearchVC.swift in Sources */,
 				A5CEE84E1D2B9C6200DF871B /* BasketPageVC.swift in Sources */,
 				A5643C381D607ED800C74624 /* BasketFooterView.swift in Sources */,
 				A589E4B91D3CB9290015A2B7 /* BuyWindowMaterial.swift in Sources */,

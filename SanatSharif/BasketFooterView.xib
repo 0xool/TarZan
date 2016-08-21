@@ -74,7 +74,6 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="Fju-fn-Ius" secondAttribute="bottom" constant="8" id="Byg-0k-v6Y"/>
                         <constraint firstItem="Fju-fn-Ius" firstAttribute="leading" secondItem="0tp-ia-nkW" secondAttribute="leading" constant="8" id="Dxb-XT-mPn"/>

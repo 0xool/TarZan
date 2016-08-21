@@ -22,9 +22,7 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
      
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
 
-        
         sizes.append(20)
         sizes.append(20)
         sizes.append(20)
@@ -61,25 +59,17 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("BasketItemCell") as! BasketItemCell
         
-        
-        
         return cell
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
             return 61.0
-        
-        
-        
     }
     
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         
             return 90
-        
-        
-        
     }
     
     
@@ -158,7 +148,10 @@ class BasketViewController: UIViewController , UITableViewDelegate , UITableView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "loadAuthenthicat" {
             if let productDetailVC = segue.destinationViewController as? LoginControlVC {
-//                if let product = sender as? Product {
+                let backItem = UIBarButtonItem()
+                backItem.title = "سبد خرید"
+                navigationItem.backBarButtonItem = backItem
+                //                if let product = sender as? Product {
 //                    productDetailVC.product = product
 //                }
             }
