@@ -20,7 +20,7 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
         
         RecentSearchTable.delegate = self
         RecentSearchTable.dataSource = self
-         self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
+        // self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
         
         
     }
@@ -32,7 +32,7 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
         //        self.SearchBar.backgroundImage = UIImage()
         self.SearchBar.translucent = true
         self.RecentSearchTable.backgroundColor = UIColor.clearColor()
-        self.SearchBar.becomeFirstResponder()
+        //self.SearchBar.becomeFirstResponder()
         self.RecentSearchTable.alpha = 0.3
         
         

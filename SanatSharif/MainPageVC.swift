@@ -43,6 +43,8 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     @IBOutlet weak var dragView: UIView!
     
     @IBOutlet weak var graphView : UIView!
+    @IBOutlet weak var searchContainerView: UIView!
+    
     
     var scrollView: UIScrollView!
     var stackView: UIStackView!
@@ -72,10 +74,6 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     
     var transitionDelegate: ZoomAnimatedTransitioningDelegate?
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         collection.delegate = self
@@ -96,6 +94,12 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
         
         self.SearchBarStackView.hidden = true
         self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
+        
+        
+        
+        
+        self.searchContainerView.transform = CGAffineTransformMakeTranslation(0, -1000)
+        
         self.SearchBar.barTintColor = UIColor(red: 182 / 255, green: 194 / 255, blue: 150 / 255, alpha: 0.1)
 //        self.SearchBar.backgroundImage = UIImage()
         self.SearchBar.translucent = true
@@ -500,6 +504,8 @@ func animateColllection(){
                     self.navigationController?.navigationBar.shadowImage = nil
                     self.navigationController?.navigationBar.translucent = false
                     self.navigationController?.navigationBar.backgroundColor  = UIColor(red: 0 / 255.0, green: 128 / 255.0, blue: 0 / 255.0, alpha: 1)
+                    //self.navigationController!.navigationBar.layer.zPosition = -1;
+
                    // self.navigationController!.navigationBar.shadowImage = nil
                     self.view.layoutIfNeeded()
                 })
@@ -519,6 +525,8 @@ func animateColllection(){
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.alpha = 1
+        //self.navigationController!.navigationBar.layer.zPosition = -1;
+
     UIView.animateWithDuration(0.5, animations: {
     self.HeightConstraint.constant = 200
     //self.topImageHeightConstraint.constant = 200
@@ -682,23 +690,21 @@ func animateColllection(){
         
         if(!isInSearchMode){
             
+
             let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
             blurEffectView.frame = self.MainView.bounds
+            
             blurEffectView.alpha = 0
              // for supporting device rotation
             self.MainView.addSubview(blurEffectView)
-            self.SearchBar.isFirstResponder()
+            self.searchContainerView.hidden = false
+            self.navigationController?.navigationBar.translucent = true
+            
+            
             
         UIView.animateWithDuration(0.5, animations: {
-            self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
-            
-            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-            self.navigationController?.navigationBar.shadowImage = UIImage()
-            self.navigationController?.navigationBar.translucent = true
-            self.navigationController?.navigationBar.alpha = 1
-            //self.navigationController!.navigationBar.layer.zPosition = -1;
-           // self.MainView.blurRadius = 30
+           
             self.SearchBar.becomeFirstResponder()
 
             for v in self.MainView.subviews{
@@ -707,17 +713,19 @@ func animateColllection(){
                 }
             }
             
-            self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, 0)
+            //self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, 0)
+            self.searchContainerView.transform = CGAffineTransformMakeTranslation(0, 0)
+            
             self.MainView.alpha = 1
-            self.RecentSearchTable.alpha = 0.3
-            self.navigationController?.navigationBar.alpha = 1
+           // self.navigationController!.navigationBar.layer.zPosition = 0;
             
             
             }, completion: nil)
         
-        self.SearchBarStackView.hidden =  false
+       // self.SearchBarStackView.hidden =  false
         self.MainView.userInteractionEnabled = false
             isInSearchMode = true
+            
         }else {
                 searchModeOff()
         }
@@ -726,8 +734,8 @@ func animateColllection(){
     }
     
     func searchModeOff(){
-        self.SearchBar.resignFirstResponder()
-        
+        //self.SearchBar.resignFirstResponder()
+        self.resignFirstResponder()
         UIView.animateWithDuration(0.25, animations: {
             
             for v in self.MainView.subviews{
@@ -736,11 +744,10 @@ func animateColllection(){
                 }
             }
             
-            self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
+           // self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
+            self.searchContainerView.transform = CGAffineTransformMakeTranslation(0, -1000)
             self.MainView.alpha = 1
-            self.navigationController?.navigationBar.alpha = 1
-            self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
-            self.RecentSearchTable.alpha = 0
+            
             }, completion: nil)
         
         //            self.searchBarView.hidden =  true
