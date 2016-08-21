@@ -107,6 +107,9 @@
 		A5CEE8521D2BA65100DF871B /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE8511D2BA65100DF871B /* RoundLabel.swift */; };
 		A5CEE8541D2BA79300DF871B /* SmallWindowViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE8531D2BA79300DF871B /* SmallWindowViewMaterial.swift */; };
 		A5CEE8561D2BB53300DF871B /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE8551D2BB53300DF871B /* BasketCell.swift */; };
+		A5D48ED01D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5D48ECE1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld */; };
+		A5D48ED21D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D48ED11D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift */; };
+		A5D48ED41D69CC8800CC1B32 /* RecentSearchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D48ED31D69CC8800CC1B32 /* RecentSearchEntity.swift */; };
 		A5D543D21D57199100D47011 /* DateHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D543D11D57199100D47011 /* DateHeaderCell.xib */; };
 		A5D543D41D5719A900D47011 /* DateHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D543D31D5719A900D47011 /* DateHeaderCell.swift */; };
 		A5D543D61D574F2300D47011 /* RemindMeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D543D51D574F2300D47011 /* RemindMeCell.swift */; };
@@ -265,6 +268,9 @@
 		A5CEE8511D2BA65100DF871B /* RoundLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundLabel.swift; path = Assets.xcassets/RoundLabel.swift; sourceTree = "<group>"; };
 		A5CEE8531D2BA79300DF871B /* SmallWindowViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallWindowViewMaterial.swift; sourceTree = "<group>"; };
 		A5CEE8551D2BB53300DF871B /* BasketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketCell.swift; sourceTree = "<group>"; };
+		A5D48ECF1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecentSearHistory.xcdatamodel; sourceTree = "<group>"; };
+		A5D48ED11D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecentSearchEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A5D48ED31D69CC8800CC1B32 /* RecentSearchEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchEntity.swift; sourceTree = "<group>"; };
 		A5D543D11D57199100D47011 /* DateHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateHeaderCell.xib; sourceTree = "<group>"; };
 		A5D543D31D5719A900D47011 /* DateHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHeaderCell.swift; sourceTree = "<group>"; };
 		A5D543D51D574F2300D47011 /* RemindMeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindMeCell.swift; sourceTree = "<group>"; };
@@ -534,10 +540,13 @@
 		A558F3F31D43475400346754 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				A5D48ED31D69CC8800CC1B32 /* RecentSearchEntity.swift */,
+				A5D48ED11D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift */,
 				A5A4E3D01D55F7C100757D0E /* Basket+CoreDataProperties.swift */,
 				A558F3F81D434AD500346754 /* Basket.swift */,
 				A558F3F41D43479800346754 /* BasketToBuy.xcdatamodeld */,
 				A558F3FB1D43598500346754 /* CoreDataController.swift */,
+				A5D48ECE1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -865,10 +874,12 @@
 			files = (
 				A5486BEC1D3F80EA003C9057 /* DataBaseModel.swift in Sources */,
 				A57120A51D4DCF810057DDE9 /* CookInstrunctions.swift in Sources */,
+				A5D48ED01D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld in Sources */,
 				A5DA4AF41D2A857400152D41 /* ProductDetailVC.swift in Sources */,
 				A54672DE1D489F51005662B2 /* RecpieDetailVCAnimationDissmiss.swift in Sources */,
 				A57120A91D4DE5570057DDE9 /* UIViewExtensions.swift in Sources */,
 				A5CEE8561D2BB53300DF871B /* BasketCell.swift in Sources */,
+				A5D48ED41D69CC8800CC1B32 /* RecentSearchEntity.swift in Sources */,
 				A5A4E3D11D55F7C100757D0E /* Basket+CoreDataProperties.swift in Sources */,
 				A52D01411D27A3E500A97FDD /* ViewController.swift in Sources */,
 				A558F3FA1D434AD500346754 /* Basket.swift in Sources */,
@@ -969,6 +980,7 @@
 				A5FFB8361D55C13200FDB0FB /* DateCell.swift in Sources */,
 				A5D543D61D574F2300D47011 /* RemindMeCell.swift in Sources */,
 				A5725CD71D40ADCA00DCE7A6 /* UIImage+Decompression.swift in Sources */,
+				A5D48ED21D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift in Sources */,
 				A57F43921D27CAB300ED5366 /* Slide.swift in Sources */,
 				A511D5561D61A6C000AA5424 /* RamItemHandler.swift in Sources */,
 				A518C0721D3BA63A0004D036 /* LoginPopOverVC.swift in Sources */,
@@ -1250,6 +1262,16 @@
 			);
 			currentVersion = A558F3F51D43479800346754 /* BasketToBuy.xcdatamodel */;
 			path = BasketToBuy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		A5D48ECE1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5D48ECF1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodel */,
+			);
+			currentVersion = A5D48ECF1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodel */;
+			path = RecentSearHistory.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
+class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,  UISearchBarDelegate{
 
     @IBOutlet weak var RecentSearchTable : UITableView!
     @IBOutlet weak var searchBarView: UIView!
@@ -21,9 +21,17 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
         RecentSearchTable.delegate = self
         RecentSearchTable.dataSource = self
         // self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
-        
+        self.SearchBar.delegate = self
         
     }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        
+        performSegueWithIdentifier("SearchResultView", sender: SearchBar.text)
+
+        
+    }
+    
     
     override func viewDidAppear(animated: Bool) {
         
