@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F8878A29900A25BDE9E2342E03BC8EAB'
-               BlueprintName = 'GMStepper'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'GMStepper.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F8878A29900A25BDE9E2342E03BC8EAB"
+               BlueprintName = "GMStepper"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "GMStepper.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

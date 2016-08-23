@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2B6E16EA5A3B2FE2469AB1C04D2B2CB4'
-               BlueprintName = 'AMViralSwitch'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'AMViralSwitch.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2B6E16EA5A3B2FE2469AB1C04D2B2CB4"
+               BlueprintName = "AMViralSwitch"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "AMViralSwitch.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

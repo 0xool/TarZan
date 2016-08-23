@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '61BB6BC9C35FC79C439987A073D34B73'
-               BlueprintName = 'JTAppleCalendar'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'JTAppleCalendar.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "61BB6BC9C35FC79C439987A073D34B73"
+               BlueprintName = "JTAppleCalendar"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "JTAppleCalendar.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

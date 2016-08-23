@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,  UISearchBarDelegate{
 
@@ -15,23 +16,50 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
     @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var SearchBarStackView: UIStackView!
     
+    let moContext = UserModelManager.sharedInstance._recentSearchController.managedObjectContext
+    var searchedTexts : [RecentSearchEntity]! = [RecentSearchEntity]()
+    
     
     override func viewDidLoad() {
         
         RecentSearchTable.delegate = self
         RecentSearchTable.dataSource = self
-        // self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
         self.SearchBar.delegate = self
+
+        
         
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         
-        performSegueWithIdentifier("SearchResultView", sender: SearchBar.text)
+        
+        if (searchBar.text != nil && searchBar.text != ""){
+            addSearchToCoreData(searchBar.text!)
+            performSegueWithIdentifier("SearchResultView", sender: SearchBar.text)
+        }
 
         
     }
     
+    func searchedResult(){
+
+        let userfetch = NSFetchRequest(entityName: "RecentSearchEntity")
+        searchedTexts.removeAll()
+
+        
+        
+        do {
+            let fetchedEntity = try moContext.executeFetchRequest(userfetch) as! [RecentSearchEntity]
+            for b in fetchedEntity {
+                self.searchedTexts.append(b)
+            }
+        }catch {
+            
+        }
+        
+        
+        self.RecentSearchTable.reloadData()
+    }
     
     override func viewDidAppear(animated: Bool) {
         
@@ -42,8 +70,27 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
         self.RecentSearchTable.backgroundColor = UIColor.clearColor()
         //self.SearchBar.becomeFirstResponder()
         self.RecentSearchTable.alpha = 0.3
+        searchedResult()
+    }
+    
+    func addSearchToCoreData(searchedText : String){
         
+        if searchedTexts.count == 10 {
+            moContext.deleteObject(searchedTexts.first!)
+            searchedTexts.removeFirst()
+        }
+       
+        let searchEntiity = NSEntityDescription.insertNewObjectForEntityForName("RecentSearchEntity", inManagedObjectContext: moContext) as! RecentSearchEntity
+        searchEntiity.recentSearchText = searchedText
         
+        do {
+            try moContext.save()
+            
+        } catch let error as NSError  {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+
+
         
     }
     
@@ -57,7 +104,7 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return searchedTexts.count
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -75,9 +122,9 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("RecentSearchCell") as? RecentSearchCell {
             
-            cell.configureCell("WTF")
+            cell.configureCell(self.searchedTexts[searchedTexts.count - indexPath.row - 1].recentSearchText!)
             cell.backgroundColor = UIColor(red: 230 / 255, green: 230 / 255 , blue: 230 / 255, alpha: 0.5)
-            //            cell.backgroundView = UIView()
+            
             cell.alpha = 1
             
             return cell

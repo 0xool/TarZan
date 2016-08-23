@@ -16,6 +16,7 @@ class UserModelManager {
     var _User : User = User ()
     var _Cart : Cart = Cart()
     var _dataControler : DataController = DataController()
+    var _recentSearchController : CoreDataRecentSearchManager = CoreDataRecentSearchManager()
     var _basketInfo : [Basket] = [Basket]()
     
     func createNewCart(cart : Cart){

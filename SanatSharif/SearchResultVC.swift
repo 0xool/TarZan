@@ -8,21 +8,47 @@
 
 import UIKit
 
-class SearchResultVC: UIViewController {
+class SearchResultVC: UIViewController  , UICollectionViewDelegate , UICollectionViewDataSource {
     
     var textSearched : String!
-    @IBOutlet weak var textTempLabel : UILabel!
+    @IBOutlet weak var collectionView : UICollectionView!
     
     override func viewDidLoad() {
         
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
         
         
     }
     
     override func viewDidAppear(animated: Bool) {
-        textTempLabel.text = textSearched
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    
+        return CGSize(width: UIScreen.mainScreen().bounds.width, height: 170)
+    
+    }
+    
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("searchCell", forIndexPath: indexPath) as! searchCell
+        
+        return cell
+        
+        
     }
 
 }

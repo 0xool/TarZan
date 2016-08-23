@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '948A46EC641E4DA25A0C1AA1762AF963'
-               BlueprintName = 'DKCamera'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'DKCamera.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "948A46EC641E4DA25A0C1AA1762AF963"
+               BlueprintName = "DKCamera"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "DKCamera.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

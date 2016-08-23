@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '03986035B05D1C564D91AA910E316353'
-               BlueprintName = 'DynamicBlurView'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'DynamicBlurView.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "03986035B05D1C564D91AA910E316353"
+               BlueprintName = "DynamicBlurView"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "DynamicBlurView.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -28,6 +28,9 @@
 		A531F7D51D474102006E0863 /* ElasticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531F7D41D474102006E0863 /* ElasticView.swift */; };
 		A531F7D71D476C85006E0863 /* RecpieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531F7D61D476C85006E0863 /* RecpieDetailVC.swift */; };
 		A531F7DB1D477AF3006E0863 /* RecpieDetailVCAnimationLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A531F7DA1D477AF3006E0863 /* RecpieDetailVCAnimationLoad.swift */; };
+		A5334B561D6AE14D00ADAE64 /* searchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5334B551D6AE14D00ADAE64 /* searchCell.swift */; };
+		A5334B581D6AE83900ADAE64 /* CardViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5334B571D6AE83900ADAE64 /* CardViewMaterial.swift */; };
+		A5334B5A1D6B080100ADAE64 /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5334B591D6B080100ADAE64 /* CardImageView.swift */; };
 		A53C74E21D28F0A0007AFC96 /* BackButtonMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53C74E11D28F0A0007AFC96 /* BackButtonMaterial.swift */; };
 		A53C74E41D28FA0A007AFC96 /* RegisteringFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53C74E31D28FA0A007AFC96 /* RegisteringFormVC.swift */; };
 		A53C74EB1D2915F3007AFC96 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53C74EA1D2915F3007AFC96 /* SWRevealViewController.m */; };
@@ -110,6 +113,7 @@
 		A5D48ED01D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5D48ECE1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld */; };
 		A5D48ED21D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D48ED11D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift */; };
 		A5D48ED41D69CC8800CC1B32 /* RecentSearchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D48ED31D69CC8800CC1B32 /* RecentSearchEntity.swift */; };
+		A5D48ED61D6AC42400CC1B32 /* CoreDataRecentSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D48ED51D6AC42400CC1B32 /* CoreDataRecentSearchManager.swift */; };
 		A5D543D21D57199100D47011 /* DateHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D543D11D57199100D47011 /* DateHeaderCell.xib */; };
 		A5D543D41D5719A900D47011 /* DateHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D543D31D5719A900D47011 /* DateHeaderCell.swift */; };
 		A5D543D61D574F2300D47011 /* RemindMeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D543D51D574F2300D47011 /* RemindMeCell.swift */; };
@@ -184,6 +188,9 @@
 		A531F7D41D474102006E0863 /* ElasticView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticView.swift; sourceTree = "<group>"; };
 		A531F7D61D476C85006E0863 /* RecpieDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieDetailVC.swift; sourceTree = "<group>"; };
 		A531F7DA1D477AF3006E0863 /* RecpieDetailVCAnimationLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieDetailVCAnimationLoad.swift; sourceTree = "<group>"; };
+		A5334B551D6AE14D00ADAE64 /* searchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchCell.swift; sourceTree = "<group>"; };
+		A5334B571D6AE83900ADAE64 /* CardViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewMaterial.swift; sourceTree = "<group>"; };
+		A5334B591D6B080100ADAE64 /* CardImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
 		A53C74E11D28F0A0007AFC96 /* BackButtonMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackButtonMaterial.swift; sourceTree = "<group>"; };
 		A53C74E31D28FA0A007AFC96 /* RegisteringFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisteringFormVC.swift; sourceTree = "<group>"; };
 		A53C74E81D2915F2007AFC96 /* SanatSharif-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SanatSharif-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -271,6 +278,7 @@
 		A5D48ECF1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecentSearHistory.xcdatamodel; sourceTree = "<group>"; };
 		A5D48ED11D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RecentSearchEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A5D48ED31D69CC8800CC1B32 /* RecentSearchEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchEntity.swift; sourceTree = "<group>"; };
+		A5D48ED51D6AC42400CC1B32 /* CoreDataRecentSearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataRecentSearchManager.swift; sourceTree = "<group>"; };
 		A5D543D11D57199100D47011 /* DateHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateHeaderCell.xib; sourceTree = "<group>"; };
 		A5D543D31D5719A900D47011 /* DateHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHeaderCell.swift; sourceTree = "<group>"; };
 		A5D543D51D574F2300D47011 /* RemindMeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindMeCell.swift; sourceTree = "<group>"; };
@@ -463,6 +471,9 @@
 				A5643C3B1D6097C500C74624 /* BasketHeaderBackGroundView.swift */,
 				A511D5551D61A6C000AA5424 /* RamItemHandler.swift */,
 				A578C9621D658320007D9F20 /* LoadMoreCell.swift */,
+				A5334B551D6AE14D00ADAE64 /* searchCell.swift */,
+				A5334B571D6AE83900ADAE64 /* CardViewMaterial.swift */,
+				A5334B591D6B080100ADAE64 /* CardImageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -547,6 +558,7 @@
 				A558F3F41D43479800346754 /* BasketToBuy.xcdatamodeld */,
 				A558F3FB1D43598500346754 /* CoreDataController.swift */,
 				A5D48ECE1D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld */,
+				A5D48ED51D6AC42400CC1B32 /* CoreDataRecentSearchManager.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -890,6 +902,7 @@
 				A531F7D31D474087006E0863 /* ElasticTextField.swift in Sources */,
 				A5F89DA51D292BE100293D58 /* RoundViewMaterial.swift in Sources */,
 				A531F7DB1D477AF3006E0863 /* RecpieDetailVCAnimationLoad.swift in Sources */,
+				A5334B5A1D6B080100ADAE64 /* CardImageView.swift in Sources */,
 				A5643C301D607AA100C74624 /* BasketHeaderView.swift in Sources */,
 				A53C74E21D28F0A0007AFC96 /* BackButtonMaterial.swift in Sources */,
 				A55E278A1D3249F50081F302 /* MainpageCollectionViewLayout.swift in Sources */,
@@ -913,6 +926,7 @@
 				A57F43901D27C97E00ED5366 /* SubList.swift in Sources */,
 				A586A6401D34F51F00731023 /* DataBaseManager.swift in Sources */,
 				A5502ADB1D28D0D300B559CD /* Constants.swift in Sources */,
+				A5334B561D6AE14D00ADAE64 /* searchCell.swift in Sources */,
 				A558F3F61D43479800346754 /* BasketToBuy.xcdatamodeld in Sources */,
 				A57C1BD01D3E3285009A5D5A /* SignUpTableVC.swift in Sources */,
 				A55517D41D61C78D003B4962 /* QRViewController.swift in Sources */,
@@ -937,6 +951,7 @@
 				A507173F1D55C775007E4BE5 /* BasketDateCell.swift in Sources */,
 				A5CEE8521D2BA65100DF871B /* RoundLabel.swift in Sources */,
 				A518C0701D3B5BAF0004D036 /* LoginControlVC.swift in Sources */,
+				A5334B581D6AE83900ADAE64 /* CardViewMaterial.swift in Sources */,
 				A5A4E3D31D5607DB00757D0E /* FileManager.swift in Sources */,
 				A5EBA8701D5F0859003CEC91 /* BasketViewController.swift in Sources */,
 				A589E4B71D3CA4C40015A2B7 /* Enums.swift in Sources */,
@@ -954,6 +969,7 @@
 				A5447CA31D49D73800FECE94 /* IngredientItemCell.swift in Sources */,
 				A57F58041D4E114600274A25 /* ReviewTableViewCell.swift in Sources */,
 				A5DEA3FB1D4618DB005218A8 /* RecpieTableControl.swift in Sources */,
+				A5D48ED61D6AC42400CC1B32 /* CoreDataRecentSearchManager.swift in Sources */,
 				A58706DB1D3104E7000D20C9 /* SaleTagLabel.swift in Sources */,
 				A58706DF1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift in Sources */,
 				A558F3FC1D43598500346754 /* CoreDataController.swift in Sources */,

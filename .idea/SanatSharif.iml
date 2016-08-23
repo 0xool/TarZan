@@ -8,98 +8,257 @@
       <sourceFolder url="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libsqlite3.tbd" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainpageTabBarControlVC.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainPageFoodCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketInfoTableViewVC.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Slider.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BuyOutCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SubList.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ViewController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainPageVC.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/DataBaseManager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Item.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/UserModelManager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/AddressPickerView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RelatedSection.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketFoldingCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LoginPageController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RelatedCollectionCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LoadMoreCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ReviewSection.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketFooterBackGroundView.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ImageCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/CookInstrunctions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MenuBarVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecpieDetailVCAnimationLoad.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RamItemHandler.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BannerCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LoginPopOverVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MediumWindowViewMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RemindMeCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/infoCellMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MenuTableViewMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketHeaderView.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Enums.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketHeaderBackGroundView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SignUpTableVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/DateHeaderCell.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Cart.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/DateHeaderCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecpieCategoryVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecpieCategory.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/UIImage+Decompression.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Basket.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Slide.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SWRevealViewController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/CookIngInfoCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/IngredientSectionHeaderCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SWRevealViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/PrudoctPagePlusMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/infoCellTable.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Item.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketItemCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/AddressPickerView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketHeaderView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/CardViewMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Picture.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ProductDetailVC.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Constraints.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Cart.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainpageCollectionViewLayout.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/PrudoctPagePlusButtonMaterial.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/User.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RoundImageMaterial.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RoundButtonMaterial.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MenuTableViewMaterial.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RegisteringFormVC.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Family.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LittleProduct.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainpageTabBarControlVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/QRViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketDetailHeaderCell.xib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainPageNavigationController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Product.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/AppDelegate.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecentSearchCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Slide.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/List.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Picture.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MediumWindowViewMaterial.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SWRevealViewController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketPageVC.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BackButtonMaterial.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SanatSharif-Bridging-Header.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LoginPageController.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MenuBarVC.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BannerCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SWRevealViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Demention.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LoginButtonView.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/PrudoctPagePlusMaterial.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SmallWindowViewMaterial.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SaleTagLabel.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketCell.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Address.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Category.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecpieCell.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LittleProduct.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/UIViewExtensions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketDetailHeaderCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/DataBaseManager.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RoundViewMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RegisteringFormVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BuyWindowMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecpieDetailVCAnimationDissmiss.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecpieTableControl.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ElasticView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SearchVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/PrudoctPagePlusButtonMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecentSearchCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RoundViewWithShadowMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketInfoTableViewVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketHeaderCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SaleTagLabel.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/DateCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/List.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Slider.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/FileManager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketFooterView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecentSearchEntity.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Constants.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainPageVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BackButtonMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/basketDetailVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/AppDelegate.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BuyOutCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SanatSharif-Bridging-Header.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/UserModelManager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketDateCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainpageCollectionViewLayout.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecpieCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Demention.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/UIColor+Palette.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Address.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/CoreDataController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Basket+CoreDataProperties.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/DataBaseModel.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RoundButtonMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/IngredientItemCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketFooterView.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Product.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LoginButtonView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SearchResultVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/MainPageFoodCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BuyAsGuestVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketToBuy.xcdatamodeld/BasketToBuy.xcdatamodel" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/UltravisualLayout.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SubList.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/searchCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketToBuyCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/CardImageView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/User.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecentSearHistory.xcdatamodeld/RecentSearHistory.xcdatamodel" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ElasticTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/SmallWindowViewMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ReviewTableViewCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecpieDetailVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RoundImageMaterial.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/ProductDetailVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Category.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/LoginControlVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/CoreDataRecentSearchManager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/RecentSearchEntity+CoreDataProperties.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketPageVC.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/InspirationsViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/GraphView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/BasketDescCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/DateCell.xib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SanatSharif/Family.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharifUITests/SanatSharifUITests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharifUITests/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharifTests/SanatSharifTests.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SanatSharifTests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Timeline.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Response.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Error.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Stream.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Validation.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ServerTrustPolicy.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Result.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Manager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/NetworkReachabilityManager.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Request.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Notifications.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/MultipartFormData.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Upload.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Components/RZTransitionsNavigationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Components/RZTransitionsNavigationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Utilities/UIImage+RZTransitionsSnapshotHelpers.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Utilities/UIImage+RZTransitionsFastImageBlur.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Utilities/NSObject+RZTransitionsViewHelpers.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Utilities/UIImage+RZTransitionsSnapshotHelpers.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Utilities/UIImage+RZTransitionsFastImageBlur.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Utilities/NSObject+RZTransitionsViewHelpers.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Data/RZUniqueTransition.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Data/RZTransitionAction.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Data/RZUniqueTransition.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/RZTransitions.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZZoomPushAnimationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZZoomPushAnimationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZTransitionsAnimationControllers.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZSegmentControlMoveFadeAnimationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZZoomBlurAnimationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZCardSlideAnimationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZZoomBlurAnimationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZSegmentControlMoveFadeAnimationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZZoomAlphaAnimationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZCirclePushAnimationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZShrinkZoomAnimationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZRectZoomAnimationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZZoomAlphaAnimationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZCirclePushAnimationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZAnimationControllerProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZRectZoomAnimationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZShrinkZoomAnimationController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Transitions/RZCardSlideAnimationController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZOverscrollInteractionController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZOverscrollInteractionController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZBaseSwipeInteractionController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZHorizontalInteractionController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZTransitionInteractionControllerProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZPinchInteractionController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZBaseSwipeInteractionController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZTransitionsInteractionControllers.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZVerticalSwipeInteractionController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZPinchInteractionController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZVerticalSwipeInteractionController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Interactors/RZHorizontalInteractionController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Managers/RZTransitionsManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RZTransitions/RZTransitions/Managers/RZTransitionsManager.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RZTransitions/RZTransitions-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RZTransitions/RZTransitions.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RZTransitions/RZTransitions-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RZTransitions/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RZTransitions/RZTransitions.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RZTransitions/RZTransitions-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-frameworks.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests.debug.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SABlurImageView/SABlurImageView-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SABlurImageView/SABlurImageView.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SABlurImageView/SABlurImageView-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SABlurImageView/SABlurImageView.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SABlurImageView/SABlurImageView-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SABlurImageView/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif.release.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif.modulemap" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-resources.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif.release.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-acknowledgements.markdown" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif.debug.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharif/Pods-SanatSharif-acknowledgements.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyButton/SwiftyButton-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyButton/SwiftyButton-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyButton/SwiftyButton-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyButton/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyButton/SwiftyButton.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SwiftyButton/SwiftyButton.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AMViralSwitch/AMViralSwitch.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AMViralSwitch/AMViralSwitch-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AMViralSwitch/AMViralSwitch-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AMViralSwitch/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AMViralSwitch/AMViralSwitch-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/AMViralSwitch/AMViralSwitch.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/PureLayout/PureLayout-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/PureLayout/PureLayout-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/PureLayout/PureLayout.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/PureLayout/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/PureLayout/PureLayout-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/PureLayout/PureLayout.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IOStickyHeader/IOStickyHeader-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IOStickyHeader/IOStickyHeader.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IOStickyHeader/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IOStickyHeader/IOStickyHeader-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IOStickyHeader/IOStickyHeader-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/IOStickyHeader/IOStickyHeader.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DOFavoriteButton/DOFavoriteButton-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DOFavoriteButton/DOFavoriteButton-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DOFavoriteButton/DOFavoriteButton.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DOFavoriteButton/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DOFavoriteButton/DOFavoriteButton-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DOFavoriteButton/DOFavoriteButton.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ResourceBundle-ImageSlideshow-Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DKCamera/DKCamera.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DKCamera/DKCamera-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DKCamera/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DKCamera/DKCamera-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DKCamera/DKCamera.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DKCamera/DKCamera-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifTests/Pods-SanatSharifTests-umbrella.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifTests/Pods-SanatSharifTests-dummy.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifTests/Pods-SanatSharifTests.modulemap" isTestSource="false" />
@@ -110,23 +269,121 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifTests/Pods-SanatSharifTests-frameworks.sh" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifTests/Pods-SanatSharifTests-acknowledgements.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifTests/Pods-SanatSharifTests-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ResourceBundle-ImageSlideshow-Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/ImageSlideshow/ImageSlideshow-prefix.pch" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-acknowledgements.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-frameworks.sh" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-acknowledgements.markdown" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests.modulemap" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-umbrella.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Info.plist" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests.debug.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests.release.xcconfig" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-dummy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-SanatSharifUITests/Pods-SanatSharifUITests-resources.sh" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DynamicBlurView/DynamicBlurView.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DynamicBlurView/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DynamicBlurView/DynamicBlurView.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/DynamicBlurView/DynamicBlurView-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/expanding-collection/expanding-collection-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/expanding-collection/expanding-collection-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/expanding-collection/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/expanding-collection/expanding-collection-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/expanding-collection/expanding-collection.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/expanding-collection/expanding-collection.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMPaperSwitch/RAMPaperSwitch.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMPaperSwitch/RAMPaperSwitch-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMPaperSwitch/RAMPaperSwitch-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMPaperSwitch/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMPaperSwitch/RAMPaperSwitch-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMPaperSwitch/RAMPaperSwitch.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMAnimatedTabBarController/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Alamofire/Alamofire-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/TextFieldEffects/TextFieldEffects.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/TextFieldEffects/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/TextFieldEffects/TextFieldEffects.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/GMStepper/GMStepper.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/GMStepper/GMStepper-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/GMStepper/GMStepper-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/GMStepper/GMStepper.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/GMStepper/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/GMStepper/GMStepper-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FoldingCell/FoldingCell.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FoldingCell/FoldingCell.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FoldingCell/FoldingCell-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FoldingCell/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FoldingCell/FoldingCell-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/FoldingCell/FoldingCell-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SQLite.swift/SQLite.swift-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SQLite.swift/SQLite.swift-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SQLite.swift/SQLite.swift.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SQLite.swift/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SQLite.swift/SQLite.swift-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/SQLite.swift/SQLite.swift.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTAppleCalendar/ResourceBundle-JTAppleCalendar-Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTAppleCalendar/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTMaterialSwitch/JTMaterialSwitch-umbrella.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTMaterialSwitch/JTMaterialSwitch.xcconfig" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTMaterialSwitch/JTMaterialSwitch.modulemap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTMaterialSwitch/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTMaterialSwitch/JTMaterialSwitch-prefix.pch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTMaterialSwitch/JTMaterialSwitch-dummy.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/JTMaterialSwitch/ResourceBundle-JTMaterialSwitch-Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SABlurImageView/SABlurImageView/CATransition+Closure.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SABlurImageView/SABlurImageView/SABlurImageView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SABlurImageView/SABlurImageView/UIImage+BlurEffect.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/ExpandingViewController/ExpandingViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/ExpandingViewController/CollectionView/Cells/BasePageCollectionCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/ExpandingViewController/CollectionView/PageCollectionView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/ExpandingViewController/CollectionView/Layout/PageCollectionLayout.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/TransitionDriver/TransitionDriver.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/ExpandingTableViewController/ExpandingTableViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/Helpers/Animations/CornerAnimatable/CornerAnimatable.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/Helpers/SubviewsForEach/SubviewsForEach.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/Helpers/ConfigurationHelper/ConfigurationHelper.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/Helpers/ScreenShot/ScreenShotHelper.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/expanding-collection/Source/Helpers/Constraints Helpers/ConstraintsHelper.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftyButton/SwiftyButton/SwiftyButton.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftyButton/SwiftyButton/SwiftyButton+ResizableImage.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SwiftyButton/SwiftyButton/SwiftyCustomContentButton.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/AMViralSwitch/Source/AMViralSwitch.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/AMViralSwitch/Source/AMViralSwitch.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Extensions/FTS4.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Extensions/R*Tree.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/Schema.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/Operators.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/Expression.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/Setter.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/CoreFunctions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/Query.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/CustomFunctions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/AggregateFunctions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Typed/Collation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/SQLite.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Foundation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Helpers.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Core/fts3_tokenizer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Core/Statement.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Core/Connection.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Core/SQLite-Bridging.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Core/SQLite-Bridging.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Core/Blob.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/SQLite.swift/SQLite/Core/Value.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/IOStickyHeader/Pod/Classes/IOStickyHeaderFlowLayoutAttibutes.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/IOStickyHeader/Pod/Classes/IOStickyHeaderFlowLayout.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DOFavoriteButton/DOFavoriteButton/like.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DOFavoriteButton/DOFavoriteButton/smile.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DOFavoriteButton/DOFavoriteButton/star.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DOFavoriteButton/DOFavoriteButton/DOFavoriteButton.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DOFavoriteButton/DOFavoriteButton/heart.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/ImageSlideshow/Pod/Classes/Core/ZoomAnimatedTransitioning.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/ImageSlideshow/Pod/Classes/Core/ImageSlideshow.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/ImageSlideshow/Pod/Classes/Core/InputSource.swift" isTestSource="false" />
@@ -136,6 +393,68 @@
       <sourceFolder url="file://$MODULE_DIR$/Pods/ImageSlideshow/Pod/Classes/Core/UIImageView+Tools.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/ImageSlideshow/Pod/Assets/ic_cross_white@2x.png" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/ImageSlideshow/Pod/Assets/ic_cross_white@3x.png" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DKCamera/DKCamera/DKCameraResource.bundle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DKCamera/DKCamera/DKCamera.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/DynamicBlurView/DynamicBlurView/DynamicBlurView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/PureLayout.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/PureLayout+Internal.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/ALView+PureLayout.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/NSArray+PureLayout.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/ALView+PureLayout.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/PureLayoutDefines.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/PureLayout/PureLayout/PureLayout/NSArray+PureLayout.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Validation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Response.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Error.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Stream.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/MultipartFormData.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ServerTrustPolicy.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ParameterEncoding.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Result.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Manager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Download.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/NetworkReachabilityManager.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Timeline.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/ResponseSerialization.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Request.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Notifications.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Upload.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/Alamofire/Source/Alamofire.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMPaperSwitch/PaperSwitch/RAMPaperSwitch.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/GMStepper/GMStepper/GMStepper.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/RAMItemAnimationProtocol.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/RAMBadge/RAMBadge.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/FumeAnimation/RAMFumeAnimation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/FrameAnimation/RAMFrameItemAnimation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/RAMAnimatedTabBarController/RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/JTAppleCollectionReusableView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/JTAppleViews.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/JTAppleDayCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/GlobalFunctionsAndExtensions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/JTAppleCalendarDelegates.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/JTCalendarProtocols.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/JTAppleCalendarLayout.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/UserInteractionFunctions.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTAppleCalendar/Sources/Classes/JTAppleCalendarView.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/FoldingCell/FoldingCell/FoldingCell/FoldingCell/FoldingCell.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTMaterialSwitch/Pod/Classes/JTMaterialSwitch.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Pods/JTMaterialSwitch/Pod/Classes/JTMaterialSwitch.m" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

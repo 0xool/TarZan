@@ -95,7 +95,7 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
         self.SearchBarStackView.hidden = true
         self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, -1000)
         
-        
+        self.tabBarController?.tabBar.items![1].badgeValue = "3"
         
         
         self.searchContainerView.transform = CGAffineTransformMakeTranslation(0, -1000)
@@ -848,14 +848,29 @@ func animateColllection(){
     func snapshopOfCell(inputView: UIView) -> UIView {
         UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0.0)
         inputView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        
+        for v in inputView.subviews{
+            
+//            if let button = v as? UIView {
+//                button.removeFromSuperview()
+//            }
+            print(v.accessibilityIdentifier)
+            
+            if let viw = v as? UIStackView {
+                viw.removeFromSuperview()
+            }
+        }
+        
         let image = UIGraphicsGetImageFromCurrentImageContext() as UIImage
         UIGraphicsEndImageContext()
         let cellSnapshot : UIView = UIImageView(image: image)
         cellSnapshot.layer.masksToBounds = false
-        cellSnapshot.layer.cornerRadius = 0.0
+        cellSnapshot.layer.cornerRadius = cellSnapshot.frame.size.width / 2
+        cellSnapshot.clipsToBounds = true
         cellSnapshot.layer.shadowOffset = CGSizeMake(-5.0, 0.0)
         cellSnapshot.layer.shadowRadius = 5.0
         cellSnapshot.layer.shadowOpacity = 0.4
+        
         return cellSnapshot
     }
     
@@ -921,6 +936,16 @@ func animateColllection(){
             }
             }
             
+            if(longPress.locationInView(self.view).y > 470){
+                
+                
+                self.dragView.backgroundColor = UIColor.yellowColor()
+                
+            }else
+            {
+                self.dragView.backgroundColor = UIColor.grayColor()
+            }
+            
             
         default:
 
@@ -936,14 +961,28 @@ func animateColllection(){
                     My.cellSnapshot!.center = cell.center
                     My.cellSnapshot!.transform = CGAffineTransformIdentity
                     My.cellSnapshot!.alpha = 0.0
-                    self.dragView.alpha = 0
                     
                     }, completion: { (finished) -> Void in
                         if finished {
                             Path.initialIndexPath = nil
                             My.cellSnapshot!.removeFromSuperview()
                             My.cellSnapshot = nil
-                            self.dragView.hidden = true
+                            
+                            UIView.animateWithDuration(0.25, animations: { 
+                                
+                                self.dragView.transform = CGAffineTransformMakeTranslation(0, UIScreen.mainScreen().bounds.height + 500)
+                                //self.dragView.alpha = 0
+
+                                
+                                }, completion: { (finished) in
+                                    if finished {
+                                            self.dragView.hidden = true
+                                            self.dragView.transform = CGAffineTransformMakeTranslation(0, 0)
+                                            self.dragView.backgroundColor = UIColor.grayColor()
+                                    }
+                            })
+                            
+                            
 
                         }
                 })
