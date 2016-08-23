@@ -19,10 +19,16 @@ class QRViewController: UIViewController , AVCaptureMetadataOutputObjectsDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
         self.configureVideoCapture()
         self.addVideoPreviewLayer()
         self.initializeQRView()
            
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
     }
     
     func configureVideoCapture() {

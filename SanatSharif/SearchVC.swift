@@ -18,16 +18,26 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
     
     let moContext = UserModelManager.sharedInstance._recentSearchController.managedObjectContext
     var searchedTexts : [RecentSearchEntity]! = [RecentSearchEntity]()
+    var delegate: switchViewProtocol?
+
     
     
     override func viewDidLoad() {
         
         RecentSearchTable.delegate = self
         RecentSearchTable.dataSource = self
-        self.SearchBar.delegate = self
-
+        SearchBar.delegate = self
         
         
+    }
+    
+    func  setFirstResponder (){
+    
+        self.SearchBar.becomeFirstResponder()
+    }
+    
+    func resignAllResponder(){
+        self.SearchBar.resignFirstResponder()
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
@@ -35,10 +45,21 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
         
         if (searchBar.text != nil && searchBar.text != ""){
             addSearchToCoreData(searchBar.text!)
-            performSegueWithIdentifier("SearchResultView", sender: SearchBar.text)
+            self.SearchBar.resignFirstResponder()
+            self.delegate?.swtchViewToSearched(self.SearchBar.text!)
         }
 
         
+    }
+    
+    func setViewtoLoad(){
+        
+        self.RecentSearchTable.alpha = 0.8
+        
+    }
+    
+    func setViewToUnload(){
+        self.RecentSearchTable.alpha = 0
     }
     
     func searchedResult(){
@@ -67,9 +88,10 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
         self.SearchBar.barTintColor = UIColor(red: 182 / 255, green: 194 / 255, blue: 150 / 255, alpha: 0.1)
         //        self.SearchBar.backgroundImage = UIImage()
         self.SearchBar.translucent = true
-        self.RecentSearchTable.backgroundColor = UIColor.clearColor()
+       // self.RecentSearchTable.backgroundColor = UIColor.clearColor()
         //self.SearchBar.becomeFirstResponder()
-        self.RecentSearchTable.alpha = 0.3
+        //self.RecentSearchTable.alpha = 0.3
+        self.RecentSearchTable.alpha = 0
         searchedResult()
     }
     
@@ -111,7 +133,8 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
         
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! RecentSearchCell
         let searchedText : String = cell.TextSearched.text!
-        performSegueWithIdentifier("SearchResultView", sender: searchedText)
+        self.SearchBar.resignFirstResponder()
+        self.delegate?.swtchViewToSearched(searchedText)
         
         
     }
@@ -123,7 +146,7 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
         if let cell = tableView.dequeueReusableCellWithIdentifier("RecentSearchCell") as? RecentSearchCell {
             
             cell.configureCell(self.searchedTexts[searchedTexts.count - indexPath.row - 1].recentSearchText!)
-            cell.backgroundColor = UIColor(red: 230 / 255, green: 230 / 255 , blue: 230 / 255, alpha: 0.5)
+            cell.backgroundColor = UIColor.clearColor()//UIColor(red: 230 / 255, green: 230 / 255 , blue: 230 / 255, alpha: 0.5)
             
             cell.alpha = 1
             
@@ -133,6 +156,13 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
             
             return UITableViewCell()
         }
+        
+    }
+    
+    @IBAction func QRItemClicked(){
+        
+        self.SearchBar.resignFirstResponder()
+        self.delegate?.switchViewToQR()
         
     }
     
@@ -151,7 +181,17 @@ class SearchVC: UIViewController , UITableViewDelegate , UITableViewDataSource ,
                 }
             }
         }
+        
+        
     }
     
     
+    
+    
+}
+
+
+protocol switchViewProtocol {
+    func swtchViewToSearched(search : String)
+    func switchViewToQR()
 }

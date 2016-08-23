@@ -13,7 +13,7 @@ import ImageSlideshow
 import DynamicBlurView
 import SABlurImageView
 
-class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate , UICollectionViewDelegateFlowLayout ,  UITableViewDelegate , UITableViewDataSource  , SWRevealViewControllerDelegate  {
+class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate , UICollectionViewDelegateFlowLayout ,  UITableViewDelegate , UITableViewDataSource  , SWRevealViewControllerDelegate , switchViewProtocol  {
     
     @IBOutlet weak var SliderPriceTag : UILabel!
     @IBOutlet weak var PriceSlider: UISlider!
@@ -73,6 +73,8 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     var prices : [Int] = [Int]()
     
     var transitionDelegate: ZoomAnimatedTransitioningDelegate?
+    var hideNavBar : Bool! = true
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -151,7 +153,17 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     
     override func viewDidAppear(animated: Bool) {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+    
+        if hideNavBar == true{
+            self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+            self.navigationController?.navigationBar.shadowImage = UIImage()
+            self.navigationController?.navigationBar.translucent = true
+            self.navigationController?.navigationBar.alpha = 1
+        }
     }
+    
+    
     
     func click() {
         let ctr = FullScreenSlideshowViewController()
@@ -504,6 +516,7 @@ func animateColllection(){
                     self.navigationController?.navigationBar.shadowImage = nil
                     self.navigationController?.navigationBar.translucent = false
                     self.navigationController?.navigationBar.backgroundColor  = UIColor(red: 0 / 255.0, green: 128 / 255.0, blue: 0 / 255.0, alpha: 1)
+                    self.hideNavBar = false
                     //self.navigationController!.navigationBar.layer.zPosition = -1;
 
                    // self.navigationController!.navigationBar.shadowImage = nil
@@ -525,6 +538,7 @@ func animateColllection(){
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.alpha = 1
+        hideNavBar = true
         //self.navigationController!.navigationBar.layer.zPosition = -1;
 
     UIView.animateWithDuration(0.5, animations: {
@@ -678,6 +692,18 @@ func animateColllection(){
                 }
             }
         }
+        
+        if segue.identifier == "SearchResultPage" {
+            let searchVC = segue.destinationViewController.childViewControllers[0] as! SearchVC
+            
+            searchVC.delegate = self
+        }
+        
+        
+        if segue.identifier == "searchToQR" {
+            let qRViewController = segue.destinationViewController as! QRViewController
+        }
+        
     }
 //=======================================================================================================
 //Summary : IBaction when clicking the search button in main view for animating the search view
@@ -686,17 +712,29 @@ func animateColllection(){
     @IBAction func SearchItemClicked(sender: AnyObject) {
         
         
-      
+        
+        
+        
+        let containerViewController = self.childViewControllers[0].childViewControllers[0] as! SearchVC
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
+        let vibrancyEffect = UIVibrancyEffect(forBlurEffect: blurEffect)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        let vibrancyView = UIVisualEffectView(effect: vibrancyEffect)
+        blurEffectView.contentView.addSubview(vibrancyView)
+        
+        // 2
+        
+ 
+        
+        
         
         if(!isInSearchMode){
             
-
-            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-            let blurEffectView = UIVisualEffectView(effect: blurEffect)
             blurEffectView.frame = self.MainView.bounds
-            
             blurEffectView.alpha = 0
+            
              // for supporting device rotation
+//            self.MainView.addSubview(blurEffectView)
             self.MainView.addSubview(blurEffectView)
             self.searchContainerView.hidden = false
             self.navigationController?.navigationBar.translucent = true
@@ -705,28 +743,38 @@ func animateColllection(){
             
         UIView.animateWithDuration(0.5, animations: {
            
-            self.SearchBar.becomeFirstResponder()
+            //self.SearchBar.becomeFirstResponder()
 
             for v in self.MainView.subviews{
                 if v is UIVisualEffectView{
-                    v.alpha = 0.8
+                    v.alpha = 1
+                    
                 }
             }
-            
+
             //self.SearchBarStackView.transform = CGAffineTransformMakeTranslation(0, 0)
             self.searchContainerView.transform = CGAffineTransformMakeTranslation(0, 0)
+            containerViewController.setFirstResponder()
+
             
             self.MainView.alpha = 1
            // self.navigationController!.navigationBar.layer.zPosition = 0;
             
             
-            }, completion: nil)
+            }, completion:{ (finished) in
+                if finished {
+                    containerViewController.setViewtoLoad()
+                }
+            })
+            
+            
         
        // self.SearchBarStackView.hidden =  false
         self.MainView.userInteractionEnabled = false
             isInSearchMode = true
             
         }else {
+                containerViewController.resignAllResponder()
                 searchModeOff()
         }
 
@@ -734,9 +782,14 @@ func animateColllection(){
     }
     
     func searchModeOff(){
-        //self.SearchBar.resignFirstResponder()
-        self.resignFirstResponder()
+        
+        let containerViewController = self.childViewControllers[0].childViewControllers[0] as! SearchVC
+        
+        
         UIView.animateWithDuration(0.25, animations: {
+            
+            containerViewController.setViewToUnload()
+            
             
             for v in self.MainView.subviews{
                 if v is UIVisualEffectView{
@@ -761,6 +814,21 @@ func animateColllection(){
 
         searchModeOff()
         performSegueWithIdentifier("SearchResultView", sender: searchBar.text)
+        
+    }
+    
+    func swtchViewToSearched(search : String){
+        
+        
+        searchModeOff()
+        performSegueWithIdentifier("SearchResultView", sender: search)
+        
+    }
+    
+    func switchViewToQR() {
+        
+        searchModeOff()
+        performSegueWithIdentifier("searchToQR", sender: self)
         
     }
     
