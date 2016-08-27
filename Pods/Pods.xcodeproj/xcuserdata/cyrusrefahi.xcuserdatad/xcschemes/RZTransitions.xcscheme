@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "589266ECE8EAECE370B5A9AD31495ACD"
-               BlueprintName = "RZTransitions"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "RZTransitions.framework">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = '6A188E71ADA20B68FFE288955334CFF4'
+               BlueprintName = 'RZTransitions'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'RZTransitions.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

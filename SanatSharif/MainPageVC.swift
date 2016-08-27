@@ -12,8 +12,38 @@ import AVFoundation
 import ImageSlideshow
 import DynamicBlurView
 import SABlurImageView
+import ZoomTransitioning
 
-class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate , UICollectionViewDelegateFlowLayout ,  UITableViewDelegate , UITableViewDataSource  , SWRevealViewControllerDelegate , switchViewProtocol  {
+
+
+
+extension MainPageVC : ZoomTransitionSourceDelegate {
+    
+    
+    func transitionSourceImageView() -> UIImageView {
+        return selectedImageView
+    }
+    
+    func transitionSourceImageViewFrame(forward forward: Bool) -> CGRect {
+        return selectedImageView.convertRect(selectedImageView.bounds, toView: view)
+    }
+    
+    func transitionSourceWillBegin() {
+        selectedImageView.hidden = true
+    }
+    
+    func transitionSourceDidEnd() {
+        selectedImageView.hidden = false
+    }
+    
+    func transitionSourceDidCancel() {
+        selectedImageView.hidden = false
+    }
+}
+
+
+
+class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate , UICollectionViewDelegateFlowLayout ,  UITableViewDelegate , UITableViewDataSource  , SWRevealViewControllerDelegate , switchViewProtocol  , UIViewControllerTransitioningDelegate {
     
     @IBOutlet weak var SliderPriceTag : UILabel!
     @IBOutlet weak var PriceSlider: UISlider!
@@ -45,6 +75,8 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     @IBOutlet weak var graphView : UIView!
     @IBOutlet weak var searchContainerView: UIView!
     
+    private let recpieDetailVCAnimation = ProductDetailAnimation()
+    
     
     var scrollView: UIScrollView!
     var stackView: UIStackView!
@@ -74,6 +106,8 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     
     var transitionDelegate: ZoomAnimatedTransitioningDelegate?
     var hideNavBar : Bool! = true
+    var selectedImageView : UIImageView!
+
     
     
     override func viewDidLoad() {
@@ -640,6 +674,7 @@ func animateColllection(){
         
             if(!sidebarMenuOpen){
                 let product = Product(id: 0, name: "پیاز جعفری", price: 0, expDate: 0)
+                self.selectedImageView = (self.collection.cellForItemAtIndexPath(indexPath) as! MainPageFoodCell).foodIMage
                 performSegueWithIdentifier("showDetails", sender: product)
             }else{
             
@@ -700,8 +735,12 @@ func animateColllection(){
         }
         
         
-        if segue.identifier == "searchToQR" {
-            let qRViewController = segue.destinationViewController as! QRViewController
+      
+        
+        if segue.identifier == "showDetails", let RD = segue.destinationViewController as? ProductDetailViewController {
+            
+            RD.transitioningDelegate = self
+            
         }
         
     }
@@ -1148,7 +1187,10 @@ func animateColllection(){
         
     }
     
+    //=========================================================================================================================================================
     
     
+
+  
 
 }

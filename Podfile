@@ -7,6 +7,7 @@ target 'SanatSharif' do
 
   # Pods for SanatSharif
   pod 'RAMPaperSwitch', '~> 1.0'
+  pod 'ZoomTransitioning', '~> 1.1'
   pod 'TextFieldEffects', '~> 1.2'
   pod "GMStepper"
   pod 'FoldingCell'

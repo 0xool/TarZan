@@ -8,8 +8,17 @@
 
 import UIKit
 import RZTransitions
+import ZoomTransitioning
 
 class MainPageNavigationController: RZTransitionsNavigationController {
+    
+    private let zoomNavigationControllerDelegate = ZoomNavigationControllerDelegate()
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        delegate = zoomNavigationControllerDelegate
+    }
     
     override func viewDidLoad() {
         

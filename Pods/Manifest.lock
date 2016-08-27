@@ -24,6 +24,7 @@ PODS:
   - SwiftyButton/CustomContent (0.4.0):
     - PureLayout (~> 3.0)
   - TextFieldEffects (1.2.0)
+  - ZoomTransitioning (1.1.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - SQLite.swift (~> 0.10.1)
   - SwiftyButton
   - TextFieldEffects (~> 1.2)
+  - ZoomTransitioning (~> 1.1)
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
@@ -67,7 +69,8 @@ SPEC CHECKSUMS:
   SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
   SwiftyButton: fffcc0d82b2b5f9ec1681f20ee9c67bed0d5c73b
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
+  ZoomTransitioning: 55fa47c227ae0f5d3b15fe358a5549aec5ecab30
 
-PODFILE CHECKSUM: 9a3ae452368183615096ecbc2882a87f49f15392
+PODFILE CHECKSUM: 527e96a1f65af3ae41b4bda7e03edf2e5e90db15
 
 COCOAPODS: 1.0.1
