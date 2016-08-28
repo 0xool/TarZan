@@ -42,6 +42,19 @@ extension MainPageVC : ZoomTransitionSourceDelegate {
 }
 
 
+extension MainPageVC : BuyAnimationDelegate {
+
+    func BuyBtnAnimation(image: UIImage) {
+        
+        
+        
+        
+        
+    }
+    
+    
+}
+
 
 class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate , UICollectionViewDelegateFlowLayout ,  UITableViewDelegate , UITableViewDataSource  , SWRevealViewControllerDelegate , switchViewProtocol  , UIViewControllerTransitioningDelegate {
     
@@ -484,6 +497,20 @@ func animateColllection(){
     
             cell.configureCell("۲۰۰۰", foodName: "گوجه و پیاز  ", foodImageName: "  ")
             
+            cell.animationDelegate = self
+            
+            cell.layer.shadowOffset = CGSizeMake(0, 1)
+            cell.layer.shadowColor = UIColor.blackColor().CGColor
+            cell.layer.shadowRadius = 1
+            cell.layer.shadowOpacity = 0.6
+            
+            // Maybe just me, but I had to add it to work:
+            cell.clipsToBounds = false
+            
+            let shadowFrame: CGRect = (cell.layer.bounds)
+            let shadowPath: CGPathRef = UIBezierPath(rect: shadowFrame).CGPath
+            cell.layer.shadowPath = shadowPath
+            
             if(animateNotDone[indexPath.row]){
                 animateSingleCell(cell, index: indexPath.row)
                 animateNotDone[indexPath.row] = false
@@ -644,7 +671,7 @@ func animateColllection(){
             return CGSizeMake(screenSize.width , 125)
         }
         
-        return CGSizeMake((collection.bounds.width - 8) / 2 , screenSize.width * 0.65)
+        return CGSizeMake((collection.bounds.width - 16) / 2 , screenSize.width * 0.65)
     }
     
     

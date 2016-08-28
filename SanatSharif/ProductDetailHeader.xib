@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="276" height="246"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kan-id-Ymb" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kan-id-Ymb" customClass="ImageSlideshow" customModule="ImageSlideshow">
                         <rect key="frame" x="0.0" y="0.0" width="276" height="246"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

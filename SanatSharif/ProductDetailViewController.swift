@@ -17,28 +17,32 @@ extension ProductDetailViewController : ZoomTransitionDestinationDelegate {
     func transitionDestinationImageViewFrame(forward forward: Bool) -> CGRect {
         if forward {
             let x: CGFloat = 0.0
-//            let y = topLayoutGuide.length
-            let y : CGFloat = 0
-            let width = UIScreen.mainScreen().bounds.width
-            let height : CGFloat = 200
+            let y = topLayoutGuide.length
+            let width = view.frame.width
+            let height = width * 2.0 / 3.0
             return CGRect(x: x, y: y, width: width, height: height)
         } else {
+            
             return productDetailHeader.imageSlider.convertRect(productDetailHeader.imageSlider.bounds, toView: view)
         }
     }
     
     func transitionDestinationWillBegin() {
-       // productDetailHeader.imageSlider.hidden = true
+       self.collectionView.alpha = 0
         
     }
     
     func transitionDestinationDidEnd(transitioningImageView imageView: UIImageView) {
         //productDetailHeader.imageSlider.hidden = false
         //largeImageView.image = imageView.image
+        
+            self.collectionView.alpha = 1
+        
     }
     
     func transitionDestinationDidCancel() {
-        productDetailHeader.imageSlider.hidden = false
+        //productDetailHeader.imageSlider.hidden = false
+        
     }
 }
 
@@ -63,8 +67,9 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
         collectionView.dataSource = self
         
         
+        
         if let layout: IOStickyHeaderFlowLayout = self.collectionView.collectionViewLayout as? IOStickyHeaderFlowLayout {
-            layout.parallaxHeaderReferenceSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, 200)
+            layout.parallaxHeaderReferenceSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, 400)
             layout.parallaxHeaderMinimumReferenceSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, 100)
             layout.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, layout.itemSize.height)
             layout.parallaxHeaderAlwaysOnTop = true
