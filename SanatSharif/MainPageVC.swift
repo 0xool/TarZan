@@ -62,29 +62,18 @@ extension MainPageVC : BuyAnimationDelegate {
         
         cellSnapshot.center = CGPointMake(cellPosition.origin.x , cellPosition.origin.y)
         
-        let toPoint: CGPoint = CGPointMake(UIScreen.mainScreen().bounds.width / 2, UIScreen.mainScreen().bounds.height)
-        let fromPoint : CGPoint = CGPointMake(cellPosition.origin.x, cellPosition.origin.y)
+      
         
         
-        let movement = CABasicAnimation(keyPath: "movement")
-        movement.additive = true
-        movement.fromValue =  NSValue(CGPoint: fromPoint)
-        movement.toValue =  NSValue(CGPoint: toPoint)
-        movement.duration = 0.3
-        
-        cellSnapshot.layer.addAnimation(movement, forKey: "move")
-        
-        cellSnapshot.removeFromSuperview()
-        
-//        UIView.animateWithDuration(1, animations: { 
-//            
-//            cellSnapshot.transform = CGAffineTransformMakeTranslation( 0 , UIScreen.mainScreen().bounds.height)
-//            
-//            }) { (finished) in
-//                if finished {
-//                    cellSnapshot.removeFromSuperview()
-//                }
-//        }
+        UIView.animateWithDuration(1, animations: { 
+            
+            cellSnapshot.transform = CGAffineTransformMakeTranslation( 0 , UIScreen.mainScreen().bounds.height)
+            
+            }) { (finished) in
+                if finished {
+                    cellSnapshot.removeFromSuperview()
+                }
+        }
         
     }
     
