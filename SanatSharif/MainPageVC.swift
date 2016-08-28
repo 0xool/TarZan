@@ -44,11 +44,47 @@ extension MainPageVC : ZoomTransitionSourceDelegate {
 
 extension MainPageVC : BuyAnimationDelegate {
 
-    func BuyBtnAnimation(image: UIImage) {
+    func BuyBtnAnimation(image: UIImage , cellPosition : CGRect) {
+        
+       
+        let cellSnapshot = UIImageView(frame: CGRectMake(100, 150, 50, 50)); // set as you want
+        cellSnapshot.image = image;
+        
+        cellSnapshot.layer.masksToBounds = false
+        cellSnapshot.layer.cornerRadius = cellSnapshot.frame.size.width / 2
+        cellSnapshot.clipsToBounds = true
+        cellSnapshot.layer.shadowOffset = CGSizeMake(-5.0, 0.0)
+        cellSnapshot.layer.shadowRadius = 5.0
+        cellSnapshot.layer.shadowOpacity = 0.4
+      //  cellSnapshot.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        
+        self.view.addSubview(cellSnapshot)
+        
+        cellSnapshot.center = CGPointMake(cellPosition.origin.x , cellPosition.origin.y)
+        
+        let toPoint: CGPoint = CGPointMake(UIScreen.mainScreen().bounds.width / 2, UIScreen.mainScreen().bounds.height)
+        let fromPoint : CGPoint = CGPointMake(cellPosition.origin.x, cellPosition.origin.y)
         
         
+        let movement = CABasicAnimation(keyPath: "movement")
+        movement.additive = true
+        movement.fromValue =  NSValue(CGPoint: fromPoint)
+        movement.toValue =  NSValue(CGPoint: toPoint)
+        movement.duration = 0.3
         
+        cellSnapshot.layer.addAnimation(movement, forKey: "move")
         
+        cellSnapshot.removeFromSuperview()
+        
+//        UIView.animateWithDuration(1, animations: { 
+//            
+//            cellSnapshot.transform = CGAffineTransformMakeTranslation( 0 , UIScreen.mainScreen().bounds.height)
+//            
+//            }) { (finished) in
+//                if finished {
+//                    cellSnapshot.removeFromSuperview()
+//                }
+//        }
         
     }
     
@@ -339,7 +375,7 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
 //            
 //        }
 //        
-        collection.reloadData()
+       
        
     }
     
@@ -496,8 +532,14 @@ func animateColllection(){
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("FoodCell", forIndexPath: indexPath) as? MainPageFoodCell {
     
             cell.configureCell("۲۰۰۰", foodName: "گوجه و پیاز  ", foodImageName: "  ")
-            
             cell.animationDelegate = self
+            
+            let attribute : UICollectionViewLayoutAttributes = self.collection.layoutAttributesForItemAtIndexPath(indexPath)!
+            let cellRect : CGRect = attribute.frame
+            
+            let cellFrameInSuperview : CGRect = self.collection.convertRect(cellRect, toView: self.view)
+            
+            cell.cellPos = cellFrameInSuperview
             
             cell.layer.shadowOffset = CGSizeMake(0, 1)
             cell.layer.shadowColor = UIColor.blackColor().CGColor

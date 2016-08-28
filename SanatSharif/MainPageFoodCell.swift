@@ -9,7 +9,7 @@
 import UIKit
 
 protocol BuyAnimationDelegate {
-    func BuyBtnAnimation(image : UIImage)
+    func BuyBtnAnimation(image : UIImage , cellPosition : CGRect)
 }
 
 class MainPageFoodCell: UICollectionViewCell {
@@ -30,11 +30,14 @@ class MainPageFoodCell: UICollectionViewCell {
     
     var Amount : Int!
     var animate : Bool!
+    var cellPos : CGRect!
+    
     
     @IBAction func BuyClicked(sender: AnyObject) {
         
             self.BuyButtonLabel.text = "0"
-            self.animationDelegate.BuyBtnAnimation(self.foodIMage.image!)
+        
+            self.animationDelegate.BuyBtnAnimation(self.foodIMage.image! , cellPosition: self.cellPos)
             self.layer.borderWidth = 2.0
             self.layer.borderColor = UIColor(red: 0, green: 128 / 255, blue: 0, alpha: 1).CGColor
             self.BuyButtonViewOutlet.backgroundColor = UIColor(red: 0, green: 128 / 255, blue: 0, alpha: 1)
