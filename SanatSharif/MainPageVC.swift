@@ -44,7 +44,7 @@ extension MainPageVC : ZoomTransitionSourceDelegate {
 
 extension MainPageVC : BuyAnimationDelegate {
 
-    func BuyBtnAnimation(image: UIImage , cellPosition : CGRect) {
+    func BuyBtnAnimation(image: UIImage , cellPosition : NSIndexPath) {
         
        
         let cellSnapshot = UIImageView(frame: CGRectMake(100, 150, 50, 50)); // set as you want
@@ -60,14 +60,21 @@ extension MainPageVC : BuyAnimationDelegate {
         
         self.view.addSubview(cellSnapshot)
         
-        cellSnapshot.center = CGPointMake(cellPosition.origin.x , cellPosition.origin.y)
+        let attribute : UICollectionViewLayoutAttributes = self.collection.layoutAttributesForItemAtIndexPath(cellPosition)!
+        let cellRect : CGRect = attribute.frame
+        
+        let cellFrameInSuperview : CGRect = self.collection.convertRect(cellRect, toView: self.view)
+        
+        cellSnapshot.center = CGPointMake(cellFrameInSuperview.origin.x + 50, cellFrameInSuperview.origin.y + 50)
         
       
         
         
         UIView.animateWithDuration(1, animations: { 
             
-            cellSnapshot.transform = CGAffineTransformMakeTranslation( 0 , UIScreen.mainScreen().bounds.height)
+           // cellSnapshot.transform = CGAffineTransformMakeTranslation( 0 , UIScreen.mainScreen().bounds.height)
+            cellSnapshot.frame = CGRectMake(UIScreen.mainScreen().bounds.width / 2, UIScreen.mainScreen().bounds.height, 0, 0)
+            
             
             }) { (finished) in
                 if finished {
@@ -523,12 +530,9 @@ func animateColllection(){
             cell.configureCell("۲۰۰۰", foodName: "گوجه و پیاز  ", foodImageName: "  ")
             cell.animationDelegate = self
             
-            let attribute : UICollectionViewLayoutAttributes = self.collection.layoutAttributesForItemAtIndexPath(indexPath)!
-            let cellRect : CGRect = attribute.frame
             
-            let cellFrameInSuperview : CGRect = self.collection.convertRect(cellRect, toView: self.view)
             
-            cell.cellPos = cellFrameInSuperview
+            cell.index = indexPath
             
             cell.layer.shadowOffset = CGSizeMake(0, 1)
             cell.layer.shadowColor = UIColor.blackColor().CGColor
