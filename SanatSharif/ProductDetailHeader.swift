@@ -22,11 +22,15 @@ class ProductDetailHeader: UICollectionViewCell {
     
     
     @IBOutlet weak var imageSlider : ImageSlideshow!
+    @IBOutlet weak var backBtn : UIButton!
  
     let screenWidthSize = UIScreen.mainScreen().bounds.width
     let screenHeightSize = UIScreen.mainScreen().bounds.height    
+    
     var transitionDelegate: ZoomAnimatedTransitioningDelegate?
     var btnDelegate : backBtnClickedProtocol!
+    
+    
 
     
     override func awakeFromNib() {
@@ -58,11 +62,28 @@ class ProductDetailHeader: UICollectionViewCell {
         //self.presentViewController(ctr, animated: true, completion: nil)
     }
     
+    
+    func removeSliderImages()  {
+//        if imageSliderAlhpaIsSet {
+            imageSlider.alpha = 0
+//            imageSliderAlhpaIsSet = false
+//        }
+    }
+    
+    func initSliderView(){
+        
+            imageSlider.alpha = 1
+            backBtn.alpha = 1
+//            imageSliderAlhpaIsSet = true
+        
+        imageSlider.setImageInputs([ImageSource(imageString: "Onion2")!, ImageSource(imageString: "Onion1")!, ImageSource(imageString: "Onion3")!, ImageSource(imageString: "Onion4")!])
+    }
+    
     func configureCell ( title : String , image : UIImage  ){
         
         
         self.imageSlider.hidden = false
-        imageSlider.setImageInputs([ImageSource(imageString: "Onion2")!, ImageSource(imageString: "Onion1")!, ImageSource(imageString: "Onion3")!, ImageSource(imageString: "Onion4")!])
+        
         
         
         // Put it somewhere, give it a frame...

@@ -5,7 +5,8 @@ target 'SanatSharif' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SanatSharif
+  # Pods for SanatSharifi
+  # Describe each part usage in each module later ######
   pod 'RAMPaperSwitch', '~> 1.0'
   pod 'ZoomTransitioning', '~> 1.1'
   pod 'TextFieldEffects', '~> 1.2'

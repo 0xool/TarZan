@@ -28,15 +28,19 @@ extension ProductDetailViewController : ZoomTransitionDestinationDelegate {
     }
     
     func transitionDestinationWillBegin() {
-       self.collectionView.alpha = 0
+       //self.collectionView.alpha = 0
+        if headerInitBool {
+            self.productDetailHeader.removeSliderImages()
+            
+        }
         
     }
     
     func transitionDestinationDidEnd(transitioningImageView imageView: UIImageView) {
         //productDetailHeader.imageSlider.hidden = false
         //largeImageView.image = imageView.image
-        
-            self.collectionView.alpha = 1
+        self.productDetailHeader.initSliderView()
+        headerInitBool = true
         
     }
     
@@ -70,6 +74,7 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
 
     private var largeImageView : UIImageView! = UIImageView()
     var productDetailHeader : ProductDetailHeader!
+    private var headerInitBool : Bool = false
     
     override func viewDidLoad() {
        

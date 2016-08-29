@@ -21,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0r-0L-lal">
                         <rect key="frame" x="0.0" y="0.0" width="276" height="246"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnc-e1-N4s">
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnc-e1-N4s">
                                 <rect key="frame" x="8" y="8" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FyW-Q7-25O"/>
@@ -43,17 +43,18 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="Q0r-0L-lal" firstAttribute="leading" secondItem="yET-ND-AIX" secondAttribute="leading" id="13b-S3-Dpi"/>
-                <constraint firstItem="Q0r-0L-lal" firstAttribute="top" secondItem="yET-ND-AIX" secondAttribute="top" id="58P-yQ-wxU"/>
                 <constraint firstItem="kan-id-Ymb" firstAttribute="top" secondItem="yET-ND-AIX" secondAttribute="top" id="BoQ-x8-SzD"/>
                 <constraint firstAttribute="trailing" secondItem="kan-id-Ymb" secondAttribute="trailing" id="C09-Do-2jF"/>
-                <constraint firstAttribute="bottom" secondItem="Q0r-0L-lal" secondAttribute="bottom" id="ReZ-5c-Eh1"/>
+                <constraint firstItem="Q0r-0L-lal" firstAttribute="leading" secondItem="yET-ND-AIX" secondAttribute="leading" id="CMP-pN-Rzi"/>
+                <constraint firstAttribute="bottom" secondItem="Q0r-0L-lal" secondAttribute="bottom" id="GGp-bj-VeI"/>
+                <constraint firstItem="Q0r-0L-lal" firstAttribute="top" secondItem="yET-ND-AIX" secondAttribute="top" id="IPL-FS-Qem"/>
+                <constraint firstAttribute="trailing" secondItem="Q0r-0L-lal" secondAttribute="trailing" id="S5F-uQ-9fc"/>
                 <constraint firstAttribute="bottom" secondItem="kan-id-Ymb" secondAttribute="bottom" id="SKw-dw-aX1"/>
                 <constraint firstItem="kan-id-Ymb" firstAttribute="leading" secondItem="yET-ND-AIX" secondAttribute="leading" id="suC-fp-ftl"/>
-                <constraint firstAttribute="trailing" secondItem="Q0r-0L-lal" secondAttribute="trailing" id="xtb-wg-Rgs"/>
             </constraints>
             <size key="customSize" width="276" height="246"/>
             <connections>
+                <outlet property="backBtn" destination="Qnc-e1-N4s" id="XKO-Jd-jWd"/>
                 <outlet property="imageSlider" destination="kan-id-Ymb" id="cYW-Ke-UeH"/>
             </connections>
             <point key="canvasLocation" x="280" y="294"/>

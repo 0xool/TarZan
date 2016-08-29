@@ -58,8 +58,8 @@ extension ZoomTransitioning {
         let transitioningImageView = transitioningPushImageView()
 
         containerView.backgroundColor = sourceView.backgroundColor
-        sourceView.alpha = 1.0
-        destinationView.alpha = 0.0
+        sourceView.alpha = 0.5
+        destinationView.alpha = 1
 
         containerView.insertSubview(destinationView, belowSubview: sourceView)
         containerView.addSubview(transitioningImageView)
@@ -73,7 +73,7 @@ extension ZoomTransitioning {
             options: .CurveEaseOut,
             animations: {
                 sourceView.alpha = 0.0
-                destinationView.alpha = 1.0
+                destinationView.alpha = 1
                 print(self.destination.transitionDestinationImageViewFrame(forward: self.forward).width)
                 
                 
