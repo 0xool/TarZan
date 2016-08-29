@@ -10,6 +10,12 @@ import UIKit
 import SABlurImageView
 import ImageSlideshow
 
+protocol backBtnClickedProtocol {
+    
+    func backBtnClicked()
+    
+}
+
 
 class ProductDetailHeader: UICollectionViewCell {
     
@@ -20,12 +26,13 @@ class ProductDetailHeader: UICollectionViewCell {
     let screenWidthSize = UIScreen.mainScreen().bounds.width
     let screenHeightSize = UIScreen.mainScreen().bounds.height    
     var transitionDelegate: ZoomAnimatedTransitioningDelegate?
+    var btnDelegate : backBtnClickedProtocol!
 
     
     override func awakeFromNib() {
         
         imageSlider.pageControlPosition = PageControlPosition.Hidden
-        imageSlider.contentScaleMode = .ScaleAspectFill
+        imageSlider.contentScaleMode = .ScaleAspectFit
         imageSlider.pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor();
         imageSlider.pageControl.pageIndicatorTintColor = UIColor.blackColor();
         
@@ -59,8 +66,12 @@ class ProductDetailHeader: UICollectionViewCell {
         
         
         // Put it somewhere, give it a frame...
- 
-        
     }
 
+    @IBAction func backBtnClicked (){
+        
+        self.btnDelegate.backBtnClicked()
+        
+    }
+    
 }

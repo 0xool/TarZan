@@ -25,7 +25,16 @@ extension MainPageVC : ZoomTransitionSourceDelegate {
     }
     
     func transitionSourceImageViewFrame(forward forward: Bool) -> CGRect {
-        return selectedImageView.convertRect(selectedImageView.bounds, toView: view)
+        if ( self.navigationController?.navigationBar.translucent == false){
+            var temp = selectedImageView.convertRect(selectedImageView.frame, toView: self.view)
+            temp.origin.y = temp.origin.y + 57
+            return temp
+            
+        }
+        var temp = selectedImageView.convertRect(selectedImageView.frame, toView: self.view)
+        temp.origin.y = temp.origin.y - 8
+        return temp
+        
     }
     
     func transitionSourceWillBegin() {
@@ -42,7 +51,7 @@ extension MainPageVC : ZoomTransitionSourceDelegate {
 }
 
 
-extension MainPageVC : BuyAnimationDelegate {
+extension MainPageVC : BuyAnimationDelegate  {
 
     func BuyBtnAnimation(image: UIImage , cellPosition : NSIndexPath) {
         
@@ -56,7 +65,6 @@ extension MainPageVC : BuyAnimationDelegate {
         cellSnapshot.layer.shadowOffset = CGSizeMake(-5.0, 0.0)
         cellSnapshot.layer.shadowRadius = 5.0
         cellSnapshot.layer.shadowOpacity = 0.4
-      //  cellSnapshot.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         
         self.view.addSubview(cellSnapshot)
         
@@ -65,7 +73,7 @@ extension MainPageVC : BuyAnimationDelegate {
         
         let cellFrameInSuperview : CGRect = self.collection.convertRect(cellRect, toView: self.view)
         
-        cellSnapshot.center = CGPointMake(cellFrameInSuperview.origin.x + 50, cellFrameInSuperview.origin.y + 50)
+        cellSnapshot.center = CGPointMake(cellFrameInSuperview.origin.x + 50, cellFrameInSuperview.origin.y + 200)
         
       
         
@@ -83,6 +91,8 @@ extension MainPageVC : BuyAnimationDelegate {
         }
         
     }
+    
+   
     
     
 }
@@ -232,7 +242,9 @@ class MainPageVC: UIViewController , UICollectionViewDelegate, UICollectionViewD
     
     override func viewDidAppear(animated: Bool) {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-    
+        self.navigationController?.navigationBarHidden = false
+        
+        
         if hideNavBar == true{
             self.navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
             self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
@@ -802,6 +814,7 @@ func animateColllection(){
         if segue.identifier == "showDetails", let RD = segue.destinationViewController as? ProductDetailViewController {
             
             RD.transitioningDelegate = self
+            
             
         }
         

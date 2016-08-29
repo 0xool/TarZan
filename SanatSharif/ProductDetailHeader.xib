@@ -18,14 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="276" height="246"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0r-0L-lal">
+                        <rect key="frame" x="0.0" y="0.0" width="276" height="246"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnc-e1-N4s">
+                                <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FyW-Q7-25O"/>
+                                    <constraint firstAttribute="width" constant="50" id="RFJ-4D-Uk3"/>
+                                </constraints>
+                                <state key="normal" image="BackButton"/>
+                                <connections>
+                                    <action selector="backBtnClicked" destination="yET-ND-AIX" eventType="touchUpInside" id="shz-a7-UPk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qnc-e1-N4s" firstAttribute="leading" secondItem="Q0r-0L-lal" secondAttribute="leading" constant="8" id="Tm5-VF-Ymm"/>
+                            <constraint firstItem="Qnc-e1-N4s" firstAttribute="top" secondItem="Q0r-0L-lal" secondAttribute="top" constant="8" id="nb2-53-vSp"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
+                <constraint firstItem="Q0r-0L-lal" firstAttribute="leading" secondItem="yET-ND-AIX" secondAttribute="leading" id="13b-S3-Dpi"/>
+                <constraint firstItem="Q0r-0L-lal" firstAttribute="top" secondItem="yET-ND-AIX" secondAttribute="top" id="58P-yQ-wxU"/>
                 <constraint firstItem="kan-id-Ymb" firstAttribute="top" secondItem="yET-ND-AIX" secondAttribute="top" id="BoQ-x8-SzD"/>
                 <constraint firstAttribute="trailing" secondItem="kan-id-Ymb" secondAttribute="trailing" id="C09-Do-2jF"/>
+                <constraint firstAttribute="bottom" secondItem="Q0r-0L-lal" secondAttribute="bottom" id="ReZ-5c-Eh1"/>
                 <constraint firstAttribute="bottom" secondItem="kan-id-Ymb" secondAttribute="bottom" id="SKw-dw-aX1"/>
                 <constraint firstItem="kan-id-Ymb" firstAttribute="leading" secondItem="yET-ND-AIX" secondAttribute="leading" id="suC-fp-ftl"/>
+                <constraint firstAttribute="trailing" secondItem="Q0r-0L-lal" secondAttribute="trailing" id="xtb-wg-Rgs"/>
             </constraints>
             <size key="customSize" width="276" height="246"/>
             <connections>
@@ -34,4 +59,7 @@
             <point key="canvasLocation" x="280" y="294"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="BackButton" width="700" height="700"/>
+    </resources>
 </document>

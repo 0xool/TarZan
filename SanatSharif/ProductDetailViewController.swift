@@ -17,9 +17,9 @@ extension ProductDetailViewController : ZoomTransitionDestinationDelegate {
     func transitionDestinationImageViewFrame(forward forward: Bool) -> CGRect {
         if forward {
             let x: CGFloat = 0.0
-            let y = topLayoutGuide.length
+            let y : CGFloat = 0
             let width = view.frame.width
-            let height = width * 2.0 / 3.0
+            let height = width * 3.0 / 3.0
             return CGRect(x: x, y: y, width: width, height: height)
         } else {
             
@@ -46,6 +46,16 @@ extension ProductDetailViewController : ZoomTransitionDestinationDelegate {
     }
 }
 
+extension ProductDetailViewController : backBtnClickedProtocol{
+    
+    func backBtnClicked() {
+        
+        self.navigationController?.popViewControllerAnimated(true)
+        
+    }
+    
+}
+
 
 class ProductDetailViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UIViewControllerTransitioningDelegate {
 
@@ -65,7 +75,7 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
        
         collectionView.delegate = self
         collectionView.dataSource = self
-        
+        self.navigationController?.navigationBarHidden = true
         
         
         if let layout: IOStickyHeaderFlowLayout = self.collectionView.collectionViewLayout as? IOStickyHeaderFlowLayout {
@@ -87,10 +97,11 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
     
     override func viewWillAppear(animated: Bool) {
         
-        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: .Default)
-        self.navigationController?.navigationBar.shadowImage = nil
-        self.navigationController?.navigationBar.translucent = true
-        self.navigationController?.navigationBar.backgroundColor  = UIColor(red: 0 / 255.0, green: 128 / 255.0, blue: 0 / 255.0, alpha: 1)
+//        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: .Default)
+//        self.navigationController?.navigationBar.shadowImage = nil
+//        self.navigationController?.navigationBar.translucent = true
+//        self.navigationController?.navigationBar.backgroundColor  = UIColor(red: 0 / 255.0, green: 128 / 255.0, blue: 0 / 255.0, alpha: 1)
+
         
     }
     
@@ -164,7 +175,7 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
                 
                 
                 self.largeImageView = cell.imageSlider.currentSlideshowItem?.imageView
-                
+                cell.btnDelegate = self
                 cell.configureCell("", image: UIImage())
                 productDetailHeader = cell.self
                 //cell.configureCell("test", image: UIImage())
