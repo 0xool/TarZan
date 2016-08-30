@@ -121,8 +121,9 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
     }
     
     
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return 4
     }
     
     
@@ -130,31 +131,36 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         if indexPath.row == 0{
-            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductRateCell", forIndexPath:     indexPath)
+            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductInfoCell", forIndexPath:     indexPath)
             return cell
         }
         
         if indexPath.row == 1{
-            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductPriceCell", forIndexPath:     indexPath)
+            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductRateCell", forIndexPath:     indexPath)
             return cell
         }
+        
+//        if indexPath.row == 1{
+//            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductPriceCell", forIndexPath:     indexPath)
+//            return cell
+//        }
         
         if indexPath.row == 2{
             let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductDateCell", forIndexPath:     indexPath)
             return cell
         }
         
-        if indexPath.row == 3{
-            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductDemensionCell", forIndexPath:     indexPath)
-            return cell
-        }
+//        if indexPath.row == 3{
+//            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductDemensionCell", forIndexPath:     indexPath)
+//            return cell
+//        }
         
-        if indexPath.row == 4{
-            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductTypeCell", forIndexPath:     indexPath)
-            return cell
-        }
+//        if indexPath.row == 4{
+//            let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductTypeCell", forIndexPath:     indexPath)
+//            return cell
+//        }
         
-        if indexPath.row == 5 {
+        if indexPath.row == 3 {
             let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("ProductDescCell", forIndexPath:     indexPath)
             return cell
         }
@@ -168,8 +174,12 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
        
-        if indexPath.row == 5 {
+        if indexPath.row == 3 {
             return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 300);
+        }
+        
+        if indexPath.row == 0 {
+            return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 100);
         }
         
             return CGSizeMake(UIScreen.mainScreen().bounds.size.width, 50);

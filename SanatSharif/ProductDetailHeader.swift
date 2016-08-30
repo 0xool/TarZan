@@ -66,6 +66,7 @@ class ProductDetailHeader: UICollectionViewCell {
     func removeSliderImages()  {
 //        if imageSliderAlhpaIsSet {
             imageSlider.alpha = 0
+            self.backBtn.alpha = 0
 //            imageSliderAlhpaIsSet = false
 //        }
     }
