@@ -23,7 +23,8 @@ extension ProductDetailViewController : ZoomTransitionDestinationDelegate {
             return CGRect(x: x, y: y, width: width, height: height)
         } else {
             
-            return productDetailHeader.imageSlider.convertRect(productDetailHeader.imageSlider.bounds, toView: view)
+            return CGRect(x: productDetailHeader.imageSlider.frame.origin.x, y: productDetailHeader.imageSlider.frame.origin.y, width: productDetailHeader.imageSlider.frame.width, height: productDetailHeader.imageSlider.frame.height)
+            //return productDetailHeader.imageSlider.convertRect(productDetailHeader.imageSlider.frame, toView: view)
         }
     }
     
@@ -31,7 +32,7 @@ extension ProductDetailViewController : ZoomTransitionDestinationDelegate {
        //self.collectionView.alpha = 0
         if headerInitBool {
             self.productDetailHeader.removeSliderImages()
-            
+            self.collectionView.scrollsToTop = true
         }
         
     }
@@ -62,8 +63,6 @@ extension ProductDetailViewController : backBtnClickedProtocol{
 
 
 class ProductDetailViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UIViewControllerTransitioningDelegate {
-
-    
     
     @IBOutlet weak var collectionView : UICollectionView!
     
@@ -80,12 +79,23 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
        
         collectionView.delegate = self
         collectionView.dataSource = self
-        self.navigationController?.navigationBarHidden = true
+        
+//        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: .Default)
+//        self.navigationController?.navigationBar.shadowImage = nil
+//        self.navigationController?.navigationBar.backgroundColor = UIColor.whiteColor()
+//        self.navigationController?.navigationBar.alpha = 1
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        
+      //  self.prefersStatusBarHidden()
+//        self.navigationController?.navigationBarHidden = true
+//        UIApplication.sharedApplication().statusBarHidden = true
+        
         
         
         if let layout: IOStickyHeaderFlowLayout = self.collectionView.collectionViewLayout as? IOStickyHeaderFlowLayout {
             layout.parallaxHeaderReferenceSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, 400)
-            layout.parallaxHeaderMinimumReferenceSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, 100)
+            layout.parallaxHeaderMinimumReferenceSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, 150)
             layout.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.size.width, layout.itemSize.height)
             layout.parallaxHeaderAlwaysOnTop = true
             layout.disableStickyHeaders = true
@@ -100,6 +110,7 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
         
     }
     
+    
     override func viewWillAppear(animated: Bool) {
         
 //        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: .Default)
@@ -107,7 +118,6 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
 //        self.navigationController?.navigationBar.translucent = true
 //        self.navigationController?.navigationBar.backgroundColor  = UIColor(red: 0 / 255.0, green: 128 / 255.0, blue: 0 / 255.0, alpha: 1)
 
-        
     }
     
     

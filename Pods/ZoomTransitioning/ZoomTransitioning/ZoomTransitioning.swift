@@ -79,7 +79,7 @@ extension ZoomTransitioning {
                 
                 
                 
-                transitioningImageView.frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 440)
+                transitioningImageView.frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: 400)
             },
             completion: { _ in
                 sourceView.alpha = 1.0
@@ -125,6 +125,7 @@ extension ZoomTransitioning {
                 destinationView.alpha = 0.0
                 sourceView.alpha = 1.0
                 transitioningImageView.frame = self.source.transitionSourceImageViewFrame(forward: self.forward)
+                print(self.source.transitionSourceImageViewFrame(forward: self.forward).height)
             },
             completion: { _ in
                 destinationView.alpha = 1.0

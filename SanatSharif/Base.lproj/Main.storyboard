@@ -3953,7 +3953,7 @@
         <!--Product Detail View Controller-->
         <scene sceneID="WHS-x4-6Fi">
             <objects>
-                <viewController storyboardIdentifier="ProductDetailViewController" id="YIE-No-HjW" customClass="ProductDetailViewController" customModule="SanatSharif" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductDetailViewController" extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="YIE-No-HjW" customClass="ProductDetailViewController" customModule="SanatSharif" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fCl-z6-ZsI"/>
                         <viewControllerLayoutGuide type="bottom" id="3fl-0A-22U"/>
@@ -3973,7 +3973,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductPriceCell" id="NEm-3P-992">
-                                        <rect key="frame" x="2.5" y="64" width="595" height="50"/>
+                                        <rect key="frame" x="2.5" y="0.0" width="595" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="595" height="50"/>
@@ -4011,7 +4011,7 @@
                                         </constraints>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductDateCell" id="Meh-Do-a6Y">
-                                        <rect key="frame" x="2.5" y="115" width="595" height="50"/>
+                                        <rect key="frame" x="2.5" y="51" width="595" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="595" height="50"/>
@@ -4049,7 +4049,7 @@
                                         </constraints>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductDemensionCell" id="Evh-4g-EqD">
-                                        <rect key="frame" x="2.5" y="166" width="595" height="50"/>
+                                        <rect key="frame" x="2.5" y="102" width="595" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="595" height="50"/>
@@ -4087,7 +4087,7 @@
                                         </constraints>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductTypeCell" id="n80-Gf-uT2">
-                                        <rect key="frame" x="2.5" y="217" width="595" height="50"/>
+                                        <rect key="frame" x="2.5" y="153" width="595" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="595" height="50"/>
@@ -4125,7 +4125,7 @@
                                         </constraints>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductDescCell" id="apb-BL-syA">
-                                        <rect key="frame" x="2.5" y="268" width="595" height="260"/>
+                                        <rect key="frame" x="2.5" y="204" width="595" height="260"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="595" height="260"/>
@@ -4181,7 +4181,7 @@
                                         </variation>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductRateCell" id="S7D-G2-JpY">
-                                        <rect key="frame" x="2.5" y="529" width="595" height="50"/>
+                                        <rect key="frame" x="2.5" y="465" width="595" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="595" height="50"/>

@@ -14,9 +14,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="276" height="246"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kan-id-Ymb" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5B-jH-uvf">
                         <rect key="frame" x="0.0" y="0.0" width="276" height="246"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kan-id-Ymb" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="10" width="276" height="236"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kan-id-Ymb" firstAttribute="leading" secondItem="Y5B-jH-uvf" secondAttribute="leading" id="1wG-90-i7j"/>
+                            <constraint firstItem="kan-id-Ymb" firstAttribute="top" secondItem="Y5B-jH-uvf" secondAttribute="top" constant="10" id="Bky-SV-fEw"/>
+                            <constraint firstAttribute="trailing" secondItem="kan-id-Ymb" secondAttribute="trailing" id="RgL-Ku-ShQ"/>
+                            <constraint firstAttribute="bottom" secondItem="kan-id-Ymb" secondAttribute="bottom" id="euU-zg-NId"/>
+                        </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0r-0L-lal">
                         <rect key="frame" x="0.0" y="0.0" width="276" height="246"/>
@@ -43,14 +55,14 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="kan-id-Ymb" firstAttribute="top" secondItem="yET-ND-AIX" secondAttribute="top" id="BoQ-x8-SzD"/>
-                <constraint firstAttribute="trailing" secondItem="kan-id-Ymb" secondAttribute="trailing" id="C09-Do-2jF"/>
+                <constraint firstAttribute="bottom" secondItem="Y5B-jH-uvf" secondAttribute="bottom" id="4hu-8Q-3ig"/>
                 <constraint firstItem="Q0r-0L-lal" firstAttribute="leading" secondItem="yET-ND-AIX" secondAttribute="leading" id="CMP-pN-Rzi"/>
                 <constraint firstAttribute="bottom" secondItem="Q0r-0L-lal" secondAttribute="bottom" id="GGp-bj-VeI"/>
                 <constraint firstItem="Q0r-0L-lal" firstAttribute="top" secondItem="yET-ND-AIX" secondAttribute="top" id="IPL-FS-Qem"/>
+                <constraint firstAttribute="trailing" secondItem="Y5B-jH-uvf" secondAttribute="trailing" id="N59-Qn-H3F"/>
+                <constraint firstItem="Y5B-jH-uvf" firstAttribute="leading" secondItem="yET-ND-AIX" secondAttribute="leading" id="PQt-3e-YP0"/>
                 <constraint firstAttribute="trailing" secondItem="Q0r-0L-lal" secondAttribute="trailing" id="S5F-uQ-9fc"/>
-                <constraint firstAttribute="bottom" secondItem="kan-id-Ymb" secondAttribute="bottom" id="SKw-dw-aX1"/>
-                <constraint firstItem="kan-id-Ymb" firstAttribute="leading" secondItem="yET-ND-AIX" secondAttribute="leading" id="suC-fp-ftl"/>
+                <constraint firstItem="Y5B-jH-uvf" firstAttribute="top" secondItem="yET-ND-AIX" secondAttribute="top" id="uPK-du-chh"/>
             </constraints>
             <size key="customSize" width="276" height="246"/>
             <connections>
