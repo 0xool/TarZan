@@ -430,7 +430,7 @@
             </objects>
             <point key="canvasLocation" x="5737" y="1408"/>
         </scene>
-        <!--Basket View Controller-->
+        <!--سبد خرید-->
         <scene sceneID="8QA-m4-Ruc">
             <objects>
                 <viewController id="5lj-ip-dzV" customClass="BasketViewController" customModule="SanatSharif" customModuleProvider="target" sceneMemberID="viewController">
@@ -578,7 +578,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="osf-z5-dpt">
+                    <navigationItem key="navigationItem" title="سبد خرید" id="osf-z5-dpt">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="6jf-sr-S7P">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -3962,7 +3962,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yS0-kl-Hcs">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yS0-kl-Hcs">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="10" id="H8D-eq-T2b" customClass="IOStickyHeaderFlowLayout" customModule="IOStickyHeader">
@@ -4331,7 +4331,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1X2-jd-ELP">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1X2-jd-ELP">
                                 <rect key="frame" x="0.0" y="550" width="600" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQ4-U5-qlr" customClass="GMStepper" customModule="GMStepper">
@@ -4817,10 +4817,10 @@
                         <viewControllerLayoutGuide type="bottom" id="xDX-Zp-UAf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fZx-fV-cm4">
-                        <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lK2-Tf-Yvb">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lK2-Tf-Yvb">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nor-VF-Rjb">
@@ -7223,7 +7223,7 @@
             </objects>
             <point key="canvasLocation" x="3007" y="1131"/>
         </scene>
-        <!--ListVC-->
+        <!--دسته بندی-->
         <scene sceneID="EVF-xH-wcX">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Air-V6-d0b" customClass="ListVC" customModule="SanatSharif" customModuleProvider="target" sceneMemberID="viewController">
@@ -7300,7 +7300,11 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="6f9-8Q-J8V"/>
+                    <navigationItem key="navigationItem" title="دسته بندی" id="6f9-8Q-J8V">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="3i9-OI-tt3">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="xVm-lr-0xo" id="6xr-zO-5wy"/>
                         <segue destination="th3-Vj-fW5" kind="show" identifier="ListProductVC" id="oFf-1U-9Le"/>
@@ -7725,9 +7729,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dkW-cA-DhN"/>
-        <segue reference="r0p-Bg-kf1"/>
-        <segue reference="WmG-qc-EOo"/>
-        <segue reference="XOb-7S-7vE"/>
         <segue reference="grc-xv-UKg"/>
+        <segue reference="Ibi-gO-vEs"/>
+        <segue reference="WmG-qc-EOo"/>
+        <segue reference="fZM-Jg-RsH"/>
     </inferredMetricsTieBreakers>
 </document>
