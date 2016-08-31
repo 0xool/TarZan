@@ -45,6 +45,11 @@
 		A5502ADB1D28D0D300B559CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5502ADA1D28D0D300B559CD /* Constants.swift */; };
 		A5502ADD1D28D17B00B559CD /* LoginPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5502ADC1D28D17B00B559CD /* LoginPageController.swift */; };
 		A55517D41D61C78D003B4962 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55517D31D61C78D003B4962 /* QRViewController.swift */; };
+		A557CDBD1D76ADD00070D0E1 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557CDBC1D76ADD00070D0E1 /* ListVC.swift */; };
+		A557CDBF1D76AED50070D0E1 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557CDBE1D76AED50070D0E1 /* ListCell.swift */; };
+		A557CDC11D76BE550070D0E1 /* ListProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557CDC01D76BE550070D0E1 /* ListProductVC.swift */; };
+		A557CDC31D76DA200070D0E1 /* ListPageFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557CDC21D76DA200070D0E1 /* ListPageFoodCell.swift */; };
+		A557CDC51D76EC100070D0E1 /* ListNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557CDC41D76EC100070D0E1 /* ListNavVC.swift */; };
 		A558F3F61D43479800346754 /* BasketToBuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A558F3F41D43479800346754 /* BasketToBuy.xcdatamodeld */; };
 		A558F3FA1D434AD500346754 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A558F3F81D434AD500346754 /* Basket.swift */; };
 		A558F3FC1D43598500346754 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A558F3FB1D43598500346754 /* CoreDataController.swift */; };
@@ -212,6 +217,11 @@
 		A5502ADA1D28D0D300B559CD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5502ADC1D28D17B00B559CD /* LoginPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageController.swift; sourceTree = "<group>"; };
 		A55517D31D61C78D003B4962 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		A557CDBC1D76ADD00070D0E1 /* ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		A557CDBE1D76AED50070D0E1 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		A557CDC01D76BE550070D0E1 /* ListProductVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProductVC.swift; sourceTree = "<group>"; };
+		A557CDC21D76DA200070D0E1 /* ListPageFoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPageFoodCell.swift; sourceTree = "<group>"; };
+		A557CDC41D76EC100070D0E1 /* ListNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNavVC.swift; sourceTree = "<group>"; };
 		A558F3F51D43479800346754 /* BasketToBuy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BasketToBuy.xcdatamodel; sourceTree = "<group>"; };
 		A558F3F81D434AD500346754 /* Basket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		A558F3FB1D43598500346754 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
@@ -484,6 +494,8 @@
 				A5334B551D6AE14D00ADAE64 /* searchCell.swift */,
 				A5334B571D6AE83900ADAE64 /* CardViewMaterial.swift */,
 				A5334B591D6B080100ADAE64 /* CardImageView.swift */,
+				A557CDBE1D76AED50070D0E1 /* ListCell.swift */,
+				A557CDC21D76DA200070D0E1 /* ListPageFoodCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -518,6 +530,9 @@
 				A5ACD5B01D6846450011A2D7 /* SearchResultVC.swift */,
 				A5ACD5B21D6870F60011A2D7 /* SearchVC.swift */,
 				A5F3FFAA1D7165F6005D53E5 /* ProductDetailViewController.swift */,
+				A557CDBC1D76ADD00070D0E1 /* ListVC.swift */,
+				A557CDC01D76BE550070D0E1 /* ListProductVC.swift */,
+				A557CDC41D76EC100070D0E1 /* ListNavVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -901,6 +916,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5486BEC1D3F80EA003C9057 /* DataBaseModel.swift in Sources */,
+				A557CDBD1D76ADD00070D0E1 /* ListVC.swift in Sources */,
 				A57120A51D4DCF810057DDE9 /* CookInstrunctions.swift in Sources */,
 				A5D48ED01D69CC4500CC1B32 /* RecentSearHistory.xcdatamodeld in Sources */,
 				A5DA4AF41D2A857400152D41 /* ProductDetailVC.swift in Sources */,
@@ -991,13 +1007,16 @@
 				A5D48ED61D6AC42400CC1B32 /* CoreDataRecentSearchManager.swift in Sources */,
 				A58706DB1D3104E7000D20C9 /* SaleTagLabel.swift in Sources */,
 				A58706DF1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift in Sources */,
+				A557CDC11D76BE550070D0E1 /* ListProductVC.swift in Sources */,
 				A558F3FC1D43598500346754 /* CoreDataController.swift in Sources */,
 				A57F438D1D27C87400ED5366 /* List.swift in Sources */,
 				A5ACD5B11D6846450011A2D7 /* SearchResultVC.swift in Sources */,
 				A5204E691D44978B0016EC88 /* basketDetailVC.swift in Sources */,
 				A57F439C1D27D08100ED5366 /* Picture.swift in Sources */,
+				A557CDC51D76EC100070D0E1 /* ListNavVC.swift in Sources */,
 				A5643C3A1D60952000C74624 /* BasketFooterBackGroundView.swift in Sources */,
 				A57F43961D27CD3800ED5366 /* User.swift in Sources */,
+				A557CDBF1D76AED50070D0E1 /* ListCell.swift in Sources */,
 				A5F89DA71D29325200293D58 /* MenuTableViewMaterial.swift in Sources */,
 				A5F3FFAB1D7165F6005D53E5 /* ProductDetailViewController.swift in Sources */,
 				A5725CDF1D40AFC600DCE7A6 /* UltravisualLayout.swift in Sources */,
@@ -1007,6 +1026,7 @@
 				A589E4B91D3CB9290015A2B7 /* BuyWindowMaterial.swift in Sources */,
 				A58706DD1D311701000D20C9 /* PrudoctPagePlusMaterial.swift in Sources */,
 				A5EBA8721D5F0B32003CEC91 /* BasketItemCell.swift in Sources */,
+				A557CDC31D76DA200070D0E1 /* ListPageFoodCell.swift in Sources */,
 				A5725CCD1D40AD2C00DCE7A6 /* InspirationsViewController.swift in Sources */,
 				A56722211D29218A009B42BF /* MainPageVC.swift in Sources */,
 				A54672E01D48CEED005662B2 /* IngredientSectionHeaderCell.swift in Sources */,
