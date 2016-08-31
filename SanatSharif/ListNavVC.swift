@@ -22,9 +22,7 @@ class ListNavVC: UINavigationController {
     override func viewDidLoad() {
         
        self.navigationBar.tintColor = UIColor.whiteColor()
-        self.navigationBar.barTintColor = UIColor.whiteColor()
-        
-        
+                
     }
     
     

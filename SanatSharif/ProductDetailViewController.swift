@@ -120,6 +120,16 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
 
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false
+    }
+    
+    override func willMoveToParentViewController(parent: UIViewController?) {
+        super.willMoveToParentViewController(parent)
+        if parent == nil {
+            self.navigationController?.navigationBarHidden = false
+        }
+    }
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

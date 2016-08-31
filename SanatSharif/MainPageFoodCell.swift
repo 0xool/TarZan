@@ -45,9 +45,11 @@ class MainPageFoodCell: UICollectionViewCell {
         
     }
     
+   
     
     
     
+   
     @IBAction func MinusClicked(sender: AnyObject) {
         
         

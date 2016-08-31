@@ -680,10 +680,10 @@
                                     </mask>
                                 </variation>
                             </stackView>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="urc-fs-eOl">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="urc-fs-eOl">
                                 <rect key="frame" x="175" y="174" width="250" height="250"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="نام کاربری" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wn0-MG-OBY" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="نام کاربری" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wn0-MG-OBY" customClass="KaedeTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -697,7 +697,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5N-xr-w0F">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t5N-xr-w0F">
                                         <rect key="frame" x="0.0" y="35" width="250" height="21"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -776,7 +776,7 @@
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUM-cO-Uro" customClass="BuyWindowMaterial" customModule="SanatSharif" customModuleProvider="target">
                                 <rect key="frame" x="40" y="134" width="520" height="347"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-sC-lK0" userLabel="ButtonView">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-sC-lK0" userLabel="ButtonView">
                                         <rect key="frame" x="0.0" y="337" width="520" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FP-xO-XZi">
@@ -859,7 +859,7 @@
                                         <color key="pageIndicatorTintColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="currentPageIndicatorTintColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </pageControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اطلاعات شخصی" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRG-YE-B4Z">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="اطلاعات شخصی" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRG-YE-B4Z">
                                         <rect key="frame" x="132" y="53" width="257" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="D6A-tM-lQ4"/>
@@ -869,27 +869,27 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cFq-Ke-kJq">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cFq-Ke-kJq">
                                         <rect key="frame" x="0.0" y="153" width="520" height="161"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLL-v7-ojk">
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="54"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-Yj-ti4">
+                                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-Yj-ti4">
                                                         <rect key="frame" x="0.0" y="0.0" width="520" height="1"/>
                                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </view>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhoneNumberPic" translatesAutoresizingMaskIntoConstraints="NO" id="pVt-Sc-aTK">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PhoneNumberPic" translatesAutoresizingMaskIntoConstraints="NO" id="pVt-Sc-aTK">
                                                         <rect key="frame" x="460" y="16" width="50" height="39.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="eOw-38-3EM"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-eN-Qh0">
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-eN-Qh0">
                                                         <rect key="frame" x="0.0" y="61" width="520" height="1"/>
                                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="شماره تلفن" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tqQ-0M-PT5" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="شماره تلفن" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tqQ-0M-PT5" customClass="KaedeTextField" customModule="TextFieldEffects">
                                                         <rect key="frame" x="8" y="16" width="444" height="30.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="next"/>
@@ -967,7 +967,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcI-NV-Anp">
                                                 <rect key="frame" x="0.0" y="108" width="520" height="54"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="نام خانوادگی" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKh-U7-hqJ" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="نام خانوادگی" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKh-U7-hqJ" customClass="KaedeTextField" customModule="TextFieldEffects">
                                                         <rect key="frame" x="8" y="16" width="444" height="20"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
@@ -980,7 +980,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LastNamePic" translatesAutoresizingMaskIntoConstraints="NO" id="Fwr-U0-gwr">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LastNamePic" translatesAutoresizingMaskIntoConstraints="NO" id="Fwr-U0-gwr">
                                                         <rect key="frame" x="460" y="6" width="50" height="38.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="8b9-Z8-5De"/>
@@ -1030,7 +1030,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTi-rL-45a" customClass="BuyWindowMaterial" customModule="SanatSharif" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lTi-rL-45a" customClass="BuyWindowMaterial" customModule="SanatSharif" customModuleProvider="target">
                                 <rect key="frame" x="40" y="70" width="520" height="411"/>
                                 <subviews>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="V8p-Iu-kkU">
@@ -1051,10 +1051,10 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lnE-11-O3n">
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lnE-11-O3n">
                                         <rect key="frame" x="0.0" y="153" width="520" height="161"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Lh-8M-2Hb">
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Lh-8M-2Hb">
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="81"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOy-m0-Sbp">
@@ -1070,7 +1070,7 @@
                                                             <constraint firstAttribute="width" constant="50" id="W45-eS-h7c"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7d7-hg-N73">
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7d7-hg-N73">
                                                         <rect key="frame" x="0.0" y="91" width="520" height="1"/>
                                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </view>
@@ -1109,7 +1109,7 @@
                                                     <constraint firstItem="Gid-iA-0j6" firstAttribute="leading" secondItem="4Lh-8M-2Hb" secondAttribute="leadingMargin" id="xyU-Fo-16W"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMS-Hd-0iG">
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMS-Hd-0iG">
                                                 <rect key="frame" x="0.0" y="81" width="520" height="81"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WorkTypePic" translatesAutoresizingMaskIntoConstraints="NO" id="8zh-ep-wqn">
@@ -1152,7 +1152,7 @@
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PN-5w-JAJ" userLabel="ButtonView">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3PN-5w-JAJ" userLabel="ButtonView">
                                         <rect key="frame" x="0.0" y="370" width="520" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NF1-Lq-PbY">
@@ -1245,7 +1245,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xB9-V0-Xlz" customClass="BuyWindowMaterial" customModule="SanatSharif" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xB9-V0-Xlz" customClass="BuyWindowMaterial" customModule="SanatSharif" customModuleProvider="target">
                                 <rect key="frame" x="40" y="90" width="520" height="440"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAO-1r-Ec3" userLabel="ButtonView">
@@ -1295,7 +1295,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="Uij-c7-3QT">
+                                    <pageControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="Uij-c7-3QT">
                                         <rect key="frame" x="232" y="8" width="57" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="57" id="TSy-GF-aHc"/>
@@ -1439,7 +1439,7 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RPS-dm-nfU" customClass="RAMPaperSwitch" customModule="RAMPaperSwitch">
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RPS-dm-nfU" customClass="RAMPaperSwitch" customModule="RAMPaperSwitch">
                                                         <rect key="frame" x="8" y="16" width="51" height="29"/>
                                                         <color key="onTintColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="thumbTintColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -6220,16 +6220,16 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xL1-hI-Kqq">
                                                 <rect key="frame" x="10" y="8" width="580" height="24"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yh4-xk-53K">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yh4-xk-53K">
                                                         <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llf-JI-ywI">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="7" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llf-JI-ywI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="12" height="24"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                                 <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مواد اولیه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfD-mq-SWW">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="مواد اولیه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfD-mq-SWW">
                                                                 <rect key="frame" x="22" y="0.0" width="48" height="24"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="aIo-RP-4gb"/>
@@ -6245,23 +6245,23 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="426-76-TY7">
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="426-76-TY7">
                                                         <rect key="frame" x="168" y="0.0" width="1" height="24"/>
                                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="6Yx-94-CeV"/>
                                                         </constraints>
                                                     </view>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Hv-wf-t5w">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Hv-wf-t5w">
                                                         <rect key="frame" x="266" y="0.0" width="61" height="24"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۱۰" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9e-vi-8J3">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="۱۰" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9e-vi-8J3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="16" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="کالری" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CN-F4-w2c">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="کالری" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CN-F4-w2c">
                                                                 <rect key="frame" x="26" y="0.0" width="35" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -6269,23 +6269,23 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-EP-f7G">
+                                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-EP-f7G">
                                                         <rect key="frame" x="425" y="0.0" width="1" height="24"/>
                                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="1" id="zFP-7b-YDc"/>
                                                         </constraints>
                                                     </view>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="s1e-9C-KqT">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="s1e-9C-KqT">
                                                         <rect key="frame" x="523" y="0.0" width="57" height="24"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۱۵" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr7-iZ-aJ8">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="۱۵" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr7-iZ-aJ8">
                                                                 <rect key="frame" x="0.0" y="0.0" width="17" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دقیقه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-9z-ONG">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="دقیقه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYX-9z-ONG">
                                                                 <rect key="frame" x="27" y="0.0" width="30" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -7379,10 +7379,10 @@
                                                             </constraints>
                                                             <variation key="default">
                                                                 <mask key="constraints">
-                                                                    <exclude reference="uVK-Px-JDn"/>
                                                                     <exclude reference="P8d-uL-Pn6"/>
                                                                     <exclude reference="diX-JI-keQ"/>
                                                                     <exclude reference="gUc-Rc-vcH"/>
+                                                                    <exclude reference="uVK-Px-JDn"/>
                                                                 </mask>
                                                             </variation>
                                                         </view>
@@ -7405,8 +7405,8 @@
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="CbV-ua-Wlm"/>
-                                                            <exclude reference="fEv-1t-Gyx"/>
                                                             <exclude reference="46G-Mr-mbW"/>
+                                                            <exclude reference="fEv-1t-Gyx"/>
                                                             <exclude reference="lTD-fS-f2k"/>
                                                             <exclude reference="FZJ-vP-vsH"/>
                                                             <exclude reference="gO8-qE-LjS"/>
@@ -7444,8 +7444,8 @@
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
-                                                                    <exclude reference="8Py-08-XxO"/>
                                                                     <exclude reference="1Uc-qr-cWT"/>
+                                                                    <exclude reference="8Py-08-XxO"/>
                                                                 </mask>
                                                             </variation>
                                                         </label>
@@ -7565,33 +7565,33 @@
                                         <size key="customSize" width="200" height="280"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="Qa2-so-2jc"/>
+                                                <exclude reference="2rZ-aF-yYy"/>
+                                                <exclude reference="32s-Jh-S4x"/>
+                                                <exclude reference="7RG-n2-nR1"/>
+                                                <exclude reference="Dnf-WF-sNZ"/>
                                                 <exclude reference="HyX-7e-GOW"/>
+                                                <exclude reference="LCa-LQ-4VN"/>
+                                                <exclude reference="Qa2-so-2jc"/>
                                                 <exclude reference="Qbx-Fo-tVw"/>
                                                 <exclude reference="RPB-aR-edd"/>
-                                                <exclude reference="Dnf-WF-sNZ"/>
-                                                <exclude reference="zTA-9N-Q6d"/>
-                                                <exclude reference="r9K-DK-kTN"/>
-                                                <exclude reference="2rZ-aF-yYy"/>
-                                                <exclude reference="yWQ-1b-jaz"/>
                                                 <exclude reference="YyD-MC-APE"/>
-                                                <exclude reference="32s-Jh-S4x"/>
-                                                <exclude reference="zr8-wH-EMf"/>
                                                 <exclude reference="aLQ-lc-4te"/>
                                                 <exclude reference="bMc-L7-aeX"/>
+                                                <exclude reference="cPL-TA-t0Y"/>
                                                 <exclude reference="chV-ow-sJK"/>
                                                 <exclude reference="itW-EQ-sYI"/>
-                                                <exclude reference="cPL-TA-t0Y"/>
-                                                <exclude reference="7RG-n2-nR1"/>
-                                                <exclude reference="LCa-LQ-4VN"/>
-                                                <exclude reference="drK-AZ-Rlm"/>
+                                                <exclude reference="r9K-DK-kTN"/>
+                                                <exclude reference="yWQ-1b-jaz"/>
+                                                <exclude reference="zTA-9N-Q6d"/>
+                                                <exclude reference="zr8-wH-EMf"/>
                                                 <exclude reference="8QW-Ph-DWr"/>
+                                                <exclude reference="drK-AZ-Rlm"/>
                                                 <exclude reference="oGw-uz-Lue"/>
-                                                <exclude reference="eN7-L2-gnF"/>
                                                 <exclude reference="0c5-Aj-zYx"/>
                                                 <exclude reference="9de-Qr-nba"/>
-                                                <exclude reference="Zei-TR-Ji6"/>
                                                 <exclude reference="XFY-OC-1In"/>
+                                                <exclude reference="Zei-TR-Ji6"/>
+                                                <exclude reference="eN7-L2-gnF"/>
                                                 <exclude reference="kBh-33-Jc9"/>
                                             </mask>
                                         </variation>
@@ -7654,7 +7654,7 @@
         <!--دسته بندی-->
         <scene sceneID="Dtf-4N-4p8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2KD-XZ-VHA" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2KD-XZ-VHA" customClass="ListNavVC" customModule="SanatSharif" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="دسته بندی" image="CollectionList" id="Slt-NT-m5y" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <connections>
                             <outlet property="animation" destination="jjX-rs-xqp" id="HCL-sn-itc"/>

@@ -105,6 +105,9 @@ class ListProductVC: UIViewController , UICollectionViewDelegate , UICollectionV
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+    }
+    
     
     
     
