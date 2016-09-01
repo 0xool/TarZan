@@ -17,6 +17,7 @@
 		A51B89351D30DB320049E6F7 /* BasketInfoTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B89341D30DB320049E6F7 /* BasketInfoTableViewVC.swift */; };
 		A51B89371D30E1D50049E6F7 /* AddressPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51B89361D30E1D50049E6F7 /* AddressPickerView.swift */; };
 		A5204E691D44978B0016EC88 /* basketDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5204E681D44978B0016EC88 /* basketDetailVC.swift */; };
+		A525BDFD1D77FE1B00B94892 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A525BDFC1D77FE1B00B94892 /* ProductCategory.swift */; };
 		A52D013F1D27A3E500A97FDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D013E1D27A3E500A97FDD /* AppDelegate.swift */; };
 		A52D01411D27A3E500A97FDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52D01401D27A3E500A97FDD /* ViewController.swift */; };
 		A52D01441D27A3E500A97FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52D01421D27A3E500A97FDD /* Main.storyboard */; };
@@ -181,6 +182,7 @@
 		A51B89341D30DB320049E6F7 /* BasketInfoTableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketInfoTableViewVC.swift; sourceTree = "<group>"; };
 		A51B89361D30E1D50049E6F7 /* AddressPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressPickerView.swift; sourceTree = "<group>"; };
 		A5204E681D44978B0016EC88 /* basketDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = basketDetailVC.swift; sourceTree = "<group>"; };
+		A525BDFC1D77FE1B00B94892 /* ProductCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
 		A52D013B1D27A3E500A97FDD /* SanatSharif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanatSharif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52D013E1D27A3E500A97FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A52D01401D27A3E500A97FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 				A589E4B61D3CA4C40015A2B7 /* Enums.swift */,
 				A5486BEB1D3F80EA003C9057 /* DataBaseModel.swift */,
 				A5C2E1FB1D59F980000F05F0 /* RecpieCategory.swift */,
+				A525BDFC1D77FE1B00B94892 /* ProductCategory.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -982,6 +985,7 @@
 				A57F43A01D27D1C300ED5366 /* Cart.swift in Sources */,
 				A57F439A1D27CF3500ED5366 /* Address.swift in Sources */,
 				A5643C3C1D6097C500C74624 /* BasketHeaderBackGroundView.swift in Sources */,
+				A525BDFD1D77FE1B00B94892 /* ProductCategory.swift in Sources */,
 				A507173F1D55C775007E4BE5 /* BasketDateCell.swift in Sources */,
 				A5CEE8521D2BA65100DF871B /* RoundLabel.swift in Sources */,
 				A518C0701D3B5BAF0004D036 /* LoginControlVC.swift in Sources */,

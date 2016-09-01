@@ -7,6 +7,8 @@ target 'SanatSharif' do
 
   # Pods for SanatSharifi
   # Describe each part usage in each module later ######
+  pod 'AlamofireImage', '~> 2.0'
+  pod 'SwiftyJSON'
   pod 'RAMPaperSwitch', '~> 1.0'
   pod 'ZoomTransitioning', '~> 1.1'
   pod 'TextFieldEffects', '~> 1.2'

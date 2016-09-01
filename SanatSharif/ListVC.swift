@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+
+
 
 class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource  {
 
     @IBOutlet weak var collectionView : UICollectionView!
     
+    var categoryList : [ProductCategory] = [ProductCategory]()
     
     override func viewDidLoad() {
         
@@ -20,6 +25,45 @@ class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewData
         
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.title = "دسته بندی"
+        
+        Alamofire.request(.GET, "https://tarzan.ir/wc-api/v3/products/categories", parameters: ["consumer_key": "ck_159770fbacaffae3aee064d2c96d79dee61c457c" , "consumer_secret" : "cs_bf53a78ddcb1ebaa1e24716af75ee773916ef040"])
+            .responseJSON { response in
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
+                
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value {
+                        let json = JSON(value)
+                        print("JSON: \(json)")
+                        for (_,subJson):(String, JSON) in json["product_categories"] {
+                            
+                            let categoryTemp : ProductCategory = ProductCategory()
+                            
+                            categoryTemp.count = subJson["count"].intValue
+                            categoryTemp.name = subJson["name"].stringValue
+                            categoryTemp.dispaly = subJson["display"].stringValue
+                            
+                            categoryTemp.desc = subJson["description"].stringValue
+                            categoryTemp.parent = subJson["parent"].intValue
+                            categoryTemp.imageSRC = subJson["image"].stringValue
+                            
+                            categoryTemp.slug = subJson["slug"].stringValue
+                            
+                            self.categoryList.append(categoryTemp)
+                            
+                            
+                        }
+                        
+                        self.collectionView.reloadData()
+                        
+                    }
+                case .Failure(let error):
+                    print(error)
+                }
+        }
         //self.navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
     }
     
@@ -35,12 +79,16 @@ class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewData
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return categoryList.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
          let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("listCell", forIndexPath: indexPath) as! ListCell
+        
+        let category : ProductCategory = categoryList[indexPath.row]
+            cell.configureCell(category.name , imageSRC: category.imageSRC)
+        
             return cell
         
     }

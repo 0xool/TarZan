@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AMViralSwitch/AMViralSwitch.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AlamofireImage/AlamofireImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKCamera/DKCamera.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DOFavoriteButton/DOFavoriteButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicBlurView/DynamicBlurView.framework"
@@ -102,6 +103,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SABlurImageView/SABlurImageView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SQLite.swift/SQLite.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyButton/SwiftyButton.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ZoomTransitioning/ZoomTransitioning.framework"
   install_framework "$BUILT_PRODUCTS_DIR/expanding-collection/expanding_collection.framework"
@@ -109,6 +111,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AMViralSwitch/AMViralSwitch.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AlamofireImage/AlamofireImage.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKCamera/DKCamera.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DOFavoriteButton/DOFavoriteButton.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicBlurView/DynamicBlurView.framework"
@@ -125,6 +128,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SABlurImageView/SABlurImageView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SQLite.swift/SQLite.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyButton/SwiftyButton.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
   install_framework "$BUILT_PRODUCTS_DIR/TextFieldEffects/TextFieldEffects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ZoomTransitioning/ZoomTransitioning.framework"
   install_framework "$BUILT_PRODUCTS_DIR/expanding-collection/expanding_collection.framework"
