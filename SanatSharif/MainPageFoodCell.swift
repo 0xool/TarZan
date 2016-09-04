@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 protocol BuyAnimationDelegate {
     func BuyBtnAnimation(image : UIImage , cellPosition : NSIndexPath)
@@ -27,6 +29,7 @@ class MainPageFoodCell: UICollectionViewCell {
     
     var product : Product!
     var type : String!
+    var request: Request?
     
     var Amount : Int!
     var animate : Bool!
@@ -158,10 +161,13 @@ class MainPageFoodCell: UICollectionViewCell {
     
    
     
-    func configureCell(product : Product){
+    func configureTheCell(product : Product){
         
         self.product = product
         foodNameLabel.text = product.Name
+        reset()
+        let url = product.imageSRC.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+        loadImage(url!)
         
     }
     
@@ -169,6 +175,33 @@ class MainPageFoodCell: UICollectionViewCell {
 
         
         
+        
+    }
+    
+    func getNetworkImage(urlString: String, completion: (UIImage? -> Void)) -> (Request) {
+        return Alamofire.request(.GET, urlString).responseImage { (response) -> Void in
+            guard let image = response.result.value else { return }
+            completion(image)
+        }
+    }
+    
+    func reset() {
+        foodIMage.image = nil
+        request?.cancel()
+        
+    }
+    
+    func loadImage(url : String) {
+        
+        
+        request = getNetworkImage(url) { image in
+            self.populateCell(image!)
+        }
+    }
+    
+    func populateCell(image: UIImage) {
+        
+        self.foodIMage.image = image
         
     }
     

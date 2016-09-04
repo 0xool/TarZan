@@ -70,9 +70,9 @@ class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewData
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
+        print( categoryList[indexPath.row].name)
         
-        self.performSegueWithIdentifier("ListProductVC", sender: nil)
-        
+        self.performSegueWithIdentifier("ListProductVC", sender: categoryList[indexPath.row])
         
     }
     
@@ -87,7 +87,7 @@ class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewData
          let cell = self.collectionView.dequeueReusableCellWithReuseIdentifier("listCell", forIndexPath: indexPath) as! ListCell
         
         let category : ProductCategory = categoryList[indexPath.row]
-            cell.configureCell(category.name , imageSRC: category.imageSRC)
+            cell.configureCell(category)
         
             return cell
         
@@ -105,6 +105,18 @@ class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewData
         let backItem = UIBarButtonItem()
         backItem.title = "دسته بندی"
         navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
+        
+        if segue.identifier == "ListProductVC", let RD = segue.destinationViewController as? ListProductVC {
+            
+            if let category = sender as? ProductCategory {
+                
+                RD.Category = category
+            }
+            
+            
+           
+            
+        }
     }
     
     

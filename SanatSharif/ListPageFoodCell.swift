@@ -6,6 +6,8 @@
 //  Copyright © 2016 cyrus refahi. All rights reserved.
 //
 import UIKit
+import AlamofireImage
+import Alamofire
 
 protocol ListBuyAnimationDelegate {
     func BuyBtnAnimation(image : UIImage , cellPosition : NSIndexPath)
@@ -26,6 +28,7 @@ class ListPageFoodCell: UICollectionViewCell {
     
     var product : Product!
     var type : String!
+    var request: Request?
     
     var Amount : Int!
     var animate : Bool!
@@ -166,6 +169,34 @@ class ListPageFoodCell: UICollectionViewCell {
         
         
         
+        
+    }
+    
+    
+    func getNetworkImage(urlString: String, completion: (UIImage? -> Void)) -> (Request) {
+        return Alamofire.request(.GET, urlString).responseImage { (response) -> Void in
+            guard let image = response.result.value else { return }
+            completion(image)
+        }
+    }
+    
+    func reset() {
+        foodIMage.image = nil
+        request?.cancel()
+        
+    }
+    
+    func loadImage(url : String) {
+        
+        
+        request = getNetworkImage(url) { image in
+            self.populateCell(image!)
+        }
+    }
+    
+    func populateCell(image: UIImage) {
+        
+        self.foodIMage.image = image
         
     }
     

@@ -8,6 +8,8 @@
 
 import UIKit
 import ZoomTransitioning
+import Alamofire
+import SwiftyJSON
 
 
 
@@ -93,6 +95,19 @@ class ListProductVC: UIViewController , UICollectionViewDelegate , UICollectionV
     @IBOutlet weak var collectionView : UICollectionView!
     
     var selectedImageView : UIImageView!
+    
+    private var category : ProductCategory!
+    
+    var Category : ProductCategory{
+        get{
+            return category
+        }
+        set{
+            category = newValue
+        }
+    }
+    
+    private var productList : [Product]! = [Product]()
 
     
     override func viewDidLoad() {
@@ -100,8 +115,56 @@ class ListProductVC: UIViewController , UICollectionViewDelegate , UICollectionV
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        print("The Category is : \(category.name)")
+        
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.title = "دسته بندی"
+        
+        Alamofire.request(.GET, "https://tarzan.ir/wc-api/v3/products", parameters: ["consumer_key": "ck_159770fbacaffae3aee064d2c96d79dee61c457c" , "consumer_secret" : "cs_bf53a78ddcb1ebaa1e24716af75ee773916ef040" , "per_page" : "35" ])
+            .responseJSON { response in
+                //print(response.request)  // original URL request
+//                print(response.response) // URL response
+//                print(response.data)     // server data
+//                print(response.result)   // result of response serialization
+                
+                switch response.result {
+                case .Success:
+                    if let value = response.result.value {
+                        let json = JSON(value)
+                        
+                        for (_,subJson):(String, JSON) in json["products"] {
+            
+                            print("JSON: \(json["products"])")
+                                let categoryArrayList = subJson["categories"].array
+                                //add to collectionViewModel
+                            for cat in categoryArrayList!{
+                                
+                                //print(self.category.name)
+                                if cat.string == self.category.name{
+//                                    print("\(subJson["title"].string)")
+                                    let product : Product = Product()
+                                    product.Name = subJson["title"].stringValue
+                                    product.Price = subJson["price"].intValue
+                                    product.ID = subJson["id"].intValue
+                                    product.imageSRC = subJson["featured_src"].stringValue
+                                    
+                                    self.productList.append(product)
+                                    
+                                }
+
+                            }
+                                
+                            
+                            
+                        }
+                        
+                        self.collectionView.reloadData()
+                    
+                    }
+                case .Failure(let error):
+                    print(error)
+                }
+        }
         
     }
     
@@ -114,7 +177,8 @@ class ListProductVC: UIViewController , UICollectionViewDelegate , UICollectionV
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let  cell = collectionView.dequeueReusableCellWithReuseIdentifier("FoodCell", forIndexPath: indexPath) as! MainPageFoodCell
         
-        cell.configureCell("۲۰۰۰", foodName: "گوجه و پیاز  ", foodImageName: "  ")
+        
+        cell.configureTheCell(productList[indexPath.row])
         cell.animationDelegate = self
         cell.index = indexPath
         cell.layer.shadowOffset = CGSizeMake(0, 1)
@@ -133,12 +197,12 @@ class ListProductVC: UIViewController , UICollectionViewDelegate , UICollectionV
     
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return productList.count
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        let product = Product(id: 0, name: "پیاز جعفری", price: 0, expDate: 0)
+        let product : Product = productList[indexPath.row]
         self.selectedImageView = (self.collectionView.cellForItemAtIndexPath(indexPath) as! MainPageFoodCell).foodIMage
         performSegueWithIdentifier("showDetails", sender: product)
 

@@ -16,6 +16,7 @@ class ListCell: UICollectionViewCell {
     @IBOutlet weak var imageView : UIImageView!
     
     var request: Request?
+    var category : ProductCategory!
     
     
     
@@ -25,6 +26,15 @@ class ListCell: UICollectionViewCell {
         self.nameLabel.text = name
         reset()
         let url = imageSRC.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
+        loadImage(url!)
+        
+    }
+    
+    func configureCell(category : ProductCategory){
+        
+        self.nameLabel.text = category.name
+        reset()
+        let url = category.imageSRC.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
         loadImage(url!)
         
     }

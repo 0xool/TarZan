@@ -14,26 +14,58 @@ class Product {
     private var _Name : String!
     private var _Price : Int!
     private var _ExpDate : Int!
+    private var _imageSRC : String!
     
 //    private var _Demention : Demention!
 //    private var _Picture : [Picture]!
 //    private var _Category : Category!
 
     var ID : Int{
-        return self._ID
+        get{
+            return self._ID
+        }
+        set{
+            _ID = newValue
+        }
     }
     
     var Name : String{
-        return _Name
+        get{
+            return _Name
+        }
+        set{
+            _Name = newValue
+        }
     }
     
     var Price : Int{
-        return self._Price
+        get{
+            return self._Price
+        }
+        set{
+            _Price = newValue
+        }
     }
     
     var ExpDate : Int{
-        return self._ExpDate
+        get{
+            return self._ExpDate
+        }
+        set{
+            _ExpDate = newValue
+        }
     }
+    
+    var imageSRC : String{
+        get{
+            return _imageSRC
+        }
+        set{
+            _imageSRC = newValue
+        }
+    }
+    
+    
     
 //    var demention : Demention{
 //        return self._Demention
@@ -57,6 +89,13 @@ class Product {
 //        self._Category = category
 //        self._Picture = picture
 //        self._Demention = demention
+        
+        
+    }
+    
+    init(){
+        
+        
         
         
     }
