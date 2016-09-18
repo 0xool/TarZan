@@ -97,7 +97,6 @@
 		A57F43A21D27D2E200ED5366 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F43A11D27D2E200ED5366 /* Item.swift */; };
 		A57F58041D4E114600274A25 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57F58031D4E114600274A25 /* ReviewTableViewCell.swift */; };
 		A5828AFD1D7199D1001E5DCC /* ProductDetailAnimationLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5828AFC1D7199D1001E5DCC /* ProductDetailAnimationLoad.swift */; };
-		A586A6401D34F51F00731023 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A586A63F1D34F51F00731023 /* DataBaseManager.swift */; };
 		A58706DB1D3104E7000D20C9 /* SaleTagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58706DA1D3104E7000D20C9 /* SaleTagLabel.swift */; };
 		A58706DD1D311701000D20C9 /* PrudoctPagePlusMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58706DC1D311701000D20C9 /* PrudoctPagePlusMaterial.swift */; };
 		A58706DF1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58706DE1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift */; };
@@ -272,7 +271,6 @@
 		A57F908A1D364C3D00B876D3 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "Pods/../build/Debug-iphoneos/SQLite.framework"; sourceTree = "<group>"; };
 		A57F908C1D364C6700B876D3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		A5828AFC1D7199D1001E5DCC /* ProductDetailAnimationLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailAnimationLoad.swift; sourceTree = "<group>"; };
-		A586A63F1D34F51F00731023 /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		A58706DA1D3104E7000D20C9 /* SaleTagLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleTagLabel.swift; sourceTree = "<group>"; };
 		A58706DC1D311701000D20C9 /* PrudoctPagePlusMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrudoctPagePlusMaterial.swift; sourceTree = "<group>"; };
 		A58706DE1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrudoctPagePlusButtonMaterial.swift; sourceTree = "<group>"; };
@@ -518,7 +516,6 @@
 				A51B89341D30DB320049E6F7 /* BasketInfoTableViewVC.swift */,
 				A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */,
 				A55E278B1D3264E60081F302 /* MainpageTabBarControlVC.swift */,
-				A586A63F1D34F51F00731023 /* DataBaseManager.swift */,
 				A518C06F1D3B5BAF0004D036 /* LoginControlVC.swift */,
 				A518C0711D3BA63A0004D036 /* LoginPopOverVC.swift */,
 				A589E4B41D3C9F140015A2B7 /* BuyAsGuestVC.swift */,
@@ -961,7 +958,6 @@
 				A55E27861D323E210081F302 /* ImageCell.swift in Sources */,
 				A57120A71D4DE05D0057DDE9 /* CookIngInfoCell.swift in Sources */,
 				A57F43901D27C97E00ED5366 /* SubList.swift in Sources */,
-				A586A6401D34F51F00731023 /* DataBaseManager.swift in Sources */,
 				A5502ADB1D28D0D300B559CD /* Constants.swift in Sources */,
 				A5334B561D6AE14D00ADAE64 /* searchCell.swift in Sources */,
 				A558F3F61D43479800346754 /* BasketToBuy.xcdatamodeld in Sources */,

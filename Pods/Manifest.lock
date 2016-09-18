@@ -20,7 +20,6 @@ PODS:
   - RAMPaperSwitch (1.0.4)
   - RZTransitions (1.2.1)
   - SABlurImageView (2.1.1)
-  - SQLite.swift (0.10.1)
   - SwiftyButton (0.4.0):
     - SwiftyButton/CustomContent (= 0.4.0)
   - SwiftyButton/CustomContent (0.4.0):
@@ -47,7 +46,6 @@ DEPENDENCIES:
   - RAMPaperSwitch (~> 1.0)
   - RZTransitions (~> 1.2)
   - SABlurImageView (~> 2.1)
-  - SQLite.swift (~> 0.10.1)
   - SwiftyButton
   - SwiftyJSON
   - TextFieldEffects (~> 1.2)
@@ -72,12 +70,11 @@ SPEC CHECKSUMS:
   RAMPaperSwitch: 8fc0d32bcd0f168eadb2855528fd148afa29b37e
   RZTransitions: 0e0013fda6989ee84dc5e44dca79fd539e1a975a
   SABlurImageView: 60fd7f18c20b4bb2bb6b1e4446464d6a480c5754
-  SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
   SwiftyButton: fffcc0d82b2b5f9ec1681f20ee9c67bed0d5c73b
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
   ZoomTransitioning: 55fa47c227ae0f5d3b15fe358a5549aec5ecab30
 
-PODFILE CHECKSUM: da1bc6dfc47d70f0c7b2294845a09035f2ae205d
+PODFILE CHECKSUM: 2f150116f269d604beadbaf8fa73b7018b9b2e5d
 
 COCOAPODS: 1.0.1

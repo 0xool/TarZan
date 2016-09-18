@@ -119,11 +119,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SQLite.swift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SwiftyButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -152,7 +147,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02952899580965DB952F03FBFBA28F92</key>
+		<key>0025B9AB16237E5890FF5D252A5F2EFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -163,6 +158,16 @@
 			<true/>
 		</dict>
 		<key>05094CC4A047119F7ADC14EE74C4881C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09FA143CD137232019607B50E2C8F836</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0DDBF6BB6A645275CA8B2FD468007B43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -192,17 +197,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45D68FF8AE1DA1A9CEF40B84AFA1C457</key>
+		<key>4556C878B585B8A9529D4F334F833037</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>470D4071FFA6FBF213E569F0A53C16BB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4FB52F42AE7DBBD65F4ABB292AC4F1EF</key>
+		<key>4839B871E4762A2BE05013DF823AE9E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -212,7 +212,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F064358643A3C7D07412D9C460BD1AE</key>
+		<key>72A5D4DAD57A343B5B2EADE17EF2DE69</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -222,7 +222,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7FA13BF47CC13AD245310D59754BBC4D</key>
+		<key>7B00569100627996C4CD15632175CBF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -232,7 +232,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E961A3B3747AF381B99645F66AD6A83</key>
+		<key>84D055988CC3AA6ECDD168D44A5AFE9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -243,16 +243,6 @@
 			<true/>
 		</dict>
 		<key>9815221B777AD23EED8A1A1FE6D5AB2A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A0FC92D75E8A93AA40FEA5A8CAC1FC7F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A81CB46681985C06A98A9B04476D308B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -272,7 +262,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D266414F3416C1C01CB4B058B21677E1</key>
+		<key>C9F752C7238DC8176D4241B0F00B667E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -282,7 +272,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DDD6A7822FF835C339E723809EA7E747</key>
+		<key>E3E91FEDAAD0F995E664342DDF412CB5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

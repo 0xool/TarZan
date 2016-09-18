@@ -26,7 +26,7 @@ class BasketToBuyCell: UICollectionViewCell {
         
         self.BasketToBuyImageView.image = image
         self.titleLabel.text = title
-        self.dateLabel.text = date.datatypeValue
+        //self.dateLabel.text = date.date
         self.personName.text = personName
         
     }
