@@ -110,6 +110,7 @@
 		A5ACD5B31D6870F60011A2D7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACD5B21D6870F60011A2D7 /* SearchVC.swift */; };
 		A5C2E1FC1D59F980000F05F0 /* RecpieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2E1FB1D59F980000F05F0 /* RecpieCategory.swift */; };
 		A5C511751D3506AE00731494 /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C511741D3506AE00731494 /* RecentSearchCell.swift */; };
+		A5CB4ECD1D8EC60700832F81 /* BasketCheckOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CB4ECC1D8EC60700832F81 /* BasketCheckOutVC.swift */; };
 		A5CD99F01D30FB3D00CA0B96 /* UserModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */; };
 		A5CEE84E1D2B9C6200DF871B /* BasketPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE84D1D2B9C6200DF871B /* BasketPageVC.swift */; };
 		A5CEE8501D2B9F6200DF871B /* MediumWindowViewMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEE84F1D2B9F6200DF871B /* MediumWindowViewMaterial.swift */; };
@@ -285,6 +286,7 @@
 		A5C2E1FB1D59F980000F05F0 /* RecpieCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecpieCategory.swift; sourceTree = "<group>"; };
 		A5C511741D3506AE00731494 /* RecentSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
 		A5C8E4DF1D364B7B00BFEE81 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A5CB4ECC1D8EC60700832F81 /* BasketCheckOutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketCheckOutVC.swift; sourceTree = "<group>"; };
 		A5CD99EF1D30FB3D00CA0B96 /* UserModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelManager.swift; sourceTree = "<group>"; };
 		A5CEE84D1D2B9C6200DF871B /* BasketPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketPageVC.swift; sourceTree = "<group>"; };
 		A5CEE84F1D2B9F6200DF871B /* MediumWindowViewMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediumWindowViewMaterial.swift; sourceTree = "<group>"; };
@@ -533,6 +535,7 @@
 				A557CDBC1D76ADD00070D0E1 /* ListVC.swift */,
 				A557CDC01D76BE550070D0E1 /* ListProductVC.swift */,
 				A557CDC41D76EC100070D0E1 /* ListNavVC.swift */,
+				A5CB4ECC1D8EC60700832F81 /* BasketCheckOutVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -1005,6 +1008,7 @@
 				A57F58041D4E114600274A25 /* ReviewTableViewCell.swift in Sources */,
 				A5DEA3FB1D4618DB005218A8 /* RecpieTableControl.swift in Sources */,
 				A5D48ED61D6AC42400CC1B32 /* CoreDataRecentSearchManager.swift in Sources */,
+				A5CB4ECD1D8EC60700832F81 /* BasketCheckOutVC.swift in Sources */,
 				A58706DB1D3104E7000D20C9 /* SaleTagLabel.swift in Sources */,
 				A58706DF1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift in Sources */,
 				A557CDC11D76BE550070D0E1 /* ListProductVC.swift in Sources */,
