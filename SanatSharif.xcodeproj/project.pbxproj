@@ -48,6 +48,7 @@
 		A54937231D472F8E007785AA /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54937221D472F8E007785AA /* GraphView.swift */; };
 		A5502ADB1D28D0D300B559CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5502ADA1D28D0D300B559CD /* Constants.swift */; };
 		A5502ADD1D28D17B00B559CD /* LoginPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5502ADC1D28D17B00B559CD /* LoginPageController.swift */; };
+		A5504EB01D93D33900465823 /* ProfileVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5504EAF1D93D33900465823 /* ProfileVCViewController.swift */; };
 		A55517D41D61C78D003B4962 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55517D31D61C78D003B4962 /* QRViewController.swift */; };
 		A557CDBD1D76ADD00070D0E1 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557CDBC1D76ADD00070D0E1 /* ListVC.swift */; };
 		A557CDBF1D76AED50070D0E1 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557CDBE1D76AED50070D0E1 /* ListCell.swift */; };
@@ -224,6 +225,7 @@
 		A54937221D472F8E007785AA /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		A5502ADA1D28D0D300B559CD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5502ADC1D28D17B00B559CD /* LoginPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageController.swift; sourceTree = "<group>"; };
+		A5504EAF1D93D33900465823 /* ProfileVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVCViewController.swift; sourceTree = "<group>"; };
 		A55517D31D61C78D003B4962 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		A557CDBC1D76ADD00070D0E1 /* ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		A557CDBE1D76AED50070D0E1 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 				A557CDC01D76BE550070D0E1 /* ListProductVC.swift */,
 				A557CDC41D76EC100070D0E1 /* ListNavVC.swift */,
 				A5CB4ECC1D8EC60700832F81 /* BasketCheckOutVC.swift */,
+				A5504EAF1D93D33900465823 /* ProfileVCViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -944,6 +947,7 @@
 				A5C2E1FC1D59F980000F05F0 /* RecpieCategory.swift in Sources */,
 				A53C74EF1D291A9C007AFC96 /* MenuBarVC.swift in Sources */,
 				A531F7D31D474087006E0863 /* ElasticTextField.swift in Sources */,
+				A5504EB01D93D33900465823 /* ProfileVCViewController.swift in Sources */,
 				A5F89DA51D292BE100293D58 /* RoundViewMaterial.swift in Sources */,
 				A531F7DB1D477AF3006E0863 /* RecpieDetailVCAnimationLoad.swift in Sources */,
 				A5334B5A1D6B080100ADAE64 /* CardImageView.swift in Sources */,
