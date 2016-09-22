@@ -39,6 +39,8 @@ class ProductDetailHeader: UICollectionViewCell {
         imageSlider.contentScaleMode = .ScaleAspectFit
         imageSlider.pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor();
         imageSlider.pageControl.pageIndicatorTintColor = UIColor.blackColor();
+        imageSlider.slideshowInterval = 5
+        imageSlider.userInteractionEnabled = false
         
         //imageSlider.setImageInputs([ImageSource(imageString: "Onion2")!, ImageSource(imageString: "Onion1")!, ImageSource(imageString: "Onion3")!, ImageSource(imageString: "Onion4")!])
         
@@ -82,7 +84,8 @@ class ProductDetailHeader: UICollectionViewCell {
     
     func configureCell ( title : String , image : UIImage  ){
         
-        
+        //self.imageSlider.
+
         self.imageSlider.hidden = false
         
         

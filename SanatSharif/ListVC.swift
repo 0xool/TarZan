@@ -10,6 +10,27 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+extension ListVC : HolderViewDelegate {
+    
+    func animateLabel() {
+        
+    }
+    
+    func addHolderView() {
+        let boxSize: CGFloat = 100.0
+        holderView.frame = CGRect(x: view.bounds.width / 2 - boxSize / 2,
+                                  y: view.bounds.height / 2 - boxSize / 2,
+                                  width: boxSize,
+                                  height: boxSize)
+        holderView.parentFrame = view.frame
+        holderView.delegate = self
+        
+        view.addSubview(holderView)
+        holderView.addOval()
+    }
+    
+    
+}
 
 
 class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource  {
@@ -17,6 +38,8 @@ class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewData
     @IBOutlet weak var collectionView : UICollectionView!
     
     var categoryList : [ProductCategory] = [ProductCategory]()
+    var holderView = HolderView(frame: CGRectZero)
+
     
     override func viewDidLoad() {
         
@@ -56,7 +79,8 @@ class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewData
                             
                             
                         }
-                        
+                        self.holderView.removeFromSuperview()
+                        self.view.userInteractionEnabled = true
                         self.collectionView.reloadData()
                         
                     }
@@ -65,6 +89,15 @@ class ListVC: UIViewController , UICollectionViewDelegate , UICollectionViewData
                 }
         }
         //self.navigationController!.navigationBar.barTintColor = UIColor.whiteColor()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if self.categoryList.count == 0{
+            super.viewDidAppear(animated)
+            self.view.userInteractionEnabled = false
+            addHolderView()
+        }
     }
     
     

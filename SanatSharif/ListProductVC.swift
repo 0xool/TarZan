@@ -46,6 +46,29 @@ extension ListProductVC : ZoomTransitionSourceDelegate {
     }
 }
 
+extension ListProductVC : HolderViewDelegate {
+    
+    func animateLabel() {
+        
+    }
+    
+    func addHolderView() {
+        let boxSize: CGFloat = 100.0
+        holderView.frame = CGRect(x: view.bounds.width / 2 - boxSize / 2,
+                                  y: view.bounds.height / 2 - boxSize / 2,
+                                  width: boxSize,
+                                  height: boxSize)
+        holderView.parentFrame = view.frame
+        holderView.delegate = self
+        
+        view.addSubview(holderView)
+        holderView.addOval()
+    }
+    
+    
+}
+
+
 
 extension ListProductVC : BuyAnimationDelegate {
     
@@ -95,6 +118,8 @@ class ListProductVC: UIViewController , UICollectionViewDelegate , UICollectionV
     @IBOutlet weak var collectionView : UICollectionView!
     
     var selectedImageView : UIImageView!
+    var holderView = HolderView(frame: CGRectZero)
+
     
     private var category : ProductCategory!
     
@@ -157,7 +182,8 @@ class ListProductVC: UIViewController , UICollectionViewDelegate , UICollectionV
                             
                             
                         }
-                        
+                        self.holderView.removeFromSuperview()
+                        self.view.userInteractionEnabled = true
                         self.collectionView.reloadData()
                     
                     }
@@ -169,6 +195,11 @@ class ListProductVC: UIViewController , UICollectionViewDelegate , UICollectionV
     }
     
     override func viewDidAppear(animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        self.view.userInteractionEnabled = false
+        addHolderView()
+   
     }
     
     

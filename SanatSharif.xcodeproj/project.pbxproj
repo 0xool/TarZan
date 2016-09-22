@@ -11,6 +11,9 @@
 		4CE8DC967222F2AC50799928 /* Pods_SanatSharif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C83F9AEE80427D627FE9D25 /* Pods_SanatSharif.framework */; };
 		A507173F1D55C775007E4BE5 /* BasketDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A507173E1D55C775007E4BE5 /* BasketDateCell.swift */; };
 		A50717411D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50717401D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift */; };
+		A50B690C1D92B6F100AC5807 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B690A1D92B6F100AC5807 /* Colors.swift */; };
+		A50B690D1D92B6F100AC5807 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B690B1D92B6F100AC5807 /* OvalLayer.swift */; };
+		A50B690F1D92B84D00AC5807 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B690E1D92B84D00AC5807 /* HolderView.swift */; };
 		A511D5561D61A6C000AA5424 /* RamItemHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A511D5551D61A6C000AA5424 /* RamItemHandler.swift */; };
 		A518C0701D3B5BAF0004D036 /* LoginControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518C06F1D3B5BAF0004D036 /* LoginControlVC.swift */; };
 		A518C0721D3BA63A0004D036 /* LoginPopOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A518C0711D3BA63A0004D036 /* LoginPopOverVC.swift */; };
@@ -176,6 +179,9 @@
 		9C83F9AEE80427D627FE9D25 /* Pods_SanatSharif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanatSharif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A507173E1D55C775007E4BE5 /* BasketDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketDateCell.swift; sourceTree = "<group>"; };
 		A50717401D55CFEF007E4BE5 /* RoundViewWithShadowMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundViewWithShadowMaterial.swift; sourceTree = "<group>"; };
+		A50B690A1D92B6F100AC5807 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A50B690B1D92B6F100AC5807 /* OvalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
+		A50B690E1D92B84D00AC5807 /* HolderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
 		A511D5551D61A6C000AA5424 /* RamItemHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RamItemHandler.swift; sourceTree = "<group>"; };
 		A518C06F1D3B5BAF0004D036 /* LoginControlVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControlVC.swift; sourceTree = "<group>"; };
 		A518C0711D3BA63A0004D036 /* LoginPopOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPopOverVC.swift; sourceTree = "<group>"; };
@@ -449,8 +455,11 @@
 				A52D01471D27A3E500A97FDD /* LaunchScreen.storyboard */,
 				A59F3A8C1D27E7610097A1C9 /* LoginButtonView.swift */,
 				A53C74E11D28F0A0007AFC96 /* BackButtonMaterial.swift */,
+				A50B690E1D92B84D00AC5807 /* HolderView.swift */,
 				A53C74EC1D2918B7007AFC96 /* RoundImageMaterial.swift */,
 				A5F89DA41D292BE100293D58 /* RoundViewMaterial.swift */,
+				A50B690A1D92B6F100AC5807 /* Colors.swift */,
+				A50B690B1D92B6F100AC5807 /* OvalLayer.swift */,
 				A5F89DA61D29325200293D58 /* MenuTableViewMaterial.swift */,
 				A54016D01D2A36F2009D2DE7 /* MainPageFoodCell.swift */,
 				A5CEE84F1D2B9F6200DF871B /* MediumWindowViewMaterial.swift */,
@@ -1008,6 +1017,7 @@
 				A57F58041D4E114600274A25 /* ReviewTableViewCell.swift in Sources */,
 				A5DEA3FB1D4618DB005218A8 /* RecpieTableControl.swift in Sources */,
 				A5D48ED61D6AC42400CC1B32 /* CoreDataRecentSearchManager.swift in Sources */,
+				A50B690F1D92B84D00AC5807 /* HolderView.swift in Sources */,
 				A5CB4ECD1D8EC60700832F81 /* BasketCheckOutVC.swift in Sources */,
 				A58706DB1D3104E7000D20C9 /* SaleTagLabel.swift in Sources */,
 				A58706DF1D311904000D20C9 /* PrudoctPagePlusButtonMaterial.swift in Sources */,
@@ -1020,6 +1030,7 @@
 				A557CDC51D76EC100070D0E1 /* ListNavVC.swift in Sources */,
 				A5643C3A1D60952000C74624 /* BasketFooterBackGroundView.swift in Sources */,
 				A57F43961D27CD3800ED5366 /* User.swift in Sources */,
+				A50B690C1D92B6F100AC5807 /* Colors.swift in Sources */,
 				A557CDBF1D76AED50070D0E1 /* ListCell.swift in Sources */,
 				A5F89DA71D29325200293D58 /* MenuTableViewMaterial.swift in Sources */,
 				A5F3FFAB1D7165F6005D53E5 /* ProductDetailViewController.swift in Sources */,
@@ -1038,6 +1049,7 @@
 				A5CEE8501D2B9F6200DF871B /* MediumWindowViewMaterial.swift in Sources */,
 				A5D60A921D2BD41800799CD2 /* RoundButtonMaterial.swift in Sources */,
 				A5FFB8361D55C13200FDB0FB /* DateCell.swift in Sources */,
+				A50B690D1D92B6F100AC5807 /* OvalLayer.swift in Sources */,
 				A5D543D61D574F2300D47011 /* RemindMeCell.swift in Sources */,
 				A5725CD71D40ADCA00DCE7A6 /* UIImage+Decompression.swift in Sources */,
 				A5D48ED21D69CC8500CC1B32 /* RecentSearchEntity+CoreDataProperties.swift in Sources */,

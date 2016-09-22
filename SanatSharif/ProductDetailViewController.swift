@@ -62,18 +62,19 @@ extension ProductDetailViewController : backBtnClickedProtocol{
 }
 
 
-class ProductDetailViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UIViewControllerTransitioningDelegate {
+
+class ProductDetailViewController: UIViewController , UICollectionViewDelegate , UICollectionViewDataSource , UIViewControllerTransitioningDelegate  {
     
     @IBOutlet weak var collectionView : UICollectionView!
     
     
     let headerNib = UINib(nibName: "ProductDetailHeader", bundle: NSBundle.mainBundle())
     let footerNib = UINib(nibName: "ProductDetailFooterView", bundle: NSBundle.mainBundle())
-    
 
     private var largeImageView : UIImageView! = UIImageView()
     var productDetailHeader : ProductDetailHeader!
     private var headerInitBool : Bool = false
+    
     
     override func viewDidLoad() {
        
@@ -84,6 +85,8 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
 //        self.navigationController?.navigationBar.shadowImage = nil
 //        self.navigationController?.navigationBar.backgroundColor = UIColor.whiteColor()
 //        self.navigationController?.navigationBar.alpha = 1
+        
+        
         
         navigationController?.setNavigationBarHidden(true, animated: true)
         
@@ -111,13 +114,9 @@ class ProductDetailViewController: UIViewController , UICollectionViewDelegate ,
     }
     
     
+    
     override func viewWillAppear(animated: Bool) {
         
-//        self.navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: .Default)
-//        self.navigationController?.navigationBar.shadowImage = nil
-//        self.navigationController?.navigationBar.translucent = true
-//        self.navigationController?.navigationBar.backgroundColor  = UIColor(red: 0 / 255.0, green: 128 / 255.0, blue: 0 / 255.0, alpha: 1)
-
     }
     
     override func viewDidDisappear(animated: Bool) {
