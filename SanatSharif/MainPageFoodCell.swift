@@ -163,6 +163,7 @@ class MainPageFoodCell: UICollectionViewCell {
     
     func configureTheCell(product : Product){
         
+        Amount = 0
         self.product = product
         foodNameLabel.text = product.Name
         reset()
